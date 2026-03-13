@@ -884,10 +884,11 @@
   <span class="newsletter-kicker">The Splendid Edit Newsletter</span>
   <h2 class="newsletter-title">The edit, direct<br/><em>to your inbox.</em></h2>
   <p class="newsletter-sub">Every fortnight: the season&rsquo;s best hotel openings, fashion week dispatches, and the curated picks your travel agent won&rsquo;t know to suggest.</p>
-  <form class="newsletter-form" onsubmit="return false;">
-    <input type="email" class="newsletter-input" placeholder="Your email address" />
-    <button class="newsletter-btn">Subscribe</button>
+  <form class="newsletter-form" id="newsletter-form" onsubmit="handleSubscribe(event)">
+    <input type="email" class="newsletter-input" id="newsletter-email" placeholder="Your email address" required />
+    <button class="newsletter-btn" id="newsletter-btn" type="submit">Subscribe</button>
   </form>
+  <p id="newsletter-msg" style="display:none; margin-top:16px; font-family:'Cormorant Garamond',serif; font-size:16px; font-style:italic;"></p>
   <p class="newsletter-note">No advertising. No sponsored content. Just the edit.</p>
 </section>
 
@@ -1560,6 +1561,42 @@
       closeMobileNav();
     }
   });
+</script>
+
+<script>
+async function handleSubscribe(e) {
+  e.preventDefault();
+  const email = document.getElementById('newsletter-email').value.trim();
+  const btn = document.getElementById('newsletter-btn');
+  const msg = document.getElementById('newsletter-msg');
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzrNMoycUD5m420g3lLZdZ08qHv3618nIjXkyyDBPYESLlQctbyFeUw3z0PRtxaf3t_/exec';
+  btn.disabled = true;
+  btn.textContent = 'Subscribing\u2026';
+  msg.style.display = 'none';
+  try {
+    const res = await fetch(SCRIPT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: 'email=' + encodeURIComponent(email)
+    });
+    const data = await res.json();
+    msg.style.display = 'block';
+    if (data.status === 'success') {
+      msg.style.color = '#5a7a5a';
+      msg.textContent = 'You\u2019re subscribed \u2014 welcome to The Edit.';
+      document.getElementById('newsletter-form').reset();
+    } else {
+      msg.style.color = '#c0392b';
+      msg.textContent = data.message || 'Something went wrong. Please try again.';
+    }
+  } catch(err) {
+    msg.style.display = 'block';
+    msg.style.color = '#c0392b';
+    msg.textContent = 'Something went wrong. Please try again.';
+  }
+  btn.disabled = false;
+  btn.textContent = 'Subscribe';
+}
 </script>
 
 </body>
