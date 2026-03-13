@@ -72,6 +72,66 @@
     .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 300; letter-spacing: 0.1em; color: rgba(250,246,241,0.25); }
     .footer-legal { display: flex; gap: 28px; }
     .footer-legal a { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 300; letter-spacing: 0.1em; color: rgba(250,246,241,0.25); text-decoration: none; }
+
+    /* ── HAMBURGER BUTTON ── */
+    .nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px 4px; z-index: 101; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--brown); transition: all 0.25s ease; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* ── MOBILE NAV DRAWER ── */
+    .mobile-nav { display: none; position: fixed; top: 64px; left: 0; right: 0; background: rgba(250,246,241,0.98); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 99; padding: 0 32px 28px; }
+    .mobile-nav.open { display: block; }
+    .mobile-nav ul { list-style: none; }
+    .mobile-nav ul li { border-bottom: 1px solid var(--border); }
+    .mobile-nav ul li a { display: block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brown); text-decoration: none; padding: 16px 0; transition: color 0.2s; }
+    .mobile-nav ul li a:hover { color: var(--crimson); }
+    .mobile-nav-subscribe { display: block; margin-top: 20px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--crimson); text-decoration: none; text-align: center; padding: 14px; border: 1px solid var(--crimson); }
+
+    @media (max-width: 900px) {
+      .issue-bar { padding: 9px 24px; }
+      .issue-bar-right { display: none; }
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .nav-subscribe { display: none; }
+      .nav-hamburger { display: flex; }
+      /* Article hero */
+      .article-hero { height: 55vh; min-height: 320px; }
+      .article-hero-content { padding: 48px 36px 36px; }
+      /* Article body */
+      .article-body { padding: 48px 28px 64px; }
+      .article-pullquote { margin: 44px -28px; padding: 36px 28px; }
+      .article-img-block { margin: 36px -28px; }
+      .article-img-block img { height: 340px; }
+      .article-img-caption { padding: 10px 28px 0; }
+      /* Footer */
+      footer { padding: 48px 28px 32px; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
+    }
+
+    @media (max-width: 560px) {
+      nav { padding: 0 20px; }
+      .issue-bar { padding: 9px 20px; }
+      /* Article hero */
+      .article-hero { height: 50vh; min-height: 280px; }
+      .article-hero-content { padding: 36px 24px 28px; }
+      /* Article body */
+      .article-body { padding: 36px 20px 52px; }
+      .article-lede { font-size: 19px; }
+      .article-body p { font-size: 17px; }
+      .article-body h2 { font-size: 26px; margin: 40px 0 18px; }
+      .article-pullquote { margin: 36px -20px; padding: 32px 20px; }
+      .article-img-block { margin: 32px -20px; }
+      .article-img-block img { height: 260px; }
+      .article-img-caption { padding: 10px 20px 0; }
+      /* Footer */
+      footer { padding: 40px 20px 28px; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .footer-legal { flex-wrap: wrap; gap: 10px 20px; }
+    }
+
 </style>
 </head>
 <body>
@@ -89,7 +149,21 @@
     <li><a href="the-splendid-edit-v5.html#cities">City Guides</a></li>
   </ul>
   <a href="the-splendid-edit-v5.html#newsletter" class="nav-subscribe">Subscribe</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <ul>
+    <li><a href="the-splendid-edit-v5.html#features" onclick="closeMobileNav()">The Stay</a></li>
+    <li><a href="the-splendid-edit-v5.html#features" onclick="closeMobileNav()">The Season</a></li>
+    <li><a href="the-splendid-edit-v5.html" onclick="closeMobileNav()">The Edit</a></li>
+    <li><a href="the-splendid-edit-v5.html#cities" onclick="closeMobileNav()">City Guides</a></li>
+  </ul>
+  <a href="the-splendid-edit-v5.html#newsletter" class="mobile-nav-subscribe" onclick="closeMobileNav()">Subscribe to The Edit</a>
+</div>
 
 <section class="article-hero">
   <img src="https://cdn.mos.cms.futurecdn.net/XJxBJMCT4KLjW7CJcREeXC.jpg" alt="Dior Autumn/Winter 2026 runway set in the Jardin des Tuileries, Paris Fashion Week" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
@@ -242,6 +316,33 @@
     </div>
   </div>
 </footer>
+
+
+<script>
+  var hamburger = document.getElementById('hamburger');
+  var mobileNav = document.getElementById('mobileNav');
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', function() {
+      var isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      mobileNav.setAttribute('aria-hidden', !isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileNav.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('click', function(e) {
+      if (mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+        closeMobileNav();
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
