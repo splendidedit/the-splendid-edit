@@ -1574,21 +1574,18 @@ async function handleSubscribe(e) {
   btn.textContent = 'Subscribing\u2026';
   msg.style.display = 'none';
   try {
-    const res = await fetch(SCRIPT_URL, {
+    // mode:'no-cors' bypasses CORS preflight — Apps Script handles the POST
+    // and we show success optimistically (opaque response can't be read)
+    await fetch(SCRIPT_URL, {
       method: 'POST',
+      mode: 'no-cors',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: 'email=' + encodeURIComponent(email)
     });
-    const data = await res.json();
     msg.style.display = 'block';
-    if (data.status === 'success') {
-      msg.style.color = '#5a7a5a';
-      msg.textContent = 'You\u2019re subscribed \u2014 welcome to The Edit.';
-      document.getElementById('newsletter-form').reset();
-    } else {
-      msg.style.color = '#c0392b';
-      msg.textContent = data.message || 'Something went wrong. Please try again.';
-    }
+    msg.style.color = '#5a7a5a';
+    msg.textContent = 'You\u2019re subscribed \u2014 welcome to The Edit.';
+    document.getElementById('newsletter-form').reset();
   } catch(err) {
     msg.style.display = 'block';
     msg.style.color = '#c0392b';
