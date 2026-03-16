@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://edit.worldofsplendid.com/sitemap.xml
+Sitemap: https://edit.worldofsplendid.com/sitemap-news.xml
