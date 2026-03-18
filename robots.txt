@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://edit.worldofsplendid.com/sitemap.xml
-Sitemap: https://edit.worldofsplendid.com/sitemap-news.xml
+Sitemap: https://splendidedit.com/sitemap.xml
+Sitemap: https://splendidedit.com/sitemap-news.xml
