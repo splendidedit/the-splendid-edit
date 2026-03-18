@@ -359,9 +359,58 @@
       .footer-top { grid-template-columns: 1fr; gap: 32px; }
       .footer-legal { flex-wrap: wrap; gap: 12px 24px; }
     }
+
+    /* ── PRELOADER ── */
+    #preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: var(--cream);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.7s ease;
+    }
+    #preloader.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .preloader-logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--brown);
+      text-align: center;
+    }
+    .preloader-logo em {
+      font-style: normal;
+      color: var(--crimson);
+      font-weight: 400;
+    }
+    .preloader-rule {
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+      margin: 14px auto 0;
+      transform: scaleX(0);
+      transform-origin: center;
+      animation: preloader-line 0.9s 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    @keyframes preloader-line {
+      to { transform: scaleX(1); }
+    }
   </style>
 </head>
 <body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-logo">The <em>Splendid</em> Edit</div>
+  <div class="preloader-rule"></div>
+</div>
 
 <!-- ISSUE BAR -->
 <div class="issue-bar">
@@ -1682,6 +1731,25 @@ async function handleSubscribe(e) {
   btn.disabled = false;
   btn.textContent = 'Subscribe';
 }
+
+/* ── PRELOADER DISMISS ── */
+(function() {
+  var preloader = document.getElementById('preloader');
+  function dismiss() {
+    if (!preloader) return;
+    preloader.classList.add('fade-out');
+    setTimeout(function() {
+      if (preloader && preloader.parentNode) {
+        preloader.parentNode.removeChild(preloader);
+      }
+    }, 750);
+  }
+  if (document.readyState === 'complete') {
+    setTimeout(dismiss, 100);
+  } else {
+    window.addEventListener('load', function() { setTimeout(dismiss, 100); });
+  }
+})();
 </script>
 
 </body>
