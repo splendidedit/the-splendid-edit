@@ -122,4 +122,16 @@
     </news:news>
   </url>
 
+  <url>
+    <loc>https://splendidedit.com/mens-fw-paris-milan-june-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-20T08:00:00Z</news:publication_date>
+      <news:title>What the Men's Shows Need to Say This June</news:title>
+    </news:news>
+  </url>
+
 </urlset>
