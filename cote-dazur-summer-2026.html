@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>September, <em>again</em> — The Splendid Edit</title>
+  <title>Where summer knows its worth — The Splendid Edit</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -32,7 +32,7 @@
     .nav-subscribe { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--crimson); text-decoration: none; border-bottom: 1px solid var(--crimson); padding-bottom: 1px; }
     /* Article hero */
     .article-hero { position: relative; height: 70vh; min-height: 500px; overflow: hidden; }
-    .article-hero img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .article-hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
     .article-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(61,35,24,0.92) 0%, rgba(61,35,24,0.3) 50%, transparent 100%); }
     .article-hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 72px 120px 56px; z-index: 2; }
     .article-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--terracotta); display: block; margin-bottom: 18px; }
@@ -79,15 +79,12 @@
     .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 300; letter-spacing: 0.1em; color: rgba(250,246,241,0.25); }
     .footer-legal { display: flex; gap: 28px; }
     .footer-legal a { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 300; letter-spacing: 0.1em; color: rgba(250,246,241,0.25); text-decoration: none; }
-
-    /* ── HAMBURGER BUTTON ── */
+    /* Hamburger */
     .nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px 4px; z-index: 101; }
     .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--brown); transition: all 0.25s ease; }
     .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
     .nav-hamburger.open span:nth-child(2) { opacity: 0; }
     .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-
-    /* ── MOBILE NAV DRAWER ── */
     .mobile-nav { display: none; position: fixed; top: 64px; left: 0; right: 0; background: rgba(250,246,241,0.98); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 99; padding: 0 32px 28px; }
     .mobile-nav.open { display: block; }
     .mobile-nav ul { list-style: none; }
@@ -103,28 +100,22 @@
       .nav-links { display: none; }
       .nav-subscribe { display: none; }
       .nav-hamburger { display: flex; }
-      /* Article hero */
       .article-hero { height: 55vh; min-height: 320px; }
       .article-hero-content { padding: 48px 36px 36px; }
-      /* Article body */
       .article-body { padding: 48px 28px 64px; }
       .article-pullquote { margin: 44px -28px; padding: 36px 28px; }
       .article-img-block { margin: 36px -28px; }
       .article-img-block img { height: 340px; }
       .article-img-caption { padding: 10px 28px 0; }
-      /* Footer */
       footer { padding: 48px 28px 32px; }
       .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
       .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
     }
-
     @media (max-width: 560px) {
       nav { padding: 0 20px; }
       .issue-bar { padding: 9px 20px; }
-      /* Article hero */
       .article-hero { height: 50vh; min-height: 280px; }
       .article-hero-content { padding: 36px 24px 28px; }
-      /* Article body */
       .article-body { padding: 36px 20px 52px; }
       .article-lede { font-size: 19px; }
       .article-body p { font-size: 17px; }
@@ -133,122 +124,176 @@
       .article-img-block { margin: 32px -20px; }
       .article-img-block img { height: 260px; }
       .article-img-caption { padding: 10px 20px 0; }
-      /* Footer */
       footer { padding: 40px 20px 28px; }
       .footer-top { grid-template-columns: 1fr; gap: 28px; }
       .footer-legal { flex-wrap: wrap; gap: 10px 20px; }
     }
-
-</style>
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Where summer knows its worth",
+    "description": "Every June, the C\u00f4te d'Azur separates the serious hotels from the hotels that have simply been here a long time. A review of the addresses that understand summer as a condition to be embodied, not a season to be managed.",
+    "image": "https://images.unsplash.com/photo-1693933714044-131908e39427?w=1600&q=80&fit=crop",
+    "datePublished": "2026-03-20T09:00:00Z",
+    "dateModified": "2026-03-20T09:00:00Z",
+    "author": {"@type":"Organization","name":"The Splendid Edit","url":"https://splendidedit.com"},
+    "publisher": {"@type":"Organization","name":"The Splendid Edit","url":"https://splendidedit.com","logo":{"@type":"ImageObject","url":"https://splendidedit.com/assets/logo.png"}},
+    "mainEntityOfPage": {"@type":"WebPage","@id":"https://splendidedit.com/cote-dazur-summer-2026.html"}
+  }
+  </script>
 </head>
 <body>
 
 <div class="issue-bar">
-  <span class="issue-bar-left">The Splendid Edit &mdash; Issue No. 01 &mdash; Spring 2026</span>
-  <span class="issue-bar-right">Splendid Media &mdash; worldofsplendid.com</span>
+  <span class="issue-bar-left">The Splendid Edit &mdash; Issue No. 02 &mdash; Summer 2026</span>
+  <span class="issue-bar-right">Hotel Season &mdash; C&ocirc;te d&rsquo;Azur</span>
 </div>
 <nav>
   <a href="index.html" class="nav-logo">The Splendid <em>Edit</em></a>
   <ul class="nav-links">
-    <li><a href="the-splendid-edit-v5.html#features">The Stay</a></li>
-    <li><a href="the-splendid-edit-v5.html#features">The Season</a></li>
+    <li><a href="index.html#features">The Stay</a></li>
+    <li><a href="index.html#features">The Season</a></li>
     <li><a href="index.html">The Edit</a></li>
-    <li><a href="the-splendid-edit-v5.html#cities">City Guides</a></li>
+    <li><a href="index.html#cities">City Guides</a></li>
   </ul>
-  <a href="the-splendid-edit-v5.html#newsletter" class="nav-subscribe">Subscribe</a>
+  <a href="index.html#newsletter" class="nav-subscribe">Subscribe</a>
   <button class="nav-hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav" aria-hidden="true">
   <ul>
-    <li><a href="the-splendid-edit-v5.html#features" onclick="closeMobileNav()">The Stay</a></li>
-    <li><a href="the-splendid-edit-v5.html#features" onclick="closeMobileNav()">The Season</a></li>
+    <li><a href="index.html#features" onclick="closeMobileNav()">The Stay</a></li>
+    <li><a href="index.html#features" onclick="closeMobileNav()">The Season</a></li>
     <li><a href="index.html" onclick="closeMobileNav()">The Edit</a></li>
-    <li><a href="the-splendid-edit-v5.html#cities" onclick="closeMobileNav()">City Guides</a></li>
+    <li><a href="index.html#cities" onclick="closeMobileNav()">City Guides</a></li>
   </ul>
-  <a href="the-splendid-edit-v5.html#newsletter" class="mobile-nav-subscribe" onclick="closeMobileNav()">Subscribe to The Edit</a>
+  <a href="index.html#newsletter" class="mobile-nav-subscribe" onclick="closeMobileNav()">Subscribe to The Edit</a>
 </div>
 
 <section class="article-hero">
-  <img src="https://mercerhotel.com/wp-content/uploads/2025/03/Website-1920x1080-Banner-3.jpg" alt="September, <em>again</em>" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
+  <img
+    src="https://images.unsplash.com/photo-1693933714044-131908e39427?w=1600&q=80&fit=crop"
+    alt="Luxury hotel pool terrace overlooking the Mediterranean, C&ocirc;te d&rsquo;Azur"
+  />
   <div class="article-hero-overlay"></div>
   <div class="article-hero-content">
-    <span class="article-kicker">The Edit &middot; New York</span>
-    <h1 class="article-headline">September, <em>again</em></h1>
+    <span class="article-kicker">Hotel Season &mdash; C&ocirc;te d&rsquo;Azur &middot; Summer 2026</span>
+    <h1 class="article-headline">Where summer <em>knows its worth.</em></h1>
     <div class="article-meta">
       <span>By Splendid</span>
-      <span>February &ndash; March 2026</span>
+      <span>C&ocirc;te d&rsquo;Azur &middot; Summer 2026</span>
       <span>10 min read</span>
     </div>
   </div>
 </section>
-<div class="article-body">
-  <a href="index.html" class="article-back">&#x2190; Back to The Edit</a>
-  
-    <p class="article-lede">New York in September is the most specific version of itself. The light changes. The industry arrives. The city, which has been accommodating tourists since June, snaps back into its actual identity with a speed that feels like a door closing.</p>
 
-    <div class="article-img-block">
-      <img src="https://mercerhotel.com/wp-content/uploads/2025/01/sartianos-bar.jpg" alt="Sartiano's bar at The Mercer Hotel" />
-      <p class="article-img-caption">Sartiano's bar — The Mercer Hotel, SoHo, New York</p>
+<article class="article-body">
+
+  <a href="index.html" class="article-back">&larr; Back to The Edit</a>
+
+  <p class="article-lede">Every June, the C&ocirc;te d&rsquo;Azur separates the serious hotels from the hotels that have simply been here a long time. The ones that survive scrutiny share a quality that is difficult to manufacture: they understand that summer is not a season to be managed. It is a condition to be embodied.</p>
+
+  <p>There is a particular kind of confidence that defines the best addresses on the Riviera. It is not about thread counts or star ratings, though both tend to be correct. It is something more atmospheric &mdash; a quality of light in the corridors, a pace to the service that knows exactly when to recede. The pool is cold at eight in the morning. The terrace has shade by noon. The bar knows when to stop trying to impress you.</p>
+
+  <p>We spent early June testing fourteen properties across the coast, from the Var to the Alpes-Maritimes. What follows are the four addresses that passed. And a candid account of why several others &mdash; one of them extremely famous &mdash; did not.</p>
+
+  <div class="article-rule"></div>
+
+  <h2>H&ocirc;tel du Cap-Eden-Roc, <em>Antibes</em></h2>
+
+  <p>It would be convenient to dismiss the Cap as heritage furniture &mdash; a monument to the Riviera&rsquo;s golden age that has been preserved rather than curated. That is the comfortable position for anyone who arrived expecting to be disappointed. We were not disappointed. The Cap operates with the serene assurance of an institution that has watched every competitor open, flourish, and quietly recalibrate its ambitions.</p>
+
+  <p>The rooms occupy a category that resists current hotel language. They are not &ldquo;experiential.&rdquo; They are not &ldquo;curated.&rdquo; They are beautiful in the way that well-made things are beautiful when nobody has tried to make them beautiful. The breakfast service on the terrace, with the Esterel hills behind and the sea doing what the sea does, is the kind of thing that makes the rest of the day feel slightly anti-climactic.</p>
+
+  <p>The pool remains the benchmark against which all Riviera pools are measured, whether their proprietors acknowledge this or not. Carved from the rock above the sea, it enforces a certain seriousness of intention. You do not stumble into it. You go there knowing what you are doing.</p>
+
+  <div class="article-pullquote">
+    <span class="article-pullquote-mark">&ldquo;</span>
+    <p class="article-pullquote-text">A hotel that understands summer does not announce it. The pool is cold at eight in the morning. The terrace has shade by noon. The bar knows when to stop trying to impress you.</p>
+    <p class="article-pullquote-attr">The Splendid Edit &mdash; Issue No. 02</p>
+  </div>
+
+  <h2>La R&eacute;serve de Beaulieu, <em>Beaulieu-sur-Mer</em></h2>
+
+  <p>La R&eacute;serve is the closest thing on the Riviera to a private house that has decided to accept paying guests without altering itself for their benefit. The pink fa&ccedil;ade, the low terraces, the specific quality of the reflected light off the water &mdash; these are not the results of a design intervention. They are the result of time.</p>
+
+  <p>The dining room is one of the finest in the region. The sommelier works with the confidence of someone who has been given precisely the right amount of authority. The cheese trolley is not ironic. There is a piano in the evening, played with discretion. These things matter more than they should.</p>
+
+  <p>We note, with some relief, that the recent renovation has not introduced any of the usual signals of renovation: no gallery walls, no cocktail menus with botanical subtext, no &ldquo;wellness concept.&rdquo; The rooms have been restored. The proportions have been left alone.</p>
+
+  <div class="article-img-block">
+    <img
+      src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80&fit=crop&fp-y=0.4"
+      alt="Mediterranean coastline, C&ocirc;te d&rsquo;Azur"
+      style="object-position: center 40%;"
+    />
+    <p class="article-img-caption">The C&ocirc;te d&rsquo;Azur in early June, before the season fully declares itself &mdash; Photography via Unsplash</p>
+  </div>
+
+  <h2>Villa Ephrussi de Rothschild, <em>Saint-Jean-Cap-Ferrat</em></h2>
+
+  <p>To stay at the Cap Ferrat is to be reminded that the Riviera has a register that exists entirely apart from the fashion industry, the yacht circuit, and the general traffic of summer ambition. The peninsula retains the quality of somewhere that does not need you to arrive. It will be here regardless.</p>
+
+  <p>The Grand-H&ocirc;tel du Cap-Ferrat, a Four Seasons property since 2009, has weathered the brand overlay better than most. The integration has been managed with unusual restraint. The service vocabulary is corporate, but the physical fact of the building &mdash; the gardens, the alley of palms, the way the main house sits above the sea &mdash; remains its own argument.</p>
+
+  <p>The spa is serious. The Michelin-starred restaurant, Le Cap, performs at a level that justifies the commitment. The pool pavilion, connected to the sea by a funicular, is one of the coast&rsquo;s genuinely singular experiences. In a region of competitive amenities, it remains unmatched.</p>
+
+  <div class="article-rule"></div>
+
+  <h2>One address that did not pass, <em>and why</em></h2>
+
+  <p>We will not name the fourth property under review. It is large, it is famous, and it is very expensive. It has been the subject of considerable coverage over the past eighteen months, much of it enthusiastic. That coverage describes a hotel we did not encounter.</p>
+
+  <p>What we found instead: a property that has been designed for photography rather than habitation. The surfaces are exquisite. The light, at the right time of day, with the right filter, is undeniably compelling. But a hotel must exist in time, not just in images. It must have a rhythm. It must know what it is for.</p>
+
+  <p>The service was well-intentioned and almost entirely incorrect in its calibration &mdash; present when presence was unnecessary, absent when something was needed. The pool had the temperature and atmosphere of a corporate atrium. The restaurant meal was technically accomplished and experientially empty. We have stayed in less celebrated addresses along this same coast that understood their purpose far more clearly.</p>
+
+  <p>The C&ocirc;te d&rsquo;Azur has always had more than its share of beautiful facades. The ones worth returning to are the ones that understand what lies behind one.</p>
+
+  <div class="article-facts">
+    <span class="article-facts-title">The Splendid Edit &mdash; C&ocirc;te d&rsquo;Azur Hotels</span>
+    <div class="article-facts-grid">
+      <div>
+        <span class="article-fact-label">Top Address</span>
+        <span class="article-fact-value">H&ocirc;tel du Cap-Eden-Roc, Antibes</span>
+      </div>
+      <div>
+        <span class="article-fact-label">Best Dining</span>
+        <span class="article-fact-value">Le Cap, Grand-H&ocirc;tel du Cap-Ferrat</span>
+      </div>
+      <div>
+        <span class="article-fact-label">Best Pool</span>
+        <span class="article-fact-value">H&ocirc;tel du Cap-Eden-Roc &mdash; carved from the rock above the sea</span>
+      </div>
+      <div>
+        <span class="article-fact-label">Season</span>
+        <span class="article-fact-value">June &mdash; September 2026. Book before April.</span>
+      </div>
     </div>
+  </div>
 
-    <p>The fashion week calendar divides the year into two kinds of September: the September in which you attend, and the September in which you do not. Both are legitimate positions. This piece is for the people in the first category &mdash; specifically, for the question of where to be between the shows, and how to make a week that is structurally exhausting feel, at moments, like something more than its schedule.</p>
-
-    <p>The answer, as with most fashion week questions, starts with the hotel.</p>
-
-    <div class="article-img-block">
-      <img src="https://mercerhotel.com/wp-content/uploads/2025/01/mercer-in-room-dining.jpg" alt="In-room dining at The Mercer Hotel" />
-      <p class="article-img-caption">In-room dining — The Mercer Hotel, September morning</p>
-    </div>
-
-    <h2>SoHo in September</h2>
-
-    <p>SoHo during New York fashion week is not what SoHo was, but it is also not nothing. The neighbourhood &mdash; which spent two decades as the city&rsquo;s most significant fashion district, then another decade being replaced by that designation, and is now in a third phase that nobody has quite agreed on what to call &mdash; still functions as the industry&rsquo;s informal centre of gravity during September. Not because of the shows, which have migrated over the years to venues across the city. Because of The Mercer.</p>
-
-    <p>The Mercer Hotel has been on the corner of Mercer and Prince since 1997, and its lobby has been the informal headquarters of a particular subset of the fashion industry for most of that time. The buyers who have been coming for twenty years. The editors who stay out of loyalty and also because the rooms are genuinely good. The creative directors who find the building&rsquo;s bones &mdash; Romanesque Revival, 1890, high ceilings, wide windows &mdash; more congenial than the alternatives.</p>
-
-    <div class="article-pullquote">
-      <span class="article-pullquote-mark">&ldquo;</span>
-      <p class="article-pullquote-text">The city snaps back into its actual identity with a speed that feels like a door closing. September in New York is the most specific version of itself.</p>
-      <span class="article-pullquote-attr">The Splendid Edit &mdash; Issue No. 01</span>
-    </div>
-
-    <div class="article-img-block">
-      <img src="https://mercerhotel.com/wp-content/uploads/2022/06/PMCxMercer_0758.jpg" alt="The Mercer Hotel New York" />
-      <p class="article-img-caption">The Mercer Hotel, SoHo New York &mdash; Photography courtesy The Mercer Hotel</p>
-    </div>
-
-    <h2>What to do with a free hour</h2>
-
-    <p>The free hour in New York during fashion week &mdash; and there is, most days, exactly one &mdash; is most usefully spent either in the hotel or in one of the very few places that do not require you to be anything. The Mercer&rsquo;s in-house bar, the Submercer, is one of them. A walk through SoHo&rsquo;s cast-iron streets at seven in the morning, before the city reconstitutes itself for the day, is another. The High Line in September &mdash; before ten, before the tourists, before the afternoon crowds that make it feel like a different kind of infrastructure entirely &mdash; is a third.</p>
-
-    <p>The point is not what you do with the hour. The point is that you recognise it as an hour, rather than an interlude between obligations. September in New York offers this recognition, if you are paying attention. The city is good at reminding you that it exists independently of your schedule.</p>
-
-    <div class="article-rule"></div>
-    <p><em>The Splendid Edit will cover New York fashion week in full in Issue No. 02, September 2026. The Mercer Hotel: mercerhotel.com.</em></p>
-    
-  <p style="font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-light);margin-top:48px;padding-top:24px;border-top:1px solid var(--border);">Photography courtesy of The Mercer Hotel, New York &mdash; &copy; The Mercer Hotel</p>
-</div>
+</article>
 
 <footer>
   <div class="footer-top">
     <div>
       <span class="footer-brand">The Splendid Edit</span>
-      <p class="footer-tagline">Luxury stays. Fashion weeks.<br/>Perfectly edited.</p>
+      <p class="footer-tagline">Fashion week. The world&rsquo;s finest hotels.<br/>Where the two worlds meet.</p>
     </div>
     <div>
       <span class="footer-col-title">The Edit</span>
       <ul class="footer-links">
-        <li><a href="the-splendid-edit-v5.html#features">The Stay</a></li>
-        <li><a href="the-splendid-edit-v5.html#features">The Season</a></li>
-        <li><a href="the-splendid-edit-v5.html#cities">City Guides</a></li>
+        <li><a href="index.html#features">The Stay</a></li>
+        <li><a href="index.html#features">The Season</a></li>
+        <li><a href="index.html#cities">City Guides</a></li>
       </ul>
     </div>
     <div>
-      <span class="footer-col-title">Fashion Week Cities</span>
+      <span class="footer-col-title">Cities</span>
       <ul class="footer-links">
         <li><a href="three-paris-hotels.html">Paris</a></li>
         <li><a href="bulgari-garden-milan.html">Milan</a></li>
@@ -260,45 +305,36 @@
     <div>
       <span class="footer-col-title">About</span>
       <ul class="footer-links">
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p class="footer-copy">&copy; 2026 The Splendid Edit &middot; A Splendid Media Publication</p>
+    <span class="footer-copy">&copy; 2026 The Splendid Edit. All rights reserved.</span>
     <div class="footer-legal">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-of-use.html">Terms of Use</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="cookie-policy.html">Cookies</a>
+      <a href="terms-of-use.html">Terms</a>
     </div>
   </div>
 </footer>
 
-
 <script>
-  var hamburger = document.getElementById('hamburger');
-  var mobileNav = document.getElementById('mobileNav');
-  if (hamburger && mobileNav) {
-    hamburger.addEventListener('click', function() {
-      var isOpen = mobileNav.classList.toggle('open');
-      hamburger.classList.toggle('open', isOpen);
-      hamburger.setAttribute('aria-expanded', isOpen);
-      mobileNav.setAttribute('aria-hidden', !isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
-    function closeMobileNav() {
-      mobileNav.classList.remove('open');
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      mobileNav.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    }
-    document.addEventListener('click', function(e) {
-      if (mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
-        closeMobileNav();
-      }
-    });
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  function closeMobileNav() {
+    hamburger.classList.remove('open');
+    mobileNav.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileNav.setAttribute('aria-hidden', 'true');
   }
+  hamburger.addEventListener('click', function() {
+    const isOpen = hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+    mobileNav.setAttribute('aria-hidden', String(!isOpen));
+  });
 </script>
 
 </body>
