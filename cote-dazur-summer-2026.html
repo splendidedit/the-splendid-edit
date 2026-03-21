@@ -140,7 +140,32 @@
     "dateModified": "2026-03-20T09:00:00Z",
     "author": {"@type":"Organization","name":"The Splendid Edit","url":"https://splendidedit.com"},
     "publisher": {"@type":"Organization","name":"The Splendid Edit","url":"https://splendidedit.com","logo":{"@type":"ImageObject","url":"https://splendidedit.com/assets/logo.png"}},
-    "mainEntityOfPage": {"@type":"WebPage","@id":"https://splendidedit.com/cote-dazur-summer-2026.html"}
+    "mainEntityOfPage": {"@type":"WebPage","@id":"https://splendidedit.com/cote-dazur-summer-2026.html"},
+    "about": [
+      {
+        "@type": "LodgingBusiness",
+        "name": "Hôtel du Cap-Eden-Roc",
+        "address": {"@type": "PostalAddress", "addressLocality": "Antibes", "addressCountry": "FR"},
+        "url": "https://www.hotel-du-cap-eden-roc.com",
+        "priceRange": "$$$$"
+      },
+      {
+        "@type": "LodgingBusiness",
+        "name": "La Réserve de Beaulieu",
+        "address": {"@type": "PostalAddress", "addressLocality": "Beaulieu-sur-Mer", "addressCountry": "FR"},
+        "url": "https://www.reservebeaulieu.com",
+        "priceRange": "$$$$"
+      },
+      {
+        "@type": "LodgingBusiness",
+        "name": "Grand-Hôtel du Cap-Ferrat",
+        "address": {"@type": "PostalAddress", "addressLocality": "Saint-Jean-Cap-Ferrat", "addressCountry": "FR"},
+        "url": "https://www.fourseasons.com/capferrat/",
+        "priceRange": "$$$$"
+      }
+    ],
+    "genre": "Hotel Review",
+    "keywords": "Côte d'Azur hotels, luxury hotels French Riviera, Hôtel du Cap-Eden-Roc, La Réserve Beaulieu, Grand-Hôtel du Cap-Ferrat, summer 2026"
   }
   </script>
 </head>
@@ -157,6 +182,7 @@
     <li><a href="index.html#features">The Season</a></li>
     <li><a href="index.html">The Edit</a></li>
     <li><a href="index.html#cities">City Guides</a></li>
+    <li><a href="about.html">About</a></li>
   </ul>
   <a href="index.html#newsletter" class="nav-subscribe">Subscribe</a>
   <button class="nav-hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
@@ -170,6 +196,7 @@
     <li><a href="index.html#features" onclick="closeMobileNav()">The Season</a></li>
     <li><a href="index.html" onclick="closeMobileNav()">The Edit</a></li>
     <li><a href="index.html#cities" onclick="closeMobileNav()">City Guides</a></li>
+    <li><a href="about.html" onclick="closeMobileNav()">About</a></li>
   </ul>
   <a href="index.html#newsletter" class="mobile-nav-subscribe" onclick="closeMobileNav()">Subscribe to The Edit</a>
 </div>
