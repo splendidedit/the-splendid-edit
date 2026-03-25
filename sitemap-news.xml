@@ -211,4 +211,26 @@
       <news:title>Chemena Kamali returns to Chloé as Creative Director — and it feels inevitable</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/galliano-zara-luxury-partnership.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-25T10:00:00Z</news:publication_date>
+      <news:title>Galliano joins Zara: when genius meets the masses</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/one-only-moonlight-basin-big-sky.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-25T11:00:00Z</news:publication_date>
+      <news:title>One&Only Moonlight Basin: grace in the mountains</news:title>
+    </news:news>
+  </url>
 </urlset>
