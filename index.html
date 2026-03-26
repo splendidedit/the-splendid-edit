@@ -104,8 +104,8 @@
     @media (max-width: 900px) { .desktop-only { display: none; } }
 
     /* ── HERO ── */
-    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 90vh; }
-    .hero-left { background: var(--brown); display: flex; flex-direction: column; justify-content: flex-end; padding: 64px 72px 64px 80px; position: relative; overflow: hidden; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; height: calc(100vh - 99px); min-height: 520px; }
+    .hero-left { background: var(--brown); display: flex; flex-direction: column; justify-content: flex-end; padding: 64px 72px 56px 80px; position: relative; overflow: hidden; }
     .hero-issue { position: absolute; top: 48px; left: 80px; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
     .hero-watermark { font-family: 'Cormorant Garamond', serif; font-size: 200px; font-weight: 300; line-height: 1; color: rgba(255,255,255,0.04); position: absolute; top: 32px; right: -20px; pointer-events: none; user-select: none; }
     .hero-category { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 20px; }
@@ -527,7 +527,7 @@
       src="https://images.unsplash.com/photo-1693933714044-131908e39427?w=1600&q=80&fit=crop&fp-y=0.55"
       alt="Luxury hotel pool terrace with loungers overlooking the Mediterranean, C&ocirc;te d&rsquo;Azur"
       class="cover-img"
-      style="min-height:90vh;object-position:center 55%;"
+      style="height:100%;object-position:center 55%;"
     />
     <p class="hero-img-credit">Photography by Lisha Riabinina via Unsplash</p>
     <div class="hero-img-caption">
