@@ -105,8 +105,8 @@
 
     /* ── HERO ── */
     .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 72vh; }
-    .hero-left { background: var(--brown); display: flex; flex-direction: column; justify-content: flex-end; padding: 48px 60px 48px 72px; position: relative; overflow: hidden; }
-    .hero-issue { position: absolute; top: 48px; left: 80px; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+    .hero-left { background: var(--brown); display: flex; flex-direction: column; justify-content: space-between; padding: 48px 60px 48px 72px; position: relative; overflow: hidden; }
+    .hero-issue { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
     .hero-watermark { font-family: 'Cormorant Garamond', serif; font-size: 200px; font-weight: 300; line-height: 1; color: rgba(255,255,255,0.04); position: absolute; top: 32px; right: -20px; pointer-events: none; user-select: none; }
     .hero-category { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 20px; }
     .hero-headline { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 4vw, 60px); font-weight: 300; line-height: 1.1; color: var(--cream); margin-bottom: 24px; }
@@ -509,25 +509,27 @@
   <div class="hero-left">
     <span class="hero-issue">The Stay &mdash; C&ocirc;te d&rsquo;Azur</span>
     <div class="hero-watermark" aria-hidden="true">02</div>
-    <p class="hero-category">Cover Story &middot; Issue 02</p>
-    <h1 class="hero-headline">
-      Where summer<br/>
-      knows <em>its worth.</em>
-    </h1>
-    <p class="hero-body">Every June, the C&ocirc;te d&rsquo;Azur separates the serious hotels from the hotels that have simply been here a long time. The ones that survive scrutiny share a quality that is difficult to manufacture: they understand that summer is not a season to be managed. It is a condition to be embodied.</p>
-    <div class="hero-meta">
-      <span>By Splendid</span>
-      <span>C&ocirc;te d&rsquo;Azur &middot; Summer 2026</span>
-      <span>10 min read</span>
+    <div class="hero-content">
+      <p class="hero-category">Cover Story &middot; Issue 02</p>
+      <h1 class="hero-headline">
+        Where summer<br/>
+        knows <em>its worth.</em>
+      </h1>
+      <p class="hero-body">Every June, the C&ocirc;te d&rsquo;Azur separates the serious hotels from the hotels that have simply been here a long time. The ones that survive scrutiny share a quality that is difficult to manufacture: they understand that summer is not a season to be managed. It is a condition to be embodied.</p>
+      <div class="hero-meta">
+        <span>By Splendid</span>
+        <span>C&ocirc;te d&rsquo;Azur &middot; Summer 2026</span>
+        <span>10 min read</span>
+      </div>
+      <a href="cote-dazur-summer-2026.html" class="hero-read">Read the full edit</a>
     </div>
-    <a href="cote-dazur-summer-2026.html" class="hero-read">Read the full edit</a>
   </div>
   <a href="cote-dazur-summer-2026.html" class="hero-right">
     <img
       src="https://images.unsplash.com/photo-1693933714044-131908e39427?w=1600&q=80&fit=crop&fp-y=0.55"
       alt="Luxury hotel pool terrace with loungers overlooking the Mediterranean, C&ocirc;te d&rsquo;Azur"
       class="cover-img"
-      style="min-height:90vh;object-position:center 55%;"
+      style="min-height:72vh;object-position:center 40%;"
     />
     <p class="hero-img-credit">Photography by Lisha Riabinina via Unsplash</p>
     <div class="hero-img-caption">
