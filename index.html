@@ -66,347 +66,1976 @@
 
   <style>
     :root {
-      --bg: #EDEAE3;
-      --bg-alt: #E5E1D9;
-      --text: #1C1C1A;
-      --text-light: #6B6660;
-      --accent: #8B1A1A;
-      --border: #D8D3CB;
-      --white: #FAFAF8;
-      --cream: #EDEAE3;
-      --warm-white: #F0EAE1;
-      --crimson: #8B1A1A;
-      --terracotta: #8B6B5F;
-      --gold: #9B8B7B;
-      --gold-light: #B5A899;
-      --brown: #1C1C1A;
-      --footer-bg: #EDEAE3;
-      --light: #F5F0EB;
+      --cream:      #FAF6F1;
+      --warm-white: #FFFCF8;
+      --crimson:    #8B1A1A;
+      --terracotta: #C2623B;
+      --gold:       #C4A265;
+      --gold-light: #D4B98A;
+      --brown:      #3D2318;
+      --footer-bg:  #3D0A05;
+      --text:       #3A3330;
+      --text-light: #7A7068;
+      --border:     #E0D6CC;
+      --light:      #F5F0EA;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Cormorant Garamond', Georgia, serif; background: var(--bg); color: var(--text); overflow-x: hidden; }
+    body { font-family: 'Cormorant Garamond', Georgia, serif; background: var(--cream); color: var(--text); overflow-x: hidden; }
 
+    /* ── IMAGES ── */
     img { display: block; max-width: 100%; }
-    .cover-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+    .cover-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s ease; }
 
-    /* HEADER & NAV */
-    .header { padding: 48px 0 0; text-align: center; background: var(--bg); }
-    .logo { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; font-style: italic; letter-spacing: 0.05em; color: var(--text); text-decoration: none; display: block; margin-bottom: 0; }
-    .logo span { display: block; font-size: 38px; font-weight: 300; margin-top: -8px; }
+    /* ── ISSUE BAR ── */
+    .issue-bar { background: var(--brown); padding: 9px 48px; display: flex; align-items: center; justify-content: space-between; }
+    .issue-bar-left { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+    .issue-bar-right { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,246,241,0.4); }
 
-    nav { padding: 32px 0 24px; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; background: var(--bg); }
-    .nav-center { display: flex; justify-content: center; gap: 48px; }
-    .nav-center a { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 0.12em; text-transform: capitalize; color: var(--text); text-decoration: none; transition: color 0.2s; }
-    .nav-center a:hover { color: var(--accent); }
+    /* ── NAV ── */
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 64px; background: rgba(250,246,241,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brown); text-decoration: none; }
+    .nav-logo em { font-style: normal; color: var(--crimson); font-weight: 400; }
+    .nav-links { display: flex; gap: 40px; list-style: none; position: absolute; left: 50%; transform: translateX(-50%); }
+    .nav-links a { font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--crimson); }
+    .nav-subscribe { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--crimson); text-decoration: none; border-bottom: 1px solid var(--crimson); padding-bottom: 1px; transition: color 0.2s, border-color 0.2s; }
+    .nav-subscribe:hover { color: var(--brown); border-color: var(--brown); }
+    @media (max-width: 900px) { .desktop-only { display: none; } }
 
-    /* HERO */
-    .hero { position: relative; width: 100%; height: 70vh; min-height: 500px; overflow: hidden; }
-    .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 55%; }
-    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(28,28,26,0.2) 0%, transparent 60%); }
-    .hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 72px 80px; background: linear-gradient(to top, rgba(237,234,227,0.98) 0%, rgba(237,234,227,0.92) 40%, transparent 100%); }
-    .hero-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 16px; }
-    .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(42px, 5vw, 62px); font-weight: 300; line-height: 1.1; color: var(--text); margin-bottom: 24px; max-width: 600px; }
-    .hero-title em { font-style: italic; }
-    .hero-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 0.1em; color: var(--text-light); display: flex; gap: 20px; }
-    .hero-meta span + span::before { content: '·'; margin-right: 20px; }
+    /* ── HERO ── */
+    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 90vh; }
+    .hero-left { background: var(--brown); display: flex; flex-direction: column; justify-content: flex-end; padding: 64px 72px 64px 80px; position: relative; overflow: hidden; }
+    .hero-issue { position: absolute; top: 48px; left: 80px; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+    .hero-watermark { font-family: 'Cormorant Garamond', serif; font-size: 200px; font-weight: 300; line-height: 1; color: rgba(255,255,255,0.04); position: absolute; top: 32px; right: -20px; pointer-events: none; user-select: none; }
+    .hero-category { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 20px; }
+    .hero-headline { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 4vw, 60px); font-weight: 300; line-height: 1.1; color: var(--cream); margin-bottom: 24px; }
+    .hero-headline em { font-style: italic; color: var(--gold); }
+    .hero-body { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 300; line-height: 1.75; color: rgba(250,246,241,0.6); max-width: 400px; margin-bottom: 36px; }
+    .hero-meta { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 0.1em; color: rgba(250,246,241,0.35); margin-bottom: 28px; display: flex; gap: 14px; align-items: center; }
+    .hero-meta span + span::before { content: '·'; margin-right: 14px; }
+    .hero-read { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: gap 0.2s; width: fit-content; }
+    .hero-read::after { content: '→'; }
+    .hero-read:hover { gap: 16px; }
+    .hero-right { position: relative; overflow: hidden; background: var(--brown); text-decoration: none; display: block; }
+    .hero-right:hover .cover-img { transform: scale(1.04); }
+    .hero-img-credit { position: absolute; bottom: 56px; left: 20px; font-family: 'Montserrat', sans-serif; font-size: 7.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,246,241,0.3); z-index: 2; }
+    .hero-img-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 60px 28px 22px; background: linear-gradient(to top, rgba(61,35,24,0.92) 0%, transparent 100%); z-index: 2; }
+    .hero-img-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 6px; }
+    .hero-img-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600; line-height: 1.3; color: var(--cream); }
 
-    /* TICKER (minimal) */
-    .ticker { background: var(--accent); padding: 12px 0; overflow: hidden; margin: 0; }
-    .ticker-inner { display: flex; animation: ticker-scroll 45s linear infinite; white-space: nowrap; }
-    .ticker-item { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); padding: 0 48px; }
-    .ticker-dot { color: var(--gold-light); margin: 0 12px; }
-    @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    /* ── TICKER ── */
+    .ticker { background: var(--crimson); overflow: hidden; padding: 10px 0; }
+    .ticker-inner { display: flex; animation: ticker-scroll 38s linear infinite; white-space: nowrap; }
+    .ticker-item { font-family: 'Montserrat', sans-serif; font-size: 9.5px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(250,246,241,0.85); padding: 0 36px; }
+    .ticker-dot { color: var(--gold-light); }
+    @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-    /* SECTION HEADERS */
-    .section-header { padding: 56px 80px 40px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-end; }
-    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 3.5vw, 48px); font-weight: 300; color: var(--text); }
-    .section-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 8px; }
-    .view-all { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--text); padding-bottom: 3px; transition: color 0.2s; }
-    .view-all:hover { color: var(--accent); border-bottom-color: var(--accent); }
+    /* ── SECTION HEADER ── */
+    .section-head { padding: 56px 80px 44px; display: flex; align-items: flex-end; justify-content: space-between; border-bottom: 1px solid var(--border); }
+    .section-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--crimson); display: block; margin-bottom: 10px; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; line-height: 1.1; color: var(--brown); }
+    .section-title em { font-style: italic; }
+    .view-all { font-family: 'Montserrat', sans-serif; font-size: 9.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text); text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; transition: color 0.2s; white-space: nowrap; }
+    .view-all:hover { color: var(--crimson); }
 
-    /* 3-COLUMN GRID (Stories/Articles) */
-    .stories-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-bottom: 1px solid var(--border); }
-    .story-card { display: block; text-decoration: none; color: inherit; overflow: hidden; border-right: 1px solid var(--border); }
-    .story-card:last-child { border-right: none; }
-    .story-card:hover .cover-img { transform: scale(1.05); }
-    .story-img { height: 320px; overflow: hidden; background: var(--bg-alt); }
-    .story-content { padding: 32px 36px; }
-    .story-category { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 10px; }
-    .story-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 2.2vw, 28px); font-weight: 400; line-height: 1.2; color: var(--text); margin-bottom: 14px; transition: color 0.2s; }
-    .story-card:hover .story-title { color: var(--accent); }
-    .story-meta { font-family: 'Montserrat', sans-serif; font-size: 8.5px; font-weight: 400; letter-spacing: 0.1em; color: var(--text-light); }
+    /* ── PILLARS ── */
+    .pillars { display: grid; grid-template-columns: repeat(4, 1fr); }
+    a.pillar { display: block; text-decoration: none; color: inherit; padding: 52px 40px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); transition: background 0.25s; }
+    a.pillar:last-child { border-right: none; }
+    a.pillar:hover { background: var(--light); }
+    a.pillar:hover .pillar-name { color: var(--crimson); }
+    .pillar-num { font-family: 'Cormorant Garamond', serif; font-size: 11px; letter-spacing: 0.2em; color: var(--gold); display: block; margin-bottom: 16px; }
+    .pillar-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--crimson); display: block; margin-bottom: 12px; }
+    .pillar-name { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; line-height: 1.2; color: var(--brown); margin-bottom: 12px; transition: color 0.2s; }
+    .pillar-desc { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 300; line-height: 1.65; color: var(--text-light); }
 
-    /* FOOTER */
-    footer { background: var(--bg); border-top: 1px solid var(--border); padding: 56px 80px 44px; }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid var(--border); }
-    .footer-brand { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text); display: block; margin-bottom: 12px; }
-    .footer-desc { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 300; font-style: italic; color: var(--text-light); line-height: 1.6; }
-    .footer-col h4 { font-family: 'Montserrat', sans-serif; font-size: 8px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text); margin-bottom: 16px; }
+    /* ── ISSUE GRID (3-col) ── */
+    .issue-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--border); }
+    a.issue-card { display: block; text-decoration: none; color: inherit; border-right: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.25s; }
+    a.issue-card:last-child { border-right: none; }
+    a.issue-card:hover { box-shadow: 0 6px 32px rgba(61,35,24,0.1); }
+    .issue-card-img { height: 280px; overflow: hidden; }
+    a.issue-card:hover .cover-img { transform: scale(1.04); }
+    .img-credit-small { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); padding: 5px 36px 0; display: block; }
+    .issue-card-body { padding: 24px 36px 36px; }
+    .issue-card-num { font-family: 'Montserrat', sans-serif; font-size: 8.5px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-light); display: block; margin-bottom: 8px; }
+    .issue-card-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--crimson); display: block; margin-bottom: 12px; }
+    .issue-card-title { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; line-height: 1.15; color: var(--brown); margin-bottom: 14px; transition: color 0.2s; }
+    a.issue-card:hover .issue-card-title { color: var(--crimson); }
+    .issue-card-desc { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 300; line-height: 1.7; color: var(--text-light); margin-bottom: 20px; }
+    .issue-card-foot { display: flex; align-items: center; justify-content: space-between; padding-top: 18px; border-top: 1px solid var(--border); }
+    .issue-card-byline { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 0.08em; color: var(--text-light); }
+    .issue-card-arrow { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--crimson); }
+
+    /* ── PULL QUOTE ── */
+    .pull-quote-section { padding: 56px 80px; background: var(--warm-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center; position: relative; overflow: hidden; }
+    .pull-quote-bg { display: none; }
+    .pull-quote-mark { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 300; line-height: 0.5; color: var(--gold); display: block; margin-bottom: 20px; }
+    .pull-quote-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 2.2vw, 30px); font-weight: 300; font-style: italic; line-height: 1.4; color: var(--brown); max-width: 680px; margin: 0 auto 20px; }
+    .pull-quote-attr { font-family: 'Montserrat', sans-serif; font-size: 9.5px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-light); }
+    .pull-quote-attr em { color: var(--crimson); font-style: normal; }
+
+    /* ── LONG READ ── */
+    .long-read { display: grid; grid-template-columns: 1.1fr 0.9fr; min-height: 560px; border-bottom: 1px solid var(--border); }
+    .long-read-img { position: relative; overflow: hidden; }
+    .long-read-img:hover .cover-img { transform: scale(1.03); }
+    .long-read-img-credit { position: absolute; bottom: 16px; left: 20px; font-family: 'Montserrat', sans-serif; font-size: 7.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(250,246,241,0.35); z-index: 2; }
+    .long-read-body { padding: 64px 72px; display: flex; flex-direction: column; justify-content: center; background: var(--cream); border-left: 1px solid var(--border); }
+    .long-read-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 8px; }
+    .long-read-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--crimson); display: block; margin-bottom: 20px; }
+    .long-read-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(30px, 3vw, 46px); font-weight: 300; line-height: 1.1; color: var(--brown); margin-bottom: 24px; }
+    .long-read-title em { font-style: italic; color: var(--crimson); }
+    .long-read-text { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 300; line-height: 1.75; color: var(--text-light); margin-bottom: 16px; }
+    .long-read-rule { width: 48px; height: 1px; background: var(--gold); margin: 28px 0; }
+    .long-read-meta { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 0.08em; color: var(--text-light); display: flex; gap: 12px; margin-bottom: 24px; }
+    .long-read-meta span + span::before { content: '·'; margin-right: 12px; }
+    .long-read-cta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--crimson); text-decoration: none; display: inline-flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--crimson); padding-bottom: 3px; width: fit-content; transition: gap 0.2s; }
+    .long-read-cta::after { content: '→'; }
+    .long-read-cta:hover { gap: 16px; }
+
+    /* ── LATEST STORIES (4-col) ── */
+    .latest-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--border); }
+    a.latest-card { display: block; text-decoration: none; color: inherit; border-right: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.25s; }
+    a.latest-card:last-child { border-right: none; }
+    a.latest-card:hover { box-shadow: 0 4px 24px rgba(61,35,24,0.1); }
+    .latest-card-img { height: 220px; overflow: hidden; }
+    a.latest-card:hover .cover-img { transform: scale(1.04); }
+    .latest-card-credit { font-family: 'Montserrat', sans-serif; font-size: 7px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); padding: 5px 28px 0; display: block; }
+    .latest-card-body { padding: 18px 28px 28px; }
+    .latest-card-tag { font-family: 'Montserrat', sans-serif; font-size: 8.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--crimson); display: block; margin-bottom: 9px; }
+    .latest-card-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; line-height: 1.2; color: var(--brown); margin-bottom: 10px; transition: color 0.2s; }
+    a.latest-card:hover .latest-card-title { color: var(--crimson); }
+    .latest-card-desc { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 300; line-height: 1.65; color: var(--text-light); }
+
+    /* ── CITY STRIP ── */
+    .city-strip { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--border); }
+    a.city-card { display: block; text-decoration: none; color: inherit; position: relative; overflow: hidden; height: 340px; border-right: 1px solid var(--border); }
+    a.city-card:last-child { border-right: none; }
+    a.city-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(61,35,24,0.88) 0%, rgba(61,35,24,0.1) 55%); z-index: 1; transition: background 0.4s; }
+    a.city-card:hover::before { background: linear-gradient(to top, rgba(139,26,26,0.95) 0%, rgba(139,26,26,0.2) 55%); }
+    a.city-card:hover .cover-img { transform: scale(1.07); }
+    .city-label { position: absolute; bottom: 24px; left: 24px; z-index: 2; }
+    .city-name { font-family: 'Cormorant Garamond', serif; font-size: 34px; font-weight: 600; color: var(--cream); display: block; margin-bottom: 5px; }
+    .city-season { font-family: 'Montserrat', sans-serif; font-size: 8.5px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); display: block; }
+    .city-count { font-family: 'Montserrat', sans-serif; font-size: 8px; font-weight: 300; letter-spacing: 0.1em; color: rgba(250,246,241,0.4); display: block; margin-top: 4px; }
+
+    /* ── SEASON SECTION ── */
+    .season-section { background: var(--brown); padding: 80px 80px 72px; }
+    .season-section .section-kicker { color: var(--gold); }
+    .season-section .section-title { color: var(--cream); }
+    .season-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.06); margin-top: 48px; border: 1px solid rgba(255,255,255,0.06); }
+    .season-card { background: var(--brown); cursor: pointer; transition: background 0.25s; overflow: hidden; }
+    .season-card:hover { background: rgba(61,10,5,0.8); }
+    .season-card-img { height: 220px; overflow: hidden; position: relative; }
+    .season-card:hover .cover-img { transform: scale(1.04); }
+    .season-card-body { padding: 36px 44px 40px; }
+    .season-card-city { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terracotta); display: block; margin-bottom: 6px; }
+    .season-card-date { font-family: 'Montserrat', sans-serif; font-size: 8px; font-weight: 400; letter-spacing: 0.12em; color: rgba(250,246,241,0.3); display: block; margin-bottom: 20px; }
+    .season-card-title { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; line-height: 1.25; color: var(--cream); margin-bottom: 18px; }
+    .season-card-body-text { font-family: 'Cormorant Garamond', serif; font-size: 15.5px; font-weight: 300; line-height: 1.72; color: rgba(250,246,241,0.5); margin-bottom: 24px; }
+    .season-card-rule { width: 36px; height: 1px; background: rgba(196,162,101,0.4); margin-bottom: 20px; }
+    .season-card-credit { font-family: 'Montserrat', sans-serif; font-size: 7.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(250,246,241,0.2); margin-bottom: 18px; display: block; }
+    .season-card-cta { font-family: 'Montserrat', sans-serif; font-size: 9.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: gap 0.2s; }
+    .season-card-cta::after { content: '→'; }
+    .season-card:hover .season-card-cta { gap: 14px; }
+
+    /* ── NEWSLETTER ── */
+    .newsletter { padding: 88px 80px; background: var(--light); text-align: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .newsletter-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--crimson); display: block; margin-bottom: 18px; }
+    .newsletter-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 4vw, 52px); font-weight: 300; line-height: 1.1; color: var(--brown); margin-bottom: 16px; }
+    .newsletter-title em { font-style: italic; color: var(--gold); }
+    .newsletter-sub { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 300; font-style: italic; color: var(--text-light); max-width: 500px; margin: 0 auto 44px; line-height: 1.65; }
+    .newsletter-form { display: flex; max-width: 460px; margin: 0 auto; border: 1px solid var(--border); }
+    .newsletter-input { flex: 1; padding: 15px 20px; font-family: 'Cormorant Garamond', serif; font-size: 16px; color: var(--text); background: var(--cream); border: none; outline: none; }
+    .newsletter-input::placeholder { color: var(--text-light); font-style: italic; }
+    .newsletter-btn { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cream); background: var(--crimson); border: none; padding: 15px 28px; cursor: pointer; transition: background 0.2s; }
+    .newsletter-btn:hover { background: var(--footer-bg); }
+    .newsletter-note { font-family: 'Montserrat', sans-serif; font-size: 8.5px; font-weight: 400; letter-spacing: 0.1em; color: var(--text-light); margin-top: 16px; text-transform: uppercase; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--footer-bg); padding: 72px 80px 44px; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; padding-bottom: 56px; border-bottom: 1px solid rgba(250,246,241,0.08); }
+    .footer-brand { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--cream); display: block; margin-bottom: 14px; }
+    .footer-tagline { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; font-weight: 300; color: rgba(250,246,241,0.45); line-height: 1.65; margin-bottom: 24px; }
+    .footer-parent { font-family: 'Montserrat', sans-serif; font-size: 8.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); opacity: 0.7; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 22px; }
     .footer-links { list-style: none; }
-    .footer-links li { margin-bottom: 10px; }
-    .footer-links a { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 300; color: var(--text-light); text-decoration: none; transition: color 0.2s; }
-    .footer-links a:hover { color: var(--text); }
-    .footer-bottom { display: flex; justify-content: space-between; align-items: center; }
-    .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 8px; font-weight: 400; letter-spacing: 0.1em; color: var(--text-light); }
-    .footer-legal { display: flex; gap: 32px; }
-    .footer-legal a { font-family: 'Montserrat', sans-serif; font-size: 8px; font-weight: 400; letter-spacing: 0.08em; color: var(--text-light); text-decoration: none; transition: color 0.2s; }
-    .footer-legal a:hover { color: var(--text); }
+    .footer-links li { margin-bottom: 11px; }
+    .footer-links a { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 300; color: rgba(250,246,241,0.5); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; }
+    .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 300; letter-spacing: 0.1em; color: rgba(250,246,241,0.25); }
+    .footer-legal { display: flex; gap: 28px; }
+    .footer-legal a { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 300; letter-spacing: 0.1em; color: rgba(250,246,241,0.25); text-decoration: none; transition: color 0.2s; }
+    .footer-legal a:hover { color: rgba(250,246,241,0.6); }
 
-    /* MOBILE */
+    /* ── HAMBURGER BUTTON ── */
+    .nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px 4px; z-index: 101; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--brown); transition: all 0.25s ease; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* ── MOBILE NAV DRAWER ── */
+    .mobile-nav { display: none; position: fixed; top: 64px; left: 0; right: 0; background: rgba(250,246,241,0.98); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 99; padding: 0 32px 28px; }
+    .mobile-nav.open { display: block; }
+    .mobile-nav ul { list-style: none; }
+    .mobile-nav ul li { border-bottom: 1px solid var(--border); }
+    .mobile-nav ul li a { display: block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brown); text-decoration: none; padding: 16px 0; transition: color 0.2s; }
+    .mobile-nav ul li a:hover { color: var(--crimson); }
+    .mobile-nav-subscribe { display: block; margin-top: 20px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--crimson); text-decoration: none; text-align: center; padding: 14px; border: 1px solid var(--crimson); transition: background 0.2s, color 0.2s; }
+    .mobile-nav-subscribe:hover { background: var(--crimson); color: var(--cream); }
+
+    /* ── TABLET (≤900px) ── */
     @media (max-width: 900px) {
-      .header { padding: 36px 24px 0; }
-      .logo { font-size: 40px; }
-      .nav-center { gap: 32px; padding: 24px 0 16px; }
-      .hero { height: 60vh; min-height: 400px; }
-      .hero-content { padding: 48px 36px; }
-      .section-header { padding: 44px 36px 32px; flex-direction: column; align-items: flex-start; gap: 16px; }
-      .stories-grid { grid-template-columns: 1fr; }
-      .story-card { border-right: none; border-bottom: 1px solid var(--border); }
-      .story-card:last-child { border-bottom: none; }
-      .story-img { height: 280px; }
-      footer { padding: 44px 36px 36px; }
-      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+      /* Issue bar */
+      .issue-bar { padding: 9px 24px; }
+      .issue-bar-right { display: none; }
+
+      /* Nav */
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+
+      /* Hero */
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 56px 36px 52px; }
+      .hero-issue { left: 36px; top: 28px; }
+      .hero-watermark { font-size: 130px; right: -10px; }
+      .hero-right { height: 60vw; min-height: 300px; }
+
+      /* Section head */
+      .section-head { padding: 44px 36px 36px; flex-direction: column; align-items: flex-start; gap: 18px; }
+
+      /* Pillars */
+      .pillars { grid-template-columns: 1fr 1fr; }
+      a.pillar:nth-child(2) { border-right: none; }
+      a.pillar:nth-child(4) { border-right: none; }
+      a.pillar { padding: 40px 30px; }
+
+      /* Issue grid */
+      .issue-grid { grid-template-columns: 1fr; }
+      a.issue-card { border-right: none; border-bottom: 1px solid var(--border); }
+      a.issue-card:last-child { border-bottom: none; }
+
+      /* Pull quote */
+      .pull-quote-section { padding: 44px 36px; }
+
+      /* Long read */
+      .long-read { grid-template-columns: 1fr; }
+      .long-read-img { height: 58vw; min-height: 260px; }
+      .long-read-body { padding: 44px 36px; border-left: none; border-top: 1px solid var(--border); }
+
+      /* Latest stories */
+      .latest-grid { grid-template-columns: 1fr 1fr; }
+      a.latest-card:nth-child(even) { border-right: none; }
+      a.latest-card:nth-child(odd):last-child { border-right: none; }
+
+      /* City strip */
+      .city-strip { grid-template-columns: repeat(3, 1fr); }
+      a.city-card:nth-child(3) { border-right: none; }
+      a.city-card { height: 280px; }
+
+      /* Season */
+      .season-section { padding: 60px 36px 52px; }
+      .season-grid { grid-template-columns: 1fr; }
+      .season-card-body { padding: 32px 32px 36px; }
+
+      /* Newsletter */
+      .newsletter { padding: 64px 36px; }
+
+      /* Footer */
+      footer { padding: 56px 36px 36px; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .footer-bottom { flex-direction: column; gap: 16px; align-items: flex-start; }
     }
 
+    /* ── MOBILE (≤560px) ── */
     @media (max-width: 560px) {
-      .header { padding: 28px 20px 0; }
-      .logo { font-size: 32px; }
-      .nav-center { gap: 24px; font-size: 9px; padding: 20px 0 14px; }
-      .hero { height: 50vh; }
-      .hero-content { padding: 36px 24px; }
-      .hero-title { font-size: 28px; }
-      .section-header { padding: 36px 24px 24px; }
-      .section-title { font-size: 24px; }
-      .stories-grid { grid-template-columns: 1fr; }
-      .story-img { height: 220px; }
-      .story-content { padding: 24px; }
-      footer { padding: 36px 24px 28px; }
-      .footer-grid { grid-template-columns: 1fr; gap: 24px; }
-      .footer-bottom { flex-direction: column; gap: 12px; }
+      /* Issue bar */
+      .issue-bar { padding: 9px 20px; }
+
+      /* Nav */
+      nav { padding: 0 20px; }
+
+      /* Hero */
+      .hero-left { padding: 44px 24px 44px; }
+      .hero-issue { left: 24px; top: 24px; }
+      .hero-body { font-size: 15px; }
+      .hero-right { height: 72vw; }
+
+      /* Section head */
+      .section-head { padding: 36px 24px 28px; }
+
+      /* Pillars */
+      .pillars { grid-template-columns: 1fr; }
+      a.pillar { border-right: none; border-bottom: 1px solid var(--border); padding: 36px 24px; }
+
+      /* Issue grid */
+      .issue-card-img { height: 240px; }
+      .issue-card-body { padding: 20px 24px 28px; }
+      .img-credit-small { padding: 5px 24px 0; }
+
+      /* Pull quote */
+      .pull-quote-section { padding: 36px 24px; }
+      .pull-quote-mark { font-size: 48px; margin-bottom: 14px; }
+
+      /* Long read */
+      .long-read-img { height: 80vw; }
+      .long-read-body { padding: 36px 24px; }
+
+      /* Latest stories */
+      .latest-grid { grid-template-columns: 1fr; }
+      a.latest-card { border-right: none; border-bottom: 1px solid var(--border); }
+      a.latest-card:last-child { border-bottom: none; }
+      .latest-card-img { height: 200px; }
+      .latest-card-body { padding: 16px 24px 24px; }
+      .latest-card-credit { padding: 5px 24px 0; }
+
+      /* City strip */
+      .city-strip { grid-template-columns: 1fr 1fr; }
+      a.city-card { height: 200px; border-right: none; border-bottom: 1px solid var(--border); }
+      a.city-card:nth-child(odd) { border-right: 1px solid var(--border); }
+      a.city-card:nth-child(3) { border-right: 1px solid var(--border); }
+      a.city-card:last-child { border-right: none; }
+      .city-name { font-size: 26px; }
+
+      /* Season */
+      .season-section { padding: 44px 24px 40px; }
+      .season-card-body { padding: 24px 20px 28px; }
+      .season-card-img { height: 200px; }
+
+      /* Newsletter */
+      .newsletter { padding: 48px 24px; }
+      .newsletter-form { flex-direction: column; border: none; gap: 0; }
+      .newsletter-input { border: 1px solid var(--border); padding: 14px 16px; }
+      .newsletter-btn { padding: 14px 20px; width: 100%; }
+
+      /* Footer */
+      footer { padding: 44px 24px 28px; }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .footer-legal { flex-wrap: wrap; gap: 12px 24px; }
+    }
+
+    /* ── PRELOADER ── */
+    #preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: var(--cream);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.7s ease;
+    }
+    #preloader.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .preloader-logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--brown);
+      text-align: center;
+    }
+    .preloader-logo em {
+      font-style: normal;
+      color: var(--crimson);
+      font-weight: 400;
+    }
+    .preloader-rule {
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+      margin: 14px auto 0;
+      transform: scaleX(0);
+      transform-origin: center;
+      animation: preloader-line 0.9s 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    @keyframes preloader-line {
+      to { transform: scaleX(1); }
     }
   </style>
 </head>
 <body>
 
-<header class="header">
-  <a href="index.html" class="logo">
-    the splendid <span>edit</span>
-  </a>
-</header>
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-logo">The <em>Splendid</em> Edit</div>
+  <div class="preloader-rule"></div>
+</div>
 
+<!-- ISSUE BAR -->
+<div class="issue-bar">
+  <span class="issue-bar-left">The Splendid Edit &mdash; Issue No. 02 &mdash; Summer 2026</span>
+  <span class="issue-bar-right">A Splendid Media Publication &mdash; worldofsplendid.com</span>
+</div>
+
+<!-- NAV -->
 <nav>
-  <div class="nav-center">
-    <a href="#stories">Stories</a>
-    <a href="#cities">City Guides</a>
-    <a href="about.html">About</a>
-    <a href="#newsletter">Subscribe</a>
-  </div>
+  <a href="./" class="nav-logo">The <em>Splendid</em> Edit</a>
+  <ul class="nav-links">
+    <li><a href="#features">The Stay</a></li>
+    <li><a href="#features">The Season</a></li>
+    <li><a href="#features">The Edit</a></li>
+    <li><a href="#cities">City Guides</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <a href="#newsletter" class="nav-subscribe desktop-only">Subscribe</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <ul>
+    <li><a href="#features" onclick="closeMobileNav()">The Stay</a></li>
+    <li><a href="#features" onclick="closeMobileNav()">The Season</a></li>
+    <li><a href="#features" onclick="closeMobileNav()">The Edit</a></li>
+    <li><a href="#cities" onclick="closeMobileNav()">City Guides</a></li>
+    <li><a href="about.html" onclick="closeMobileNav()">About</a></li>
+  </ul>
+  <a href="#newsletter" class="mobile-nav-subscribe" onclick="closeMobileNav()">Subscribe to The Edit</a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
-  <img
-    src="https://images.unsplash.com/photo-1693933714044-131908e39427?w=1600&q=80&fit=crop&fp-y=0.55"
-    alt="Luxury hotel pool terrace with loungers overlooking the Mediterranean, Côte d'Azur"
-  />
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <span class="hero-label">Côte d'Azur — Summer 2026</span>
-    <h1 class="hero-title">Where summer <em>knows its worth</em></h1>
+  <div class="hero-left">
+    <span class="hero-issue">The Stay &mdash; C&ocirc;te d&rsquo;Azur</span>
+    <div class="hero-watermark" aria-hidden="true">02</div>
+    <p class="hero-category">Cover Story &middot; Issue 02</p>
+    <h1 class="hero-headline">
+      Where summer<br/>
+      knows <em>its worth.</em>
+    </h1>
+    <p class="hero-body">Every June, the C&ocirc;te d&rsquo;Azur separates the serious hotels from the hotels that have simply been here a long time. The ones that survive scrutiny share a quality that is difficult to manufacture: they understand that summer is not a season to be managed. It is a condition to be embodied.</p>
     <div class="hero-meta">
-      <span>The Stay</span>
       <span>By Splendid</span>
+      <span>C&ocirc;te d&rsquo;Azur &middot; Summer 2026</span>
       <span>10 min read</span>
     </div>
+    <a href="cote-dazur-summer-2026.html" class="hero-read">Read the full edit</a>
   </div>
+  <a href="cote-dazur-summer-2026.html" class="hero-right">
+    <img
+      src="https://images.unsplash.com/photo-1693933714044-131908e39427?w=1600&q=80&fit=crop&fp-y=0.55"
+      alt="Luxury hotel pool terrace with loungers overlooking the Mediterranean, C&ocirc;te d&rsquo;Azur"
+      class="cover-img"
+      style="min-height:90vh;object-position:center 55%;"
+    />
+    <p class="hero-img-credit">Photography by Lisha Riabinina via Unsplash</p>
+    <div class="hero-img-caption">
+      <span class="hero-img-label">Hotel Season &mdash; Summer 2026</span>
+      <p class="hero-img-title">The hotels that earned the summer — and the ones still learning how</p>
+    </div>
+  </a>
 </section>
 
-<!-- TICKER (subtle) -->
+<!-- TICKER -->
 <div class="ticker">
   <div class="ticker-inner">
-    <span class="ticker-item">A/W 2026 Fashion Week</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">Côte d'Azur Openings</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">New Hotel Reviews</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">Paris · Milan · London</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">The Best Pool Addresses</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">Chemena Kamali at Chloé</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">Harbour-Front Hotels</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">Resort Collections 2026</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">Summer Suite Edit</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">Fashion Week Dispatch</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">A/W 2026 Fashion Week</span><span class="ticker-dot">·</span>
-    <span class="ticker-item">Côte d'Azur Openings</span><span class="ticker-dot">·</span>
+    <span class="ticker-item">A/W 2026 Fashion Week</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">C&ocirc;te d&rsquo;Azur Openings</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">New Hotel Reviews</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Paris &middot; Milan &middot; London</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">The Best Pool Addresses</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Chloe&acute; &mdash; Chemena Kamali</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Harbour-Front Hotels</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Resort Collections 2026</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Summer Suite Edit</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Fashion Week Dispatch</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">A/W 2026 Fashion Week</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">C&ocirc;te d&rsquo;Azur Openings</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">New Hotel Reviews</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Paris &middot; Milan &middot; London</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">The Best Pool Addresses</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Chloe&acute; &mdash; Chemena Kamali</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Harbour-Front Hotels</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Resort Collections 2026</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Summer Suite Edit</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
+    <span class="ticker-item">Fashion Week Dispatch</span><span class="ticker-dot">&nbsp;&middot;&nbsp;</span>
   </div>
 </div>
 
-<!-- STORIES SECTION -->
-<section id="stories">
-  <div class="section-header">
-    <div>
-      <span class="section-kicker">In This Issue</span>
-      <h2 class="section-title">Featured Stories</h2>
-    </div>
-    <a href="#stories" class="view-all">View all →</a>
+<!-- PILLARS -->
+<section class="pillars" id="about">
+  <a href="bulgari-garden-milan.html" class="pillar">
+    <span class="pillar-num">01</span>
+    <span class="pillar-tag">The Stay</span>
+    <h3 class="pillar-name">Hotel reviews that hold nothing back</h3>
+    <p class="pillar-desc">We write about hotels the way fashion critics write about couture &mdash; with rigour, subjectivity, and genuine love for the form.</p>
+  </a>
+  <a href="prada-second-row.html" class="pillar">
+    <span class="pillar-num">02</span>
+    <span class="pillar-tag">The Season</span>
+    <h3 class="pillar-name">Fashion week, as lived from the inside</h3>
+    <p class="pillar-desc">The shows, the rooms, the restaurants after dark. Each city seen through the eyes of a seasoned and opinionated traveller.</p>
+  </a>
+  <a href="three-paris-hotels.html" class="pillar">
+    <span class="pillar-num">03</span>
+    <span class="pillar-tag">The Edit</span>
+    <h3 class="pillar-name">Our curated picks at the crossover</h3>
+    <p class="pillar-desc">The bar that belongs in your itinerary and your camera roll. Where to wear the new coat. The pool that rewards the early riser.</p>
+  </a>
+  <a href="tokyo-between-shows.html" class="pillar">
+    <span class="pillar-num">04</span>
+    <span class="pillar-tag">City Guides</span>
+    <h3 class="pillar-name">Fashion week cities, perfectly mapped</h3>
+    <p class="pillar-desc">Paris. Milan. London. New York. Tokyo. Living, breathing guides filtered through exceptional stays and the season&rsquo;s collections.</p>
+  </a>
+</section>
+
+<!-- IN THIS ISSUE -->
+<div class="section-head" id="features">
+  <div>
+    <span class="section-kicker">In This Issue</span>
+    <h2 class="section-title">From <em>Issue No. 02</em></h2>
   </div>
+  <a href="#features" class="view-all">View all stories</a>
+</div>
 
-  <div class="stories-grid">
-    <a href="capella-kyoto-opening.html" class="story-card">
-      <div class="story-img">
-        <img src="https://images.unsplash.com/photo-1734427842929-a49948a93d3a?w=600&q=80&fit=crop" alt="Capella Kyoto" class="cover-img" />
-      </div>
-      <div class="story-content">
-        <span class="story-category">The Stay</span>
-        <h3 class="story-title">Capella arrives in Kyoto</h3>
-        <span class="story-meta">Kyoto • March 2026</span>
-      </div>
-    </a>
+<section class="issue-grid">
 
-    <a href="cote-dazur-summer-2026.html" class="story-card">
-      <div class="story-img">
-        <img src="https://images.unsplash.com/photo-1693933714044-131908e39427?w=600&q=80&fit=crop" alt="Côte d'Azur Summer 2026" class="cover-img" />
+  <a href="mens-fw-paris-milan-june-2026.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1769547673654-c67427ac94ff?w=533&q=80"
+        alt="Paris — June Men's Fashion Week"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Paris &mdash; Photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num" style="font-family:'Montserrat',sans-serif;font-size:8px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--crimson);display:block;margin-bottom:8px;">Preview &mdash; Coming June 2026</span>
+      <span class="issue-card-tag">The Season &middot; Men&rsquo;s</span>
+      <h3 class="issue-card-title">What the men&rsquo;s shows need to say this June</h3>
+      <p class="issue-card-desc">Milan then Paris, late June. After a women&rsquo;s season that rewarded precision over spectacle, the men&rsquo;s circuit arrives with questions to answer &mdash; and a generation of designers ready to answer them differently.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Splendid &middot; Preview</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
       </div>
-      <div class="story-content">
-        <span class="story-category">The Stay</span>
-        <h3 class="story-title">Where summer knows its worth</h3>
-        <span class="story-meta">C&ocirc;te d&rsquo;Azur • Summer 2026</span>
-      </div>
-    </a>
+    </div>
+  </a>
 
-    <a href="chemena-kamali-chloe.html" class="story-card">
-      <div class="story-img">
-        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80&fit=crop" alt="Chemena Kamali at Chloé" class="cover-img" />
+  <a href="prada-second-row.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=533&q=80&fit=crop"
+        alt="Model on the runway, AW2026 Milan fashion week"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Runway photography courtesy of Prada SpA &mdash; &copy; Acielle / Style du Monde</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">II</span>
+      <span class="issue-card-tag">The Season &middot; Milan</span>
+      <h3 class="issue-card-title">What Prada smells like from the second row</h3>
+      <p class="issue-card-desc">The Fondazione Prada in September: part concrete, part ambition, part the collective fragrance of four hundred people who have not slept properly since New York. This season&rsquo;s collection arrived in disciplined waves &mdash; structured outerwear, then knitwear that made you reassess everything else you own.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Splendid &middot; A/W 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
       </div>
-      <div class="story-content">
-        <span class="story-category">The Season</span>
-        <h3 class="story-title">Chemena Kamali returns to Chloé</h3>
-        <span class="story-meta">Fashion • Spring 2026</span>
-      </div>
-    </a>
+    </div>
+  </a>
 
-    <a href="paris-fashion-week-aw26.html" class="story-card">
-      <div class="story-img">
-        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80&fit=crop" alt="Paris Fashion Week A/W 2026" class="cover-img" />
+  <a href="seven-rooms-september.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=533&q=80&fit=crop"
+        alt="Luxury hotel bedroom, New York"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Photography by Yoshida Takahiro &mdash; courtesy of The Mercer Hotel, New York</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">III</span>
+      <span class="issue-card-tag">The Edit &middot; New York</span>
+      <h3 class="issue-card-title">Seven rooms for September</h3>
+      <p class="issue-card-desc">September in New York requires a particular kind of base. You will leave it early and return late, overstimulated and hungry. The Mercer in SoHo has long been the answer for those who know where the shows really happen &mdash; not in the tents, but in the restaurants on Spring Street afterwards.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">New York &middot; September 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
       </div>
-      <div class="story-content">
-        <span class="story-category">The Season</span>
-        <h3 class="story-title">Five shows that mattered</h3>
-        <span class="story-meta">Paris • March 2026</span>
-      </div>
-    </a>
+    </div>
+  </a>
 
-    <a href="bulgari-garden-milan.html" class="story-card">
-      <div class="story-img">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80&fit=crop" alt="Bulgari Garden Milan" class="cover-img" />
+  <a href="hinoki-silence-tokyo.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=533&q=80&fit=crop"
+        alt="Aman Tokyo — the signature wooden-lattice lobby"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Photography courtesy of Aman Tokyo &mdash; &copy; Mark Seelen</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">IV</span>
+      <span class="issue-card-tag">The Stay &middot; Tokyo</span>
+      <h3 class="issue-card-title">Hinoki. Silence. Tokyo.</h3>
+      <p class="issue-card-desc">At the Aman Tokyo, occupying the upper floors of the Otemachi Tower, silence is a considered offering. The rooms are arranged so the city disappears below rather than pressing in at eye level, and the bath &mdash; deep hinoki wood &mdash; is a genuine argument for Tokyo as a fashion week destination in its own right.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Splendid &middot; Tokyo 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
       </div>
-      <div class="story-content">
-        <span class="story-category">The Stay</span>
-        <h3 class="story-title">Hotel reviews that hold nothing back</h3>
-        <span class="story-meta">Milan • 2026</span>
-      </div>
-    </a>
+    </div>
+  </a>
 
-    <a href="prada-second-row.html" class="story-card">
-      <div class="story-img">
-        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80&fit=crop" alt="Prada Second Row" class="cover-img" />
+  <a href="paris-fashion-week-aw26.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=533&q=80&fit=crop"
+        alt="Dior Autumn/Winter 2026 runway set, Paris Fashion Week"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Dior A/W 2026 runway &mdash; Photography via Wallpaper*</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">V</span>
+      <span class="issue-card-tag">The Season &middot; Paris</span>
+      <h3 class="issue-card-title">Five shows that mattered</h3>
+      <p class="issue-card-desc">Paris Autumn/Winter 2026 was the season the new appointments stopped being new. Anderson at Dior, Blazy at Chanel, McCollough and Hernandez at Loewe &mdash; all showed with a confidence their debuts could not quite claim. These are the five collections we are still thinking about.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Splendid &middot; A/W 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
       </div>
-      <div class="story-content">
-        <span class="story-category">The Season</span>
-        <h3 class="story-title">What Prada smells like from the second row</h3>
-        <span class="story-meta">Milan • A/W 2026</span>
-      </div>
-    </a>
+    </div>
+  </a>
 
-    <a href="galliano-zara-luxury-partnership.html" class="story-card">
-      <div class="story-img">
-        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80&fit=crop" alt="Galliano & Zara Partnership" class="cover-img" />
+  <a href="opera-garnier-paris-fashion-week.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1617124616541-b4a2f2c3f248?w=533&q=80&fit=crop"
+        alt="Runway presentation at the Op&eacute;ra Garnier, Paris Fashion Week"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Op&eacute;ra Garnier runway &mdash; Photography via Fashion PR Firm</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">VI</span>
+      <span class="issue-card-tag">The Season &middot; Paris</span>
+      <h3 class="issue-card-title">When the Op&eacute;ra Garnier became a runway</h3>
+      <p class="issue-card-desc">On the evening of March 3rd, three emerging design houses &mdash; ARAS Nancy, La Dar&iacute;que, and The Muse &mdash; staged their collections inside Paris&rsquo;s most storied opera house. Diamonds, ceremony, and the art of becoming the inspiration.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Splendid &middot; A/W 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
       </div>
-      <div class="story-content">
-        <span class="story-category">The Season</span>
-        <h3 class="story-title">Galliano & Zara's luxury partnership</h3>
-        <span class="story-meta">Fashion • 2026</span>
-      </div>
-    </a>
+    </div>
+  </a>
 
-    <a href="one-only-moonlight-basin-big-sky.html" class="story-card">
-      <div class="story-img">
-        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80&fit=crop" alt="One&Only Moonlight Basin" class="cover-img" />
+  <a href="siriano-look-13-nyfw.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=533&q=80&fit=crop"
+        alt="Anna Alimani in Christian Siriano Look 13 at NYFW"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Christian Siriano NYFW &mdash; Photography via Fashion PR Firm</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">VII</span>
+      <span class="issue-card-tag">The Season &middot; New York</span>
+      <h3 class="issue-card-title">Look 13 &mdash; the Siriano moment that lingered</h3>
+      <p class="issue-card-desc">Christian Siriano&rsquo;s NYFW collection produced one of the season&rsquo;s defining images: Look 13, worn by Anna Alimani with the kind of composure that turns a runway walk into a photograph you remember. Vogue Runway took notice.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Splendid &middot; A/W 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
       </div>
-      <div class="story-content">
-        <span class="story-category">The Stay</span>
-        <h3 class="story-title">Moonlight Basin, Big Sky</h3>
-        <span class="story-meta">Montana • Winter 2026</span>
-      </div>
-    </a>
+    </div>
+  </a>
 
-    <a href="hinoki-silence-tokyo.html" class="story-card">
-      <div class="story-img">
-        <img src="https://www.aman.com/sites/default/files/styles/masonry_extra_large/public/2023-01/Aman%20Tokyo%20-%20Japan%20-%20Lobby.jpg?itok=3S7TLtkX" alt="Aman Tokyo" class="cover-img" />
+  <a href="paris-fashion-week-fw26-report.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1633351340042-9dabbbe0e4ed?w=533&q=80"
+        alt="Paris Fashion Week Fall/Winter 2026"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Paris Fashion Week &mdash; Photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">VIII</span>
+      <span class="issue-card-tag">The Season &middot; Paris</span>
+      <h3 class="issue-card-title">Paris FW26: The shows that mattered</h3>
+      <p class="issue-card-desc">Sensual silhouettes, sculptural couture, and a quiet return to bespoke artistry &mdash; from Ala&iuml;a&rsquo;s precision to Chanel&rsquo;s dreamlike mushroom forest, the season&rsquo;s defining moments.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Splendid &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
       </div>
-      <div class="story-content">
-        <span class="story-category">The Stay</span>
-        <h3 class="story-title">Hinoki. Silence. Tokyo.</h3>
-        <span class="story-meta">Tokyo • 2026</span>
-      </div>
-    </a>
+    </div>
+  </a>
 
-    <a href="opera-garnier-paris-fashion-week.html" class="story-card">
-      <div class="story-img">
-        <img src="https://www.fashionprfirm.com/cdn/shop/articles/IMG_9204.jpg?v=1772904260&width=600" alt="Op&eacute;ra Garnier" class="cover-img" />
+  <a href="berlin-fashion-week-fw26.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=533&q=80"
+        alt="Berlin Fashion Week Fall/Winter 2026"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Berlin Fashion Week &mdash; Photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">IX</span>
+      <span class="issue-card-tag">The Season &middot; Berlin</span>
+      <h3 class="issue-card-title">Berlin&rsquo;s quiet revolution</h3>
+      <p class="issue-card-desc">Beneath the city&rsquo;s rough edges lies ambition and a deep love for craftsmanship. Six designers who made Berlin Fashion Week FW26 impossible to ignore.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Splendid &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
       </div>
-      <div class="story-content">
-        <span class="story-category">The Season</span>
-        <h3 class="story-title">When the Opéra Garnier became a runway</h3>
-        <span class="story-meta">Paris • March 2026</span>
+    </div>
+  </a>
+
+  <a href="runway-sets-new-theatre.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1543728069-a3f97c5a2f32?w=533&q=80"
+        alt="Immersive fashion runway set design"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Fashion Show Set Design &mdash; Photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">X</span>
+      <span class="issue-card-tag">Fashion &middot; Culture</span>
+      <h3 class="issue-card-title">When the set becomes the show</h3>
+      <p class="issue-card-desc">Designers are building worlds, not just collections. From Chanel&rsquo;s Grand Palais forest to Valentino&rsquo;s Kaiserpanorama, fashion&rsquo;s new theatrical turn.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Splendid &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
       </div>
-    </a>
+    </div>
+  </a>
+
+  <a href="fw26-trend-edit.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1554881070-74595ca2b74c?w=533&q=80"
+        alt="Fall/Winter 2026 fashion trends"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">FW26 Season &mdash; Photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">XI</span>
+      <span class="issue-card-tag">The Edit &middot; FW26</span>
+      <h3 class="issue-card-title">The FW26 Edit: What the season told us</h3>
+      <p class="issue-card-desc">Five themes that defined the collections &mdash; from sensual tailoring to immersive world-building &mdash; distilled from Paris to Berlin.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Splendid &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
+
+  <a href="simone-rocha-pitti-uomo-2026.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1713636222334-dd5c6feb5d8c?w=533&q=80&fit=crop"
+        alt="Florence — Pitti Uomo June 2026, Simone Rocha guest designer"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Florence &mdash; Photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">XII</span>
+      <span class="issue-card-tag">The Season &middot; Florence</span>
+      <h3 class="issue-card-title">Simone Rocha at Pitti Uomo: what her first menswear show needs to be</h3>
+      <p class="issue-card-desc">The most consequential Pitti guest designer appointment in years &mdash; and the questions it raises about where menswear is headed in June 2026.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">The Splendid Edit &middot; June 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="florence-hotels-pitti-uomo.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1657570546247-267b05863b12?w=533&q=80&fit=crop"
+        alt="Florence — Palazzo and Duomo skyline, Pitti Uomo hotel guide"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Florence &mdash; Photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">XIII</span>
+      <span class="issue-card-tag">The Stay &middot; Florence</span>
+      <h3 class="issue-card-title">Where to stay in Florence during Pitti Uomo</h3>
+      <p class="issue-card-desc">The Four Seasons garden, the Portrait on the Arno, the Savoy bar at midnight. A frank guide to Florence&rsquo;s best hotels for the trade fair week.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">The Splendid Edit &middot; June 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="galliano-zara-return.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1762430815620-fcca603c240c?w=533&q=80&fit=crop"
+        alt="John Galliano returns to fashion via Zara partnership"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">XIV</span>
+      <span class="issue-card-tag">The Commentary &middot; Fashion</span>
+      <h3 class="issue-card-title">John Galliano returns to fashion &mdash; and the venue says everything</h3>
+      <p class="issue-card-desc">The partnership with Zara is not a compromise. It is a declaration about who fashion belongs to now &mdash; and who Galliano has always been designing for.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">The Splendid Edit &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="valentino-palazzo-barberini-aw26.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1768761293838-30a345c36b60?w=533&q=80&fit=crop"
+        alt="Valentino AW26 at Palazzo Barberini, Rome"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Rome &mdash; Photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">XV</span>
+      <span class="issue-card-tag">The Show &middot; Rome</span>
+      <h3 class="issue-card-title">Valentino comes home to Rome</h3>
+      <p class="issue-card-desc">Alessandro Michele staged AW26 at Palazzo Barberini. The choice was not sentimental. It was structural &mdash; and it changed how the collection read.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">The Splendid Edit &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="aw26-fashion-week-trends.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=533&q=80"
+        alt="A/W 2026 Fashion Week runway models"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Fashion Week photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">XVI</span>
+      <span class="issue-card-tag">The Season &middot; Fashion Week</span>
+      <h3 class="issue-card-title">A/W 2026 reveals a season of balance and romance</h3>
+      <p class="issue-card-desc">From New York through London, Milan, and Paris, the autumn-winter shows showcase six defining trends: layered sophistication, dominating black, colourful textural play, slip dress reinvention, contemporary romance, and a new fluidity in power suiting.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">The Splendid Edit &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="chemena-kamali-chloe.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=533&q=80&fit=crop"
+        alt="Creative design process in a fashion studio"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Studio workspace photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">XVII</span>
+      <span class="issue-card-tag">The Season &middot; Chloé</span>
+      <h3 class="issue-card-title">Chemena Kamali returns to Chloé as Creative Director</h3>
+      <p class="issue-card-desc">After twice serving under visionary leadership at the Parisian house, Chemena Kamali takes the helm as Creative Director. Her third tenure signals not a return, but a completion.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">The Splendid Edit &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="galliano-zara-luxury-partnership.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=533&q=80&fit=crop"
+        alt="Fashion runway — avant-garde collection"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Fashion photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">XVIII</span>
+      <span class="issue-card-tag">The Edit &middot; Fashion</span>
+      <h3 class="issue-card-title">Galliano joins Zara: when genius meets the masses</h3>
+      <p class="issue-card-desc">John Galliano&rsquo;s two-year creative partnership with Zara marks an unprecedented intersection — haute couture sensibility applied to democratic fashion. We examine what it means for both.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">The Splendid Edit &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="one-only-moonlight-basin-big-sky.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=533&q=80&fit=crop"
+        alt="Mountain landscape — Big Sky, Montana"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Mountain photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">XIX</span>
+      <span class="issue-card-tag">The Stay &middot; Montana</span>
+      <h3 class="issue-card-title">One&amp;Only Moonlight Basin: grace in the mountains</h3>
+      <p class="issue-card-desc">One&amp;Only&rsquo;s first US property arrives in Big Sky, Montana — eighty acres of alpine restraint. The architecture doesn&rsquo;t compete with the landscape. It defers to it.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">The Splendid Edit &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="capella-kyoto-opening.html" class="issue-card">
+    <div class="issue-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=533&q=80&fit=crop"
+        alt="Kyoto — temple garden and traditional architecture"
+        class="cover-img"
+        style="height:280px;"
+      />
+    </div>
+    <span class="img-credit-small">Kyoto photography via Unsplash</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">XX</span>
+      <span class="issue-card-tag">The Stay &middot; Kyoto</span>
+      <h3 class="issue-card-title">Capella arrives in Kyoto</h3>
+      <p class="issue-card-desc">The Singapore-based luxury group opens its most considered property yet — a former imperial textile warehouse transformed into a study in restraint, ceremony, and earned quiet.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">The Splendid Edit &middot; March 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
+</section>
+
+<!-- PULL QUOTE -->
+<div class="pull-quote-section">
+  <div class="pull-quote-bg" aria-hidden="true">&ldquo;</div>
+  <span class="pull-quote-mark">&ldquo;</span>
+  <p class="pull-quote-text">A hotel that understands summer does not announce it. The pool is cold at eight in the morning. The terrace has shade by noon. The bar knows when to stop trying to impress you.</p>
+  <p class="pull-quote-attr">Splendid &mdash; <em>The Splendid Edit, Issue No. 02</em></p>
+</div>
+
+<!-- THE LONG READ -->
+<div class="section-head">
+  <div>
+    <span class="section-kicker">The Long Read</span>
+    <h2 class="section-title">The garden <em>in Milan</em></h2>
+  </div>
+  <a href="bulgari-garden-milan.html" class="view-all">Read in full</a>
+</div>
+
+<article class="long-read">
+  <div class="long-read-img">
+    <img
+      src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80&fit=crop"
+      alt="The secret garden at Bulgari Hotel Milano"
+      class="cover-img"
+      style="min-height:560px;"
+    />
+    <p class="long-read-img-credit">Photography courtesy of Bulgari Hotel Milano &mdash; &copy; Richard Powers</p>
+  </div>
+  <div class="long-read-body">
+    <span class="long-read-eyebrow">The Long Read &mdash; Issue 02</span>
+    <span class="long-read-tag">The Stay &middot; Milan</span>
+    <h2 class="long-read-title">The Bulgari garden, and the <em>strange mercy</em> it offers in summer</h2>
+    <p class="long-read-text">There is a garden in the middle of Via Montenapoleone, behind walls that most people on that street do not know exist. It belongs to the Bulgari Hotel Milano, and in summer it performs a function no amount of room-service or excellent air conditioning can replicate: it gives you back the sense that the city is optional.</p>
+    <p class="long-read-text">Ten thousand square feet of private green, in one of the most commercially dense streets in Europe. The Bulgari has understood something essential about luxury hotel design — that the rarest amenity in a great city is not a view. It is distance.</p>
+    <div class="long-read-rule"></div>
+    <div class="long-read-meta">
+      <span>By Splendid</span>
+      <span>Milan &mdash; Summer 2026</span>
+      <span>10 min read</span>
+    </div>
+    <a href="bulgari-garden-milan.html" class="long-read-cta">Read the full review</a>
+  </div>
+</article>
+
+<!-- LATEST STORIES -->
+<div class="section-head">
+  <div>
+    <span class="section-kicker">Latest Stories</span>
+    <h2 class="section-title">From the <em>current season</em></h2>
+  </div>
+  <a href="#about" class="view-all">All stories</a>
+</div>
+
+<section class="latest-grid">
+
+  <a href="bulgari-garden-milan.html" class="latest-card">
+    <div class="latest-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80&fit=crop"
+        alt="The 10,000 sq ft secret garden, Bulgari Hotel Milano"
+        class="cover-img"
+        style="height:220px;"
+      />
+    </div>
+    <span class="latest-card-credit">Photography courtesy of Bulgari Hotel Milano &mdash; &copy; Richard Powers</span>
+    <div class="latest-card-body">
+      <span class="latest-card-tag">The Stay &middot; Milan</span>
+      <h3 class="latest-card-title">The garden that holds up during Milan Fashion Week</h3>
+      <p class="latest-card-desc">The Bulgari Hotel&rsquo;s private garden performs a function no other Milan hotel can replicate: it makes the industry feel briefly optional.</p>
+    </div>
+  </a>
+
+  <a href="three-paris-hotels.html" class="latest-card">
+    <div class="latest-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80&fit=crop"
+        alt="Elegant Paris hotel lobby, fashion week season"
+        class="cover-img"
+        style="height:220px;"
+      />
+    </div>
+    <span class="latest-card-credit">Photography courtesy of La Fondation H&ocirc;tel, Paris &mdash; &copy; Nicolas Anetson</span>
+    <div class="latest-card-body">
+      <span class="latest-card-tag">The Season &middot; Paris</span>
+      <h3 class="latest-card-title">Three hotels that passed every test during Paris Fashion Week</h3>
+      <p class="latest-card-desc">Le M&eacute;urice, La Fondation, and the quietly exceptional H&ocirc;tel des Grands Boulevards. One expensive property north of the Louvre did not survive our scrutiny.</p>
+    </div>
+  </a>
+
+  <a href="tokyo-between-shows.html" class="latest-card">
+    <div class="latest-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=533&q=80&fit=crop"
+        alt="Aman Tokyo — the 30m indoor pool, Otemachi"
+        class="cover-img"
+        style="height:220px;"
+      />
+    </div>
+    <span class="latest-card-credit">Photography courtesy of Aman Tokyo &mdash; &copy; Mark Seelen</span>
+    <div class="latest-card-body">
+      <span class="latest-card-tag">City Guide &middot; Tokyo</span>
+      <h3 class="latest-card-title">Tokyo between the shows</h3>
+      <p class="latest-card-desc">What happens to the city when the schedule allows for a morning walk. The Aman&rsquo;s relationship with silence. A ramen shop in Ginza that doesn&rsquo;t care who you are.</p>
+    </div>
+  </a>
+
+  <a href="september-again.html" class="latest-card">
+    <div class="latest-card-img">
+      <img
+        src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80&fit=crop"
+        alt="Luxury hotel suite, New York"
+        class="cover-img"
+        style="height:220px;"
+      />
+    </div>
+    <span class="latest-card-credit">Photography courtesy of The Mercer Hotel, New York &mdash; &copy; Yoshida Takahiro</span>
+    <div class="latest-card-body">
+      <span class="latest-card-tag">The Edit &middot; New York</span>
+      <h3 class="latest-card-title">September, again</h3>
+      <p class="latest-card-desc">The tote bag of show notes, the SoHo hotel that never lets you down, and the restaurant table you need to book before noon on Monday.</p>
+    </div>
+  </a>
+
+</section>
+
+<!-- CITY STRIP -->
+<div class="section-head" id="cities">
+  <div>
+    <span class="section-kicker">City Guides</span>
+    <h2 class="section-title">The fashion week <em>cities</em></h2>
+  </div>
+  <a href="#cities" class="view-all">All city guides</a>
+</div>
+
+<section class="city-strip">
+
+  <a href="three-paris-hotels.html" class="city-card">
+    <img
+      src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&h=1000&q=90"
+      alt="Paris, France"
+      class="cover-img"
+      style="height:340px;"
+    />
+    <div class="city-label">
+      <span class="city-name">Paris</span>
+      <span class="city-season">Couture &middot; SS &middot; AW</span>
+      <span class="city-count">14 hotels &middot; 9 guides</span>
+    </div>
+  </a>
+
+  <a href="bulgari-garden-milan.html" class="city-card">
+    <img
+      src="https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?auto=format&fit=crop&w=1600&h=1000&q=90"
+      alt="Duomo di Milano at sunset, Milan, Italy"
+      class="cover-img"
+      style="height:340px;"
+    />
+    <div class="city-label">
+      <span class="city-name">Milan</span>
+      <span class="city-season">SS &middot; AW</span>
+      <span class="city-count">11 hotels &middot; 7 guides</span>
+    </div>
+  </a>
+
+  <a href="connaught-mayfair.html" class="city-card">
+    <img
+      src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=1600&h=1000&q=90"
+      alt="London, Westminster Bridge and Big Ben at night"
+      class="cover-img"
+      style="height:340px;"
+    />
+    <div class="city-label">
+      <span class="city-name">London</span>
+      <span class="city-season">SS &middot; AW</span>
+      <span class="city-count">12 hotels &middot; 8 guides</span>
+    </div>
+  </a>
+
+  <a href="seven-rooms-september.html" class="city-card">
+    <img
+      src="https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625?auto=format&fit=crop&w=1600&h=1000&q=90"
+      alt="New York City"
+      class="cover-img"
+      style="height:340px;"
+    />
+    <div class="city-label">
+      <span class="city-name">New York</span>
+      <span class="city-season">SS &middot; AW &middot; Bridal</span>
+      <span class="city-count">16 hotels &middot; 10 guides</span>
+    </div>
+  </a>
+
+  <a href="hinoki-silence-tokyo.html" class="city-card">
+    <img
+      src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1600&h=1000&q=90"
+      alt="Tokyo, Japan"
+      class="cover-img"
+      style="height:340px;"
+    />
+    <div class="city-label">
+      <span class="city-name">Tokyo</span>
+      <span class="city-season">SS &middot; AW</span>
+      <span class="city-count">8 hotels &middot; 5 guides</span>
+    </div>
+  </a>
+
+</section>
+
+<!-- THE SEASON -->
+<section class="season-section">
+  <span class="section-kicker">Hotel Season</span>
+  <h2 class="section-title" style="font-size:38px;font-weight:300;margin-top:8px;">The stays worth <em>the journey</em></h2>
+  <div class="season-grid">
+
+    <div class="season-card" onclick="location.href='paris-hotels-held-up.html'" style="cursor:pointer;">
+      <div class="season-card-img">
+        <img
+          src="https://images.unsplash.com/photo-1471623432079-b009d30b6729?w=1600&q=80&fit=crop"
+          alt="Paris fashion week — the hotels that held up"
+          class="cover-img"
+          style="height:220px;"
+        />
+      </div>
+      <div class="season-card-body">
+        <span class="season-card-city">Paris</span>
+        <span class="season-card-date">Hotel Season &mdash; Summer 2026</span>
+        <h3 class="season-card-title">Paris in summer: the hotels that know the difference</h3>
+        <p class="season-card-body-text">When the industry leaves and the tourists arrive, Paris reveals which hotels were built for a sustained season and which were designed around a fortnight of fashion weeks. The best addresses in the city do not change their character when the shows end. They simply become easier to get into.</p>
+        <div class="season-card-rule"></div>
+        <span class="season-card-credit">Photography courtesy of Le M&eacute;urice, Paris &mdash; &copy; Dorchester Collection</span>
+        <a href="paris-hotels-held-up.html" class="season-card-cta">Read the full dispatch</a>
+      </div>
+    </div>
+
+    <div class="season-card" onclick="location.href='hinoki-silence-tokyo.html'" style="cursor:pointer;">
+      <div class="season-card-img">
+        <img
+          src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=533&q=80&fit=crop"
+          alt="Aman Tokyo — the 30m indoor pool"
+          class="cover-img"
+          style="height:220px;"
+        />
+      </div>
+      <div class="season-card-body">
+        <span class="season-card-city">Tokyo</span>
+        <span class="season-card-date">Hotel Season &mdash; Summer 2026</span>
+        <h3 class="season-card-title">Tokyo at altitude: the Aman case for the upper floors</h3>
+        <p class="season-card-body-text">In summer, when the city below runs at full pressure, the upper floors of the Otemachi Tower become an argument for vertical distance as a form of rest. The Aman Tokyo has understood this from the beginning. The 30-metre pool, the hinoki bath, the quality of the silence at 33 floors above street level &mdash; these are not amenities. They are the architecture of recovery.</p>
+        <div class="season-card-rule"></div>
+        <span class="season-card-credit">Photography courtesy of Aman Tokyo &mdash; &copy; Mark Seelen</span>
+        <a href="hinoki-silence-tokyo.html" class="season-card-cta">Read the full review</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
+<!-- NEWSLETTER -->
+<section class="newsletter" id="newsletter">
+  <span class="newsletter-kicker">The Splendid Edit Newsletter</span>
+  <h2 class="newsletter-title">The edit, direct<br/><em>to your inbox.</em></h2>
+  <p class="newsletter-sub">Every fortnight: the summer&rsquo;s best hotel openings, the pools worth building a trip around, and the curated picks your travel agent won&rsquo;t know to suggest.</p>
+  <form class="newsletter-form" id="newsletter-form" onsubmit="handleSubscribe(event)">
+    <input type="email" class="newsletter-input" id="newsletter-email" placeholder="Your email address" required />
+    <button class="newsletter-btn" id="newsletter-btn" type="submit">Subscribe</button>
+  </form>
+  <p id="newsletter-msg" style="display:none; margin-top:16px; font-family:'Cormorant Garamond',serif; font-size:16px; font-style:italic;"></p>
+  <p class="newsletter-note">No advertising. No sponsored content. Just the edit.</p>
+</section>
+
 <!-- FOOTER -->
-<footer id="newsletter">
-  <div class="footer-grid">
+<footer>
+  <div class="footer-top">
     <div>
       <span class="footer-brand">The Splendid Edit</span>
-      <p class="footer-desc">Luxury hotel stays, fashion week coverage and perfectly curated travel. An Australian editorial publication by Splendid Media.</p>
+      <p class="footer-tagline">Luxury stays. Fashion weeks.<br/>Perfectly edited.</p>
+      <span class="footer-parent">A Splendid Media Publication</span>
     </div>
-    <div class="footer-col">
-      <h4>Stories</h4>
+    <div>
+      <span class="footer-col-title">The Edit</span>
       <ul class="footer-links">
-        <li><a href="#stories">All Stories</a></li>
-        <li><a href="#stories">The Stay</a></li>
-        <li><a href="#stories">The Season</a></li>
-        <li><a href="#stories">The Edit</a></li>
+        <li><a href="#features">The Stay</a></li>
+        <li><a href="#features">The Season</a></li>
+        <li><a href="#about">The Edit</a></li>
+        <li><a href="#cities">City Guides</a></li>
       </ul>
     </div>
-    <div class="footer-col">
-      <h4>Company</h4>
+    <div>
+      <span class="footer-col-title">Fashion Week Cities</span>
       <ul class="footer-links">
-        <li><a href="about.html">About</a></li>
+        <li><a href="three-paris-hotels.html">Paris</a></li>
+        <li><a href="bulgari-garden-milan.html">Milan</a></li>
+        <li><a href="connaught-mayfair.html">London</a></li>
+        <li><a href="seven-rooms-september.html">New York</a></li>
+        <li><a href="hinoki-silence-tokyo.html">Tokyo</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="footer-col-title">About</span>
+      <ul class="footer-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Advertise</a></li>
+        <li><a href="contact.html">Partnerships</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy-policy.html">Privacy</a></li>
-        <li><a href="terms-of-use.html">Terms</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Connect</h4>
-      <ul class="footer-links">
-        <li><a href="https://instagram.com/splendidedit" target="_blank">Instagram</a></li>
-        <li><a href="https://twitter.com/splendidedit" target="_blank">X</a></li>
-        <li><a href="index.html#newsletter">Newsletter</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span class="footer-copy">&copy; 2026 The Splendid Edit. All rights reserved.</span>
+    <p class="footer-copy">&copy; 2026 The Splendid Edit &middot; A Splendid Media Publication &middot; worldofsplendid.com</p>
     <div class="footer-legal">
       <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="cookie-policy.html">Cookie Policy</a>
       <a href="terms-of-use.html">Terms of Use</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
     </div>
   </div>
 </footer>
+
+
+<!-- ═══════════════════════════════════════════════
+     THE SPLENDID EDIT — CHAT CONCIERGE WIDGET
+     ═══════════════════════════════════════════════ -->
+
+<style>
+  /* ── CHAT WIDGET ── */
+  #chat-widget {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 9999;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Toggle button */
+  #chat-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--brown);
+    border: 1.5px solid var(--gold);
+    color: var(--gold);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 32px rgba(61,35,24,0.38), 0 2px 8px rgba(61,35,24,0.22);
+    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+    position: relative;
+    outline: none;
+    margin-left: auto;
+  }
+  #chat-toggle:hover {
+    background: var(--footer-bg);
+    transform: scale(1.07);
+    box-shadow: 0 12px 40px rgba(61,35,24,0.45);
+  }
+  #chat-toggle svg {
+    width: 22px;
+    height: 22px;
+    transition: opacity 0.18s;
+  }
+  #chat-toggle .icon-close { display: none; }
+  #chat-widget.open #chat-toggle .icon-chat  { display: none; }
+  #chat-widget.open #chat-toggle .icon-close { display: block; }
+  #chat-widget.open #chat-toggle {
+    background: var(--footer-bg);
+  }
+
+  /* Pulsing dot */
+  #chat-toggle::after {
+    content: '';
+    position: absolute;
+    top: 3px; right: 3px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--terracotta);
+    border: 2px solid var(--cream);
+    animation: pulse-dot 2.4s ease-in-out infinite;
+  }
+  #chat-widget.open #chat-toggle::after { display: none; }
+  @keyframes pulse-dot {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50%       { transform: scale(1.3); opacity: 0.75; }
+  }
+
+  /* Panel */
+  #chat-panel {
+    position: absolute;
+    bottom: 76px;
+    right: 0;
+    width: 370px;
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    box-shadow: 0 24px 72px rgba(61,35,24,0.22), 0 4px 16px rgba(61,35,24,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(16px) scale(0.97);
+    pointer-events: none;
+    transition: opacity 0.28s ease, transform 0.28s ease;
+    transform-origin: bottom right;
+  }
+  #chat-widget.open #chat-panel {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: all;
+  }
+
+  /* Panel header */
+  #chat-header {
+    background: var(--brown);
+    padding: 18px 22px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(196,162,101,0.2);
+    flex-shrink: 0;
+  }
+  .chat-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .chat-header-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--footer-bg);
+    border: 1px solid rgba(196,162,101,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .chat-header-avatar svg {
+    width: 16px;
+    height: 16px;
+  }
+  .chat-header-text {}
+  .chat-header-kicker {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7.5px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .chat-header-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--cream);
+    display: block;
+    line-height: 1.1;
+  }
+  .chat-header-status {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    color: rgba(250,246,241,0.35);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 2px;
+  }
+  .chat-header-status::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #7ec87e;
+    display: inline-block;
+  }
+  #chat-close {
+    background: none;
+    border: none;
+    color: rgba(250,246,241,0.4);
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px;
+    transition: color 0.18s;
+    outline: none;
+  }
+  #chat-close:hover { color: var(--cream); }
+
+  /* Messages area */
+  #chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 22px 20px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 280px;
+    max-height: 340px;
+    scroll-behavior: smooth;
+  }
+  #chat-messages::-webkit-scrollbar { width: 4px; }
+  #chat-messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  /* Message bubbles */
+  .chat-msg {
+    display: flex;
+    flex-direction: column;
+    max-width: 88%;
+    animation: msg-in 0.24s ease;
+  }
+  @keyframes msg-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .chat-msg--bot {
+    align-self: flex-start;
+  }
+  .chat-msg--user {
+    align-self: flex-end;
+  }
+  .chat-bubble {
+    padding: 11px 15px;
+    line-height: 1.65;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15.5px;
+    font-weight: 300;
+  }
+  .chat-msg--bot .chat-bubble {
+    background: var(--light);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 0 12px 12px 12px;
+  }
+  .chat-msg--user .chat-bubble {
+    background: var(--brown);
+    color: var(--cream);
+    border-radius: 12px 0 12px 12px;
+  }
+  .chat-msg-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7.5px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 5px;
+  }
+  .chat-msg--user .chat-msg-label {
+    text-align: right;
+    color: var(--text-light);
+  }
+
+  /* Suggestions chips */
+  #chat-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 4px;
+  }
+  .chat-chip {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8.5px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    background: var(--cream);
+    border: 1px solid rgba(139,26,26,0.25);
+    padding: 7px 12px;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, border-color 0.18s;
+    outline: none;
+  }
+  .chat-chip:hover {
+    background: var(--crimson);
+    color: var(--cream);
+    border-color: var(--crimson);
+  }
+
+  /* Typing indicator */
+  #chat-typing {
+    display: none;
+    align-self: flex-start;
+    padding: 10px 14px;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 0 12px 12px 12px;
+    gap: 5px;
+    align-items: center;
+  }
+  #chat-typing.visible { display: flex; }
+  .typing-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    animation: typing-bounce 1.3s ease-in-out infinite;
+  }
+  .typing-dot:nth-child(2) { animation-delay: 0.18s; }
+  .typing-dot:nth-child(3) { animation-delay: 0.36s; }
+  @keyframes typing-bounce {
+    0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+    30%            { transform: translateY(-6px); opacity: 1; }
+  }
+
+  /* Gold rule divider in messages */
+  .chat-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    opacity: 0.6;
+  }
+  .chat-divider::before,
+  .chat-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* Input area */
+  #chat-input-area {
+    display: flex;
+    border-top: 1px solid var(--border);
+    background: var(--cream);
+    flex-shrink: 0;
+  }
+  #chat-input {
+    flex: 1;
+    padding: 14px 16px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text);
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  #chat-input::placeholder {
+    color: var(--text-light);
+    font-style: italic;
+  }
+  #chat-send {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--cream);
+    background: var(--crimson);
+    border: none;
+    padding: 14px 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+    outline: none;
+  }
+  #chat-send:hover { background: var(--footer-bg); }
+  #chat-send:disabled {
+    background: var(--border);
+    cursor: default;
+  }
+
+  /* Footer note */
+  #chat-footer {
+    padding: 8px 20px;
+    background: var(--light);
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .chat-footer-note {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    text-align: center;
+  }
+</style>
+
+<!-- CHAT HTML -->
+<div id="chat-widget">
+  <!-- Toggle button -->
+  <button id="chat-toggle" aria-label="Open The Splendid Edit concierge">
+    <!-- Chat icon -->
+    <svg class="icon-chat" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+    </svg>
+    <!-- Close icon -->
+    <svg class="icon-close" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+
+  <!-- Chat panel -->
+  <div id="chat-panel" role="dialog" aria-label="The Splendid Edit concierge">
+
+    <!-- Header -->
+    <div id="chat-header">
+      <div class="chat-header-inner">
+        <div class="chat-header-avatar">
+          <svg fill="none" viewBox="0 0 24 24" stroke="#C4A265" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <div class="chat-header-text">
+          <span class="chat-header-kicker">Editorial Concierge</span>
+          <span class="chat-header-name">The Splendid Edit</span>
+          <span class="chat-header-status">Available now</span>
+        </div>
+      </div>
+      <button id="chat-close" aria-label="Close chat">×</button>
+    </div>
+
+    <!-- Messages -->
+    <div id="chat-messages" aria-live="polite">
+      <div class="chat-msg chat-msg--bot">
+        <span class="chat-msg-label">The Edit</span>
+        <div class="chat-bubble">
+          Welcome. I&rsquo;m your editorial concierge — here to help you navigate the season&rsquo;s finest hotels, fashion weeks, and curated reads.<br/><br/>Where shall we begin?
+        </div>
+      </div>
+      <div id="chat-suggestions">
+        <button class="chat-chip" data-query="Paris Fashion Week hotels">Paris hotels</button>
+        <button class="chat-chip" data-query="Milan stays">Milan stays</button>
+        <button class="chat-chip" data-query="London fashion week">London season</button>
+        <button class="chat-chip" data-query="newsletter">Subscribe</button>
+      </div>
+      <div id="chat-typing">
+        <span class="typing-dot"></span>
+        <span class="typing-dot"></span>
+        <span class="typing-dot"></span>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Ask The Edit…" autocomplete="off" aria-label="Your message" maxlength="300" />
+      <button id="chat-send" aria-label="Send">&#x2192;</button>
+    </div>
+
+    <!-- Footer -->
+    <div id="chat-footer">
+      <p class="chat-footer-note">The Splendid Edit &mdash; Issue No. 01 &mdash; Spring 2026</p>
+    </div>
+
+  </div><!-- /chat-panel -->
+</div><!-- /chat-widget -->
+
+<script>
+(function() {
+  'use strict';
+
+  // ── DOM references ──────────────────────────────
+  const widget      = document.getElementById('chat-widget');
+  const toggle      = document.getElementById('chat-toggle');
+  const closeBtn    = document.getElementById('chat-close');
+  const messages    = document.getElementById('chat-messages');
+  const typing      = document.getElementById('chat-typing');
+  const input       = document.getElementById('chat-input');
+  const sendBtn     = document.getElementById('chat-send');
+  const suggestions = document.getElementById('chat-suggestions');
+
+  // ── Toggle open / close ─────────────────────────
+  function openChat() {
+    widget.classList.add('open');
+    input.focus();
+  }
+  function closeChat() {
+    widget.classList.remove('open');
+  }
+  toggle.addEventListener('click', () => {
+    widget.classList.contains('open') ? closeChat() : openChat();
+  });
+  closeBtn.addEventListener('click', closeChat);
+
+  // ── Suggestion chips ────────────────────────────
+  suggestions.addEventListener('click', function(e) {
+    if (e.target.classList.contains('chat-chip')) {
+      const query = e.target.getAttribute('data-query') || e.target.textContent;
+      suggestions.style.display = 'none';
+      sendMessage(query);
+    }
+  });
+
+  // ── Send on button / Enter ──────────────────────
+  sendBtn.addEventListener('click', handleSend);
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); }
+  });
+
+  function handleSend() {
+    const text = input.value.trim();
+    if (!text) return;
+    input.value = '';
+    sendMessage(text);
+  }
+
+  // ── Append message bubble ────────────────────────
+  function appendMessage(role, html) {
+    const wrap = document.createElement('div');
+    wrap.className = 'chat-msg chat-msg--' + role;
+    const label = document.createElement('span');
+    label.className = 'chat-msg-label';
+    label.textContent = role === 'bot' ? 'The Edit' : 'You';
+    const bubble = document.createElement('div');
+    bubble.className = 'chat-bubble';
+    bubble.innerHTML = html;
+    wrap.appendChild(label);
+    wrap.appendChild(bubble);
+    // Insert before typing indicator
+    messages.insertBefore(wrap, typing);
+    scrollToBottom();
+  }
+
+  function scrollToBottom() {
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  // ── Show / hide typing indicator ────────────────
+  function showTyping() {
+    typing.classList.add('visible');
+    scrollToBottom();
+  }
+  function hideTyping() {
+    typing.classList.remove('visible');
+  }
+
+  // ── Send + get response ──────────────────────────
+  function sendMessage(text) {
+    appendMessage('user', escHtml(text));
+    sendBtn.disabled = true;
+    showTyping();
+    const delay = 900 + Math.random() * 700;
+    setTimeout(function() {
+      hideTyping();
+      const reply = getReply(text);
+      appendMessage('bot', reply);
+      sendBtn.disabled = false;
+      input.focus();
+    }, delay);
+  }
+
+  // ── HTML escape ──────────────────────────────────
+  function escHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  // ── Response engine ──────────────────────────────
+  function getReply(text) {
+    const q = text.toLowerCase();
+
+    if (match(q, ['paris', 'ritz', 'le bristol', 'crillon', 'plaza athenee'])) {
+      return 'Paris during fashion week demands a hotel that understands the pace. Our edit begins at the Ritz and the Le Bristol — both within reach of the Tuileries shows — and extends to quieter alternatives for those who find the Vendôme too performative. <br/><br/>Shall I guide you to our full Paris hotel edit?';
+    }
+    if (match(q, ['milan', 'bulgari', 'via montenapoleone', 'four seasons milan'])) {
+      return 'Milan is best survived from the Bulgari Hotel Milano — its private garden on Via Privata Fratelli Gabba is genuinely the finest thirty-minute escape in the city during fashion week. The Four Seasons on Via Gesù is the industry\'s preferred second choice.<br/><br/>We cover both in Issue No. 01.';
+    }
+    if (match(q, ['london', 'claridge', 'the connaught', 'sketch', 'mayfair'])) {
+      return 'London fashion week rewards those who book early at Claridge\'s — the proximity to Bond Street and the show venues off Strand makes it practically a headquarters. The Connaught offers a quieter counterpoint.<br/><br/>See our full London edit in this issue.';
+    }
+    if (match(q, ['new york', 'nyfw', 'the mark', 'soho', 'tribeca'])) {
+      return 'New York fashion week is covered in our forthcoming Issue No. 02, focused on the September season. The Mark on the Upper East Side remains our editors\' first choice — close enough to the tents, far enough from them.<br/><br/>Subscribe to be notified when it publishes.';
+    }
+    if (match(q, ['tokyo', 'japan'])) {
+      return 'Tokyo fashion week occupies a special section of our upcoming international edition. The Aman Tokyo and the Mandarin Oriental remain our anchors for the March season.<br/><br/>Stay subscribed for our Tokyo deep-dive.';
+    }
+    if (match(q, ['hotel', 'stay', 'book', 'where to stay', 'recommend'])) {
+      return 'Our hotel edits are organised by city and season. For Spring 2026 we cover Paris, Milan, and London in depth — each with a primary recommendation, a quieter alternative, and notes on which properties understand the fashion week calendar.<br/><br/>Which city interests you?';
+    }
+    if (match(q, ['fashion week', 'show', 'runway', 'catwalk', 'couture', 'resort'])) {
+      return 'The Splendid Edit approaches fashion week from the hotel outward — we believe where you stay shapes how you see the shows. Our coverage runs from the Sunday arrivals through the final Friday, with hotel dispatches filed each evening.<br/><br/>Browse our Season section for full coverage.';
+    }
+    if (match(q, ['subscribe', 'newsletter', 'email', 'issue', 'notify', 'notification'])) {
+      return 'The Splendid Edit newsletter publishes every fortnight — hotel openings, season dispatches, and the curated picks your travel agent won\'t know to suggest. No advertising. No sponsored content.<br/><br/>You\'ll find the subscription form at the bottom of this page.';
+    }
+    if (match(q, ['issue', 'issue 01', 'spring', '2026', 'current issue'])) {
+      return 'Issue No. 01 covers Spring 2026 — the Paris, London, and Milan fashion weeks, and the hotels that made each of them survivable. It\'s published by Splendid.';
+    }
+    if (match(q, ['editor', 'founder', 'who are you', 'who writes', 'team'])) {
+      return 'The Splendid Edit is published by Splendid. The publication was conceived in a hotel lobby in Milan during fashion week — the origin story is told in full in the Editor\'s Letter at the bottom of this page.';
+    }
+    if (match(q, ['what is', 'about', 'splendid', 'publication', 'magazine'])) {
+      return 'The Splendid Edit is a curated publication covering luxury hotels and fashion weeks — written with the rigour of fashion criticism and the specificity of someone who has stayed in these rooms and attended these shows.<br/><br/>Issue No. 01 is Spring 2026.';
+    }
+    if (match(q, ['cost', 'price', 'free', 'paid', 'subscription fee'])) {
+      return 'The newsletter is free to subscribe. The Splendid Edit is currently published as a digital edition — future print editions will be announced via the newsletter first.';
+    }
+    if (match(q, ['hello', 'hi', 'hey', 'good morning', 'good evening', 'bonjour', 'ciao'])) {
+      return 'Good day. Welcome to The Splendid Edit — I&rsquo;m your editorial concierge for the Spring 2026 season. May I help you with hotels, fashion week coverage, or our latest issue?';
+    }
+    if (match(q, ['thank', 'thanks', 'merci', 'grazie', 'perfect', 'wonderful'])) {
+      return 'A pleasure, as always. Is there anything else from The Edit I can help you with?';
+    }
+    if (match(q, ['bye', 'goodbye', 'au revoir', 'ciao', 'farewell'])) {
+      return 'Au revoir. Do return when the next season calls — we shall be here.';
+    }
+
+    // Fallback
+    return 'A considered question. The Splendid Edit covers luxury hotels, fashion weeks across Paris, Milan, London, New York, and Tokyo, and the editors\' curated reads each season.<br/><br/>You might ask me about a specific city, a hotel recommendation, or our current issue — I&rsquo;m happy to guide you.';
+  }
+
+  function match(q, keywords) {
+    return keywords.some(k => q.includes(k));
+  }
+
+})();
+</script>
+
+<script>
+  // ── MOBILE NAV TOGGLE ──
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    mobileNav.setAttribute('aria-hidden', !isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileNav.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+      closeMobileNav();
+    }
+  });
+</script>
+
+<script>
+async function handleSubscribe(e) {
+  e.preventDefault();
+  const email = document.getElementById('newsletter-email').value.trim();
+  const btn = document.getElementById('newsletter-btn');
+  const msg = document.getElementById('newsletter-msg');
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzrNMoycUD5m420g3lLZdZ08qHv3618nIjXkyyDBPYESLlQctbyFeUw3z0PRtxaf3t_/exec';
+  btn.disabled = true;
+  btn.textContent = 'Subscribing\u2026';
+  msg.style.display = 'none';
+  try {
+    // mode:'no-cors' bypasses CORS preflight — Apps Script handles the POST
+    // and we show success optimistically (opaque response can't be read)
+    await fetch(SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: 'email=' + encodeURIComponent(email)
+    });
+    msg.style.display = 'block';
+    msg.style.color = '#5a7a5a';
+    msg.textContent = 'You\u2019re subscribed \u2014 welcome to The Edit.';
+    document.getElementById('newsletter-form').reset();
+  } catch(err) {
+    msg.style.display = 'block';
+    msg.style.color = '#c0392b';
+    msg.textContent = 'Something went wrong. Please try again.';
+  }
+  btn.disabled = false;
+  btn.textContent = 'Subscribe';
+}
+
+/* ── PRELOADER DISMISS ── */
+(function() {
+  var preloader = document.getElementById('preloader');
+  function dismiss() {
+    if (!preloader) return;
+    preloader.classList.add('fade-out');
+    setTimeout(function() {
+      if (preloader && preloader.parentNode) {
+        preloader.parentNode.removeChild(preloader);
+      }
+    }, 750);
+  }
+  if (document.readyState === 'complete') {
+    setTimeout(dismiss, 100);
+  } else {
+    window.addEventListener('load', function() { setTimeout(dismiss, 100); });
+  }
+})();
+</script>
 
 </body>
 </html>
