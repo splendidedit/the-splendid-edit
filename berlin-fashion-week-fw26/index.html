@@ -20,7 +20,7 @@
 
     .article-hero {
       width: 100%; height: 65vh; min-height: 420px;
-      background: url('images/prada-runway.jpg') center/cover no-repeat;
+      background: url('../images/berlin-fw-hero.jpg') center/cover no-repeat;
       display: flex; align-items: flex-end; position: relative;
     }
     .article-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent 40%, rgba(0,0,0,0.65)); }
@@ -44,13 +44,36 @@
     .article-back:hover { color: var(--accent); }
     .article-source { font-family: var(--sans); font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light); margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
 
+    .article-img-block { margin: 40px 0; }
+    .article-img-block img { width: 100%; height: 420px; object-fit: cover; object-position: center top; display: block; }
+    .article-img-caption { margin-top: 10px; font-family: var(--sans); font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light); }
     footer { background: #1a1a1a; color: #ccc; padding: 48px 24px; font-family: var(--sans); font-size: 12px; text-align: center; }
     footer .footer-brand { font-family: var(--sans); font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #fff; }
     footer p { margin-top: 8px; font-style: italic; font-family: var(--serif); font-size: 14px; color: #aaa; }
-
-    @media (max-width: 600px) {
-      .article-hero { height: 50vh; }
+    @media (max-width: 768px) {
+      .article-hero { height: 55vh; }
+      .article-hero-inner { padding: 40px 28px; }
+      .article-hero-inner h1 { font-size: clamp(28px, 5vw, 40px); }
+      .article-body { padding: 44px 24px 64px; }
+      .article-body h2 { font-size: 24px; }
+      .article-pullquote { margin: 36px -24px; padding: 28px 24px; }
+      .article-img-block { margin: 32px -24px; }
+      .article-img-block img { height: 320px; }
+    }
+    @media (max-width: 560px) {
+      .article-hero { height: 50vh; min-height: 320px; }
       .article-hero-inner { padding: 32px 20px; }
+      .article-hero-inner h1 { font-size: clamp(26px, 7vw, 34px); }
+      .article-hero-inner .article-dek { font-size: 16px; }
+      .article-body { padding: 36px 20px 52px; }
+      .article-body p { font-size: 16px; }
+      .article-body h2 { font-size: 22px; margin: 36px 0 16px; }
+      .article-pullquote { margin: 32px -20px; padding: 24px 20px; }
+      .article-pullquote p { font-size: 19px; }
+      .article-img-block { margin: 28px -20px; }
+      .article-img-block img { height: 260px; }
+    }
+  .article-hero-inner { padding: 32px 20px; }
       .article-body { padding: 40px 20px 60px; }
       .article-body p { font-size: 16px; }
     }
@@ -67,7 +90,7 @@
     "author": { "@type": "Organization", "name": "The Splendid Edit" },
     "publisher": { "@type": "Organization", "name": "The Splendid Edit", "url": "https://splendidedit.com" },
     "mainEntityOfPage": "https://splendidedit.com/berlin-fashion-week-fw26.html",
-    "image": "images/prada-show.jpg"
+    "image": "../images/berlin-fw-hero.jpg"
   }
   </script>
 </head>
@@ -91,9 +114,19 @@
 
   <h2>Unvain: A Manifesto in Fabric</h2>
 
+  <div class="article-img-block">
+    <img src="../images/berlin-unvain.jpg" alt="Unvain AW26 collection, Berlin Fashion Week — look by Robert Friedrichs" />
+    <p class="article-img-caption">Unvain AW26 &mdash; Photography by Boris Marberg for Berlin Fashion Week &mdash; courtesy of CR Fashion Book</p>
+  </div>
+
   <p>Robert Friedrichs&rsquo; label Unvain made its runway debut at the Feuerle Collection, presenting against a backdrop of Southeast Asian sculptures and Imperial Chinese furniture. The aesthetic is brutalist, rebellious, and precisely controlled: sharp architectural silhouettes that balance epaulettes, studs, leather, and transparent fabrics with upcycled fur. The label refuses easy narratives, focusing instead on mysticism, tension, and a restrained rockstar elegance. An immersive scent installation by Ryoko added a sensory dimension that made the show something you didn&rsquo;t just watch but experienced physically.</p>
 
   <h2>John Lawrence Sullivan: The Fighter&rsquo;s Stance</h2>
+
+  <div class="article-img-block">
+    <img src="../images/berlin-jls.jpg" alt="John Lawrence Sullivan AW26 runway, Berlin Fashion Week — Kraftwerk Berlin" />
+    <p class="article-img-caption">John Lawrence Sullivan AW26 &mdash; Kraftwerk Berlin &mdash; Photography by Finnegan Koichi Godenschweger for Berlin Fashion Week &mdash; courtesy of CR Fashion Book</p>
+  </div>
 
   <p>Designer Arashi Yanagawa&rsquo;s past as a professional boxer continues to inform everything about this label. The FW26 collection, presented as part of the INTERVENTION series curated by Reference Studios, carried the tension of a fight &mdash; long coats, tailored jackets, and biker staples with exaggerated sleeves and shoulders that forced a guarded stance. Founded in 2003, John Lawrence Sullivan translates a life forged in the ring into fearless silhouettes and an uncompromising sense of individuality.</p>
 
@@ -103,6 +136,11 @@
   </div>
 
   <h2>Lou de B&eacute;toly: Upcycling as Seduction</h2>
+
+  <div class="article-img-block">
+    <img src="../images/berlin-lou-betoly.jpg" alt="Lou de Bétoly AW26 collection, Berlin Fashion Week — look by Odély Teboul" />
+    <p class="article-img-caption">Lou de B&eacute;toly AW26 &mdash; Photography by James Cochrane for Berlin Fashion Week &mdash; courtesy of CR Fashion Book</p>
+  </div>
 
   <p>French designer Od&eacute;ly Teboul&rsquo;s Berlin-based label thrives on reinvention. Vintage lingerie, lace, knitwear, and leather are deconstructed and reassembled until familiar materials emerge as delicate, jaw-dropping sculptures. The FW26 colour palette was deliberately minimal, allowing every detail to command attention. Teboul works with repetition, proving that a single fabric can tell a hundred different stories. Upcycling has rarely looked this seductive.</p>
 

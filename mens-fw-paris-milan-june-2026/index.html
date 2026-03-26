@@ -35,7 +35,21 @@
     .footer-logo{font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(250,246,241,0.5);margin-bottom:12px}
     .footer-logo em{font-style:normal;color:var(--gold)}
     .footer-copy{font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:0.14em;color:rgba(250,246,241,0.25)}
-    @media(max-width:700px){nav{padding:0 24px}.article-header,.article-body{padding-left:24px;padding-right:24px}.article-hero{height:55vw;min-height:300px}}
+    @media (max-width: 768px) {
+      nav { padding: 0 28px; }
+      .article-header, .article-body { padding-left: 28px; padding-right: 28px; }
+      .article-hero { height: 58vh; min-height: 360px; }
+      .article-body h2 { font-size: 24px; }
+    }
+    @media (max-width: 560px) {
+      nav { padding: 0 20px; }
+      .article-header { padding: 40px 20px 32px; }
+      .article-body { padding: 0 20px 56px; }
+      .article-hero { height: 55vw; min-height: 280px; }
+      .article-body p { font-size: 17px; }
+      .article-body h2 { font-size: 22px; margin: 36px 0 16px; }
+      .article-body blockquote { font-size: 19px; padding-left: 20px; }
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -43,7 +57,7 @@
     "@type": "NewsArticle",
     "headline": "What the Men's Shows Need to Say This June",
     "description": "Milan then Paris, late June. After a women's season that rewarded precision over spectacle, the men's circuit arrives with questions to answer and a generation of designers ready to answer them.",
-    "image": "images/pitti-uomo-florence.jpg",
+    "image": "images/paris-saintlaurent-aw26.jpg",
     "datePublished": "2026-03-20T08:00:00Z",
     "dateModified": "2026-03-20T08:00:00Z",
     "author": {"@type":"Organization","name":"The Splendid Edit","url":"https://splendidedit.com"},
