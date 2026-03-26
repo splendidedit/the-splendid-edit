@@ -299,7 +299,7 @@
       .nav-hamburger { display: flex; }
 
       /* Hero */
-      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero { grid-template-columns: 1fr; height: auto; min-height: auto; }
       .hero-left { padding: 56px 36px 52px; }
       .hero-issue { left: 36px; top: 28px; }
       .hero-watermark { font-size: 130px; right: -10px; }
@@ -362,7 +362,8 @@
       /* Hero */
       .hero-left { padding: 44px 24px 44px; }
       .hero-issue { left: 24px; top: 24px; }
-      .hero-body { font-size: 15px; }
+      .hero-headline { font-size: clamp(28px, 8vw, 40px); }
+      .hero-body { font-size: 15px; max-width: 100%; }
       .hero-right { height: 72vw; }
 
       /* Section head */
@@ -573,12 +574,6 @@
     <h3 class="pillar-name">Hotel reviews that hold nothing back</h3>
     <p class="pillar-desc">We write about hotels the way fashion critics write about couture &mdash; with rigour, subjectivity, and genuine love for the form.</p>
   </a>
-  <a href="prada-second-row/" class="pillar">
-    <span class="pillar-num">02</span>
-    <span class="pillar-tag">The Season</span>
-    <h3 class="pillar-name">Fashion week, as lived from the inside</h3>
-    <p class="pillar-desc">The shows, the rooms, the restaurants after dark. Each city seen through the eyes of a seasoned and opinionated traveller.</p>
-  </a>
   <a href="three-paris-hotels/" class="pillar">
     <span class="pillar-num">03</span>
     <span class="pillar-tag">The Edit</span>
@@ -621,28 +616,6 @@
       <p class="issue-card-desc">Milan then Paris, late June. After a women&rsquo;s season that rewarded precision over spectacle, the men&rsquo;s circuit arrives with questions to answer &mdash; and a generation of designers ready to answer them differently.</p>
       <div class="issue-card-foot">
         <span class="issue-card-byline">By Splendid &middot; Preview</span>
-        <span class="issue-card-arrow">Read &rarr;</span>
-      </div>
-    </div>
-  </a>
-
-  <a href="prada-second-row/" class="issue-card">
-    <div class="issue-card-img">
-      <img
-        src="images/prada-show.jpg"
-        alt="Model on the runway, AW2026 Milan fashion week"
-        class="cover-img"
-        style="height:280px;"
-      />
-    </div>
-    <span class="img-credit-small">Runway photography courtesy of Prada SpA &mdash; &copy; Acielle / Style du Monde</span>
-    <div class="issue-card-body">
-      <span class="issue-card-num">II</span>
-      <span class="issue-card-tag">The Season &middot; Milan</span>
-      <h3 class="issue-card-title">What Prada smells like from the second row</h3>
-      <p class="issue-card-desc">The Fondazione Prada in September: part concrete, part ambition, part the collective fragrance of four hundred people who have not slept properly since New York. This season&rsquo;s collection arrived in disciplined waves &mdash; structured outerwear, then knitwear that made you reassess everything else you own.</p>
-      <div class="issue-card-foot">
-        <span class="issue-card-byline">By Splendid &middot; A/W 2026</span>
         <span class="issue-card-arrow">Read &rarr;</span>
       </div>
     </div>
@@ -692,28 +665,6 @@
     </div>
   </a>
 
-  <a href="paris-fashion-week-aw26/" class="issue-card">
-    <div class="issue-card-img">
-      <img
-        src="images/paris-fw26-dior.jpg"
-        alt="Dior Autumn/Winter 2026 runway, Paris Fashion Week"
-        class="cover-img"
-        style="height:280px;"
-      />
-    </div>
-    <span class="img-credit-small">Dior A/W 2026 &mdash; Photography via CR Fashion Book / Getty Images</span>
-    <div class="issue-card-body">
-      <span class="issue-card-num">V</span>
-      <span class="issue-card-tag">The Season &middot; Paris</span>
-      <h3 class="issue-card-title">Five shows that mattered</h3>
-      <p class="issue-card-desc">Paris Autumn/Winter 2026 was the season the new appointments stopped being new. Anderson at Dior, Vaccarello at Saint Laurent, Ackermann at Tom Ford &mdash; all showed with a confidence their debuts could not quite claim. These are the five collections we are still thinking about.</p>
-      <div class="issue-card-foot">
-        <span class="issue-card-byline">By Splendid &middot; A/W 2026</span>
-        <span class="issue-card-arrow">Read &rarr;</span>
-      </div>
-    </div>
-  </a>
-
   <a href="opera-garnier-paris-fashion-week/" class="issue-card">
     <div class="issue-card-img">
       <img
@@ -731,72 +682,6 @@
       <p class="issue-card-desc">On the evening of March 3rd, three emerging design houses &mdash; ARAS Nancy, La Dar&iacute;que, and The Muse &mdash; staged their collections inside Paris&rsquo;s most storied opera house. Diamonds, ceremony, and the art of becoming the inspiration.</p>
       <div class="issue-card-foot">
         <span class="issue-card-byline">By Splendid &middot; A/W 2026</span>
-        <span class="issue-card-arrow">Read &rarr;</span>
-      </div>
-    </div>
-  </a>
-
-  <a href="siriano-look-13-nyfw/" class="issue-card">
-    <div class="issue-card-img">
-      <img
-        src="images/siriano-nyfw.jpg"
-        alt="Anna Alimani in Christian Siriano Look 13 at NYFW"
-        class="cover-img"
-        style="height:280px;"
-      />
-    </div>
-    <span class="img-credit-small">Christian Siriano NYFW &mdash; Photography via Fashion PR Firm</span>
-    <div class="issue-card-body">
-      <span class="issue-card-num">VII</span>
-      <span class="issue-card-tag">The Season &middot; New York</span>
-      <h3 class="issue-card-title">Look 13 &mdash; the Siriano moment that lingered</h3>
-      <p class="issue-card-desc">Christian Siriano&rsquo;s NYFW collection produced one of the season&rsquo;s defining images: Look 13, worn by Anna Alimani with the kind of composure that turns a runway walk into a photograph you remember. Vogue Runway took notice.</p>
-      <div class="issue-card-foot">
-        <span class="issue-card-byline">By Splendid &middot; A/W 2026</span>
-        <span class="issue-card-arrow">Read &rarr;</span>
-      </div>
-    </div>
-  </a>
-
-  <a href="paris-fashion-week-fw26-report/" class="issue-card">
-    <div class="issue-card-img">
-      <img
-        src="images/runway-chanel-set.jpg"
-        alt="Chanel at Paris Fashion Week Fall/Winter 2026"
-        class="cover-img"
-        style="height:280px;"
-      />
-    </div>
-    <span class="img-credit-small">Paris Fashion Week &mdash; Photography by Peter White / Getty Images</span>
-    <div class="issue-card-body">
-      <span class="issue-card-num">VIII</span>
-      <span class="issue-card-tag">The Season &middot; Paris</span>
-      <h3 class="issue-card-title">Paris FW26: The shows that mattered</h3>
-      <p class="issue-card-desc">Sensual silhouettes, sculptural couture, and a quiet return to bespoke artistry &mdash; from Ala&iuml;a&rsquo;s precision to Chanel&rsquo;s dreamlike mushroom forest, the season&rsquo;s defining moments.</p>
-      <div class="issue-card-foot">
-        <span class="issue-card-byline">By Splendid &middot; March 2026</span>
-        <span class="issue-card-arrow">Read &rarr;</span>
-      </div>
-    </div>
-  </a>
-
-  <a href="berlin-fashion-week-fw26/" class="issue-card">
-    <div class="issue-card-img">
-      <img
-        src="images/berlin-fw-hero.jpg"
-        alt="Unvain AW26, Berlin Fashion Week"
-        class="cover-img"
-        style="height:280px;"
-      />
-    </div>
-    <span class="img-credit-small">Unvain AW26 &mdash; Photography by Boris Marberg for Berlin Fashion Week</span>
-    <div class="issue-card-body">
-      <span class="issue-card-num">IX</span>
-      <span class="issue-card-tag">The Season &middot; Berlin</span>
-      <h3 class="issue-card-title">Berlin&rsquo;s quiet revolution</h3>
-      <p class="issue-card-desc">Beneath the city&rsquo;s rough edges lies ambition and a deep love for craftsmanship. Six designers who made Berlin Fashion Week FW26 impossible to ignore.</p>
-      <div class="issue-card-foot">
-        <span class="issue-card-byline">By Splendid &middot; March 2026</span>
         <span class="issue-card-arrow">Read &rarr;</span>
       </div>
     </div>
