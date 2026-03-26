@@ -85,7 +85,7 @@
 
     /* ── IMAGES ── */
     img { display: block; max-width: 100%; }
-    .cover-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s ease; }
+    .cover-img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block; transition: transform 0.7s ease; }
 
     /* ── ISSUE BAR ── */
     .issue-bar { background: var(--brown); padding: 9px 48px; display: flex; align-items: center; justify-content: space-between; }
@@ -104,8 +104,8 @@
     @media (max-width: 900px) { .desktop-only { display: none; } }
 
     /* ── HERO ── */
-    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 90vh; }
-    .hero-left { background: var(--brown); display: flex; flex-direction: column; justify-content: flex-end; padding: 64px 72px 64px 80px; position: relative; overflow: hidden; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 72vh; }
+    .hero-left { background: var(--brown); display: flex; flex-direction: column; justify-content: flex-end; padding: 48px 60px 48px 72px; position: relative; overflow: hidden; }
     .hero-issue { position: absolute; top: 48px; left: 80px; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
     .hero-watermark { font-family: 'Cormorant Garamond', serif; font-size: 200px; font-weight: 300; line-height: 1; color: rgba(255,255,255,0.04); position: absolute; top: 32px; right: -20px; pointer-events: none; user-select: none; }
     .hero-category { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 20px; }
@@ -117,7 +117,7 @@
     .hero-read { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: gap 0.2s; width: fit-content; }
     .hero-read::after { content: '→'; }
     .hero-read:hover { gap: 16px; }
-    .hero-right { position: relative; overflow: hidden; background: var(--brown); text-decoration: none; display: block; }
+    .hero-right { position: relative; overflow: hidden; background: var(--brown); text-decoration: none; display: block; min-height: 72vh; }
     .hero-right:hover .cover-img { transform: scale(1.04); }
     .hero-img-credit { position: absolute; bottom: 56px; left: 20px; font-family: 'Montserrat', sans-serif; font-size: 7.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,246,241,0.3); z-index: 2; }
     .hero-img-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 60px 28px 22px; background: linear-gradient(to top, rgba(61,35,24,0.92) 0%, transparent 100%); z-index: 2; }
