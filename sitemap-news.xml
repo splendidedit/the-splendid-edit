@@ -244,4 +244,28 @@
       <news:title>Capella Arrives in Kyoto</news:title>
     </news:news>
   </url>
+
+  <url>
+    <loc>https://splendidedit.com/chanel-aw26-blazy-grand-palais/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-29T10:00:00Z</news:publication_date>
+      <news:title>Chanel A/W 2026: Matthieu Blazy Builds from the Ground Up</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/dior-anderson-tuileries-aw26/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-29T10:00:00Z</news:publication_date>
+      <news:title>Dior A/W 2026: Jonathan Anderson Takes a Walk in the Tuileries</news:title>
+    </news:news>
+  </url>
 </urlset>
