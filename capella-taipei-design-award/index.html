@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Quiet Room at the Top — Capella Taipei's Design Award — The Splendid Edit</title>
+  <meta name="description" content="Capella Taipei wins the Wallpaper* Design Award for Best New Opening — and André Fu's vision of the modern mansion finally gives the Taiwanese capital a hotel worthy of the city." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --cream:#FAF6F1;--warm-white:#FFFCF8;--crimson:#8B1A1A;--terracotta:#C2623B;--gold:#C4A265;--gold-light:#D4B98A;--brown:#3D2318;--footer-bg:#3D0A05;--text:#3A3330;--text-light:#7A7068;--border:#E0D6CC;--light:#F5F0EA; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Cormorant Garamond',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:64px;background:rgba(250,246,241,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:var(--brown)}
+    .nav-logo em{font-style:normal;color:var(--crimson);font-weight:400}
+    .nav-home{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:400;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-light);border-bottom:1px solid var(--border);padding-bottom:1px}
+    .article-hero{width:100%;height:70vh;min-height:480px;position:relative;overflow:hidden;background:var(--brown)}
+    .article-hero img{width:100%;height:100%;object-fit:cover;opacity:0.85}
+    .article-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(61,35,24,0.7) 0%,transparent 50%)}
+    .article-img-caption{font-family:'Montserrat',sans-serif;font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-light);padding:8px 48px;border-bottom:1px solid var(--border)}
+    .article-header{max-width:780px;margin:0 auto;padding:64px 48px 48px}
+    .article-kicker{font-family:'Montserrat',sans-serif;font-size:9px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;color:var(--crimson);display:block;margin-bottom:16px}
+    .article-title{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,4vw,56px);font-weight:300;line-height:1.1;color:var(--brown);margin-bottom:24px}
+    .article-title em{font-style:italic;color:var(--crimson)}
+    .article-deck{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;font-style:italic;line-height:1.6;color:var(--text-light);margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid var(--border)}
+    .article-meta{font-family:'Montserrat',sans-serif;font-size:9px;font-weight:400;letter-spacing:0.12em;color:var(--text-light);display:flex;gap:20px;align-items:center}
+    .article-body{max-width:780px;margin:0 auto;padding:0 48px 80px}
+    .article-lede{font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;font-weight:300;line-height:1.8;color:var(--text);margin-bottom:36px}
+    .article-body p{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:300;line-height:1.85;color:var(--text);margin-bottom:28px}
+    .article-body h2{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;line-height:1.2;color:var(--brown);margin:48px 0 20px}
+    .article-pullquote{border-left:2px solid var(--gold);padding:4px 0 4px 28px;margin:40px 0;font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;font-weight:300;color:var(--brown);line-height:1.5}
+    footer{background:var(--footer-bg);padding:48px;text-align:center}
+    .footer-logo{font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(250,246,241,0.5);margin-bottom:12px}
+    .footer-logo em{font-style:normal;color:var(--gold)}
+    .footer-links{display:flex;justify-content:center;gap:32px;margin-bottom:24px}
+    .footer-links a{font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(250,246,241,0.35)}
+    .footer-links a:hover{color:var(--gold)}
+    .footer-copy{font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:0.14em;color:rgba(250,246,241,0.25)}
+    @media (max-width: 900px) {
+      nav { padding: 0 28px; }
+      .article-header, .article-body { padding-left: 28px; padding-right: 28px; }
+      .article-hero { height: 58vh; min-height: 360px; }
+      .article-body h2 { font-size: 24px; }
+      .article-img-caption { padding-left: 28px; padding-right: 28px; }
+    }
+    @media (max-width: 560px) {
+      nav { padding: 0 20px; }
+      .article-header { padding: 40px 20px 32px; }
+      .article-body { padding: 0 20px 56px; }
+      .article-hero { height: 52vw; min-height: 280px; }
+      .article-lede { font-size: 18px; }
+      .article-body p { font-size: 17px; }
+      .article-body h2 { font-size: 22px; margin: 36px 0 16px; }
+      .article-pullquote { font-size: 19px; padding-left: 20px; }
+      .article-img-caption { padding-left: 20px; padding-right: 20px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "The Quiet Room at the Top — Capella Taipei's Design Award",
+    "description": "Capella Taipei wins the Wallpaper* Design Award for Best New Opening — and André Fu's vision of the modern mansion finally gives the Taiwanese capital a hotel worthy of the city.",
+    "image": "https://splendidedit.com/images/capella-taipei-hero.jpg",
+    "datePublished": "2026-03-31T07:00:00Z",
+    "dateModified": "2026-03-31T07:00:00Z",
+    "author": {"@type": "Person", "name": "Juliette Marchand"},
+    "publisher": {"@type": "Organization", "name": "The Splendid Edit", "url": "https://splendidedit.com", "logo": {"@type": "ImageObject", "url": "https://splendidedit.com/assets/logo.png"}},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://splendidedit.com/capella-taipei-design-award/"}
+  }
+  </script>
+</head>
+<body>
+
+<nav>
+  <a href="../" class="nav-logo">The <em>Splendid</em> Edit</a>
+  <a href="../" class="nav-home">← Back to The Edit</a>
+</nav>
+
+<div class="article-hero">
+  <img src="../images/capella-taipei-hero.jpg" alt="Capella Taipei hotel interior — marble vestibule with bronze doors and André Fu's monumental textile artwork" />
+  <div class="article-hero-overlay"></div>
+</div>
+<p class="article-img-caption">Photography courtesy of Wallpaper* / Capella Hotels &amp; Resorts</p>
+
+<header class="article-header">
+  <span class="article-kicker">Travel / Hotels</span>
+  <h1 class="article-title">The Quiet Room at the <em>Top</em></h1>
+  <p class="article-deck">Capella Taipei wins the Wallpaper* Design Award for Best New Opening — and André Fu's vision of the modern mansion finally gives the Taiwanese capital a hotel worthy of the city.</p>
+  <div class="article-meta">
+    <span>By Juliette Marchand</span>
+    <span>·</span>
+    <span>March 2026</span>
+    <span>·</span>
+    <span>Hotels</span>
+  </div>
+</header>
+
+<article class="article-body">
+
+  <p class="article-lede">Taipei has always moved at a frequency slightly out of step with the cities that lay claim to its design conversation. It is dense without feeling crowded, ambitious without being loud. For over a decade, the Taiwanese capital had no luxury hotel genuinely equal to its own complexity. That changed when Capella arrived in Songshan District, and the design world, via the Wallpaper* Design Awards 2026, has now made official what guests began whispering weeks after opening.</p>
+
+  <p>The Wallpaper* Best New Opening award is not merely a commendation. It is a declaration that a building has done something rare in contemporary hospitality — that it has arrived with both ambition and restraint, that it knows where it is, that it has a reason to exist beyond occupancy rates. Capella Taipei, designed by Hong Kong-based André Fu, earns the distinction because it makes a convincing case that quiet luxury is not the absence of extravagance but the presence of a genuine point of view.</p>
+
+  <h2>A City That Waited</h2>
+
+  <p>Taipei's hotel landscape has long been a study in missed potential. International groups passed through and planted glass towers with no particular relationship to the street or the city's pace. Boutique properties proliferated, several of them excellent, but the category of the truly grand, considered luxury hotel remained conspicuously vacant. Capella's 86-room property, which opened in late 2025 inside a new glass tower by Mori Building Group along Dunhua North Road, arrives in the Minsheng neighbourhood with something few newcomers possess: a settled sense of belonging.</p>
+
+  <p>The location matters. Minsheng is not the tourist centre. It is the neighbourhood where Taipei keeps itself — shaded by old banyan trees, traced by independent coffee houses and gallery courtyards, defined by a quality of afternoon light that resists description but announces itself to anyone who has spent time there. Fu absorbed this. His brief was a modern mansion. The result is a hotel that feels less like a completed project than a living proposition.</p>
+
+  <h2>André Fu's Architecture of Feeling</h2>
+
+  <p>Fu has described Taipei's defining quality as "a subtle calmness in the air." In a city of 2.5 million people, that is an observation worth examining carefully. The traffic does not stop. The markets do not quiet at night. What Fu identifies is something temperamental rather than acoustic — a city at ease with its own intelligence, unbothered by the need to impress. He chose to build a hotel that shares this disposition.</p>
+
+  <blockquote>The best hotels do not announce themselves. They reveal themselves slowly, the way a well-made room reveals its proportions only after you have lived in it for several hours.</blockquote>
+
+  <p>The arrival sequence establishes the tone. Monumental bronze doors open onto a marble vestibule where the first significant artwork stops a visitor cold: a textile piece by artist Chen-Lin Lee mapping the geography of the Taipei Basin, its topographic contours rendered in thread with a precision that earns extended looking. Beyond the Plume lounge, a cylindrical chamber is anchored by a spiral staircase whose handrail traces the curve of a calla lily through 800 blocks of hardwood. The gesture is elaborate but the effect is not fussy. It is, rather, the kind of detail that rewards a second glance and a third, which is precisely what the best hotel architecture does.</p>
+
+  <h2>Rooms and the Art of Sufficiency</h2>
+
+  <p>The 78 rooms and eight suites begin at over 500 square feet, an unusual generosity in a city where real estate imposes its own argument. The palette runs through taupe, pale blue, and blanched wood — an interior world that removes stimulation rather than adding it. Silk wall panels, hand-painted and gilded in collaboration with British atelier De Gournay, carry the weight of surface ornament. They speak to each other across the room rather than shouting at the guest. Six suites hold private pool terraces, the only rooftop pools available in central Taipei, and their particular gift is the view they refuse: you are above the city but the city is not performing for you. It simply continues below.</p>
+
+  <p>Technology is present but does not conduct itself as a feature. AI controls embedded in the bedside console respond to spoken requests without ceremony. Universal sockets and clean cable management reflect an understanding that guests arrive carrying devices and deserve not to feel guilty about it. These are small decisions. Their aggregate effect is a room that asks very little of its occupant and offers a great deal in return.</p>
+
+  <h2>Dining as Cultural Argument</h2>
+
+  <p>Five dining venues carry the weight of Capella Taipei's cultural programme as much as its culinary one. Plume functions as the signature all-day restaurant, its design consistent with the residential logic of the rest of the building. The Glasshouse, which opened in late 2025, contains three bar spaces — Tilt, with its Art Deco geometry and jazz programme, among them — that have become gathering places for Taipei residents as much as hotel guests. This is the correct aspiration and too rarely achieved.</p>
+
+  <p>The omakase counter, intimate at twelve seats, operates with the concentration such formats demand. Capella has brought in culinary partnerships that treat Taiwanese produce and Taiwanese seasons as the primary fact, with foreign influences as commentary rather than the main event. In a city with its own distinct food culture of extraordinary depth and range, this is the only defensible position. It is pleasing to report that the kitchen has worked out the implications.</p>
+
+  <h2>The Culturist Programme and the Question of Belonging</h2>
+
+  <p>What lifts Capella Taipei above a very well-designed hotel into something more difficult to categorise is the Culturist programme. Capella's proprietary hospitality role blends the functions of concierge, local guide, and household staff into something the brand has developed across its portfolio and which has its fullest expression here. Guests with time and curiosity can arrange introductions to local craftspeople and artisans — a sandal workshop operating continuously for over a century, kintsugi instruction, mornings beneath the historic banyan that has grown around the building's relationship with the street.</p>
+
+  <p>Whether such programmes survive scaling and seasons is the correct question to ask, and the honest answer is that it is too early to know. What is clear is that the intention is structural rather than decorative. The hotel was not designed to extract guests from Taipei and deliver them a curated version of it. It was designed to put guests back into the city with slightly better instructions.</p>
+
+  <p>The Wallpaper* award arrives at the right moment — not as a coronation but as a recognition of a hotel still finding its depth. The best new openings do not reveal themselves fully in their first months. Capella Taipei has already demonstrated sufficient character to suggest that when it does, the revelation will be worth the wait.</p>
+
+</article>
+
+<footer>
+  <div class="footer-logo">The <em>Splendid</em> Edit</div>
+  <div class="footer-links">
+    <a href="../about/">About</a>
+    <a href="../contact/">Contact</a>
+    <a href="../privacy-policy/">Privacy</a>
+    <a href="../terms-of-use/">Terms</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 The Splendid Edit &mdash; A Splendid Media Publication</p>
+</footer>
+
+</body>
+</html>
