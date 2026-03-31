@@ -1,220 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Homepage -->
   <url>
-    <loc>https://splendidedit.com/the-splendid-edit-v5.html</loc>
-    <lastmod>2026-03-16</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://splendidedit.com/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Articles: Fashion -->
+  <!-- Fashion -->
   <url>
-    <loc>https://splendidedit.com/paris-fashion-week-fw26-report.html</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://splendidedit.com/antwerp-six-momu-40-years/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/berlin-fashion-week-fw26.html</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://splendidedit.com/aw26-fashion-week-trends/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/runway-sets-new-theatre.html</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://splendidedit.com/balenciaga-clairobscur-piccioli-aw26/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/fw26-trend-edit.html</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://splendidedit.com/chanel-aw26-blazy-grand-palais/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/opera-garnier-paris-fashion-week.html</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://splendidedit.com/chanel-fw26-matthieu-blazy/</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/paris-fashion-week-aw26.html</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://splendidedit.com/chemena-kamali-chloe/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/prada-second-row.html</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://splendidedit.com/christopher-kane-mulberry/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/siriano-look-13-nyfw.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/di-felice-courreges-farewell/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/dior-anderson-tuileries-aw26/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/florence-hotels-pitti-uomo/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/fw26-trend-edit/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/galliano-zara-luxury-partnership/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/galliano-zara-return/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/opera-garnier-paris-fashion-week/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/runway-sets-new-theatre/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/seoul-beauty-fashion-week-ready/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/seoul-fashion-week-korean-wave/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/seoul-hotels-fashion-week/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/september-again/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/simone-rocha-pitti-uomo-2026/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/valentino-palazzo-barberini-aw26/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/willy-chavarria-zara-vatisimo/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Articles: Hotels & Travel -->
+  <!-- Hotels & Travel -->
   <url>
-    <loc>https://splendidedit.com/paris-hotels-held-up.html</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://splendidedit.com/bulgari-garden-milan/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/three-paris-hotels.html</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://splendidedit.com/capella-kyoto-opening/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/bulgari-garden-milan.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/connaught-mayfair/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/connaught-mayfair.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/cote-dazur-summer-2026/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/hinoki-silence-tokyo.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/delano-miami-beach-reopening/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/le-meurice-paris.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/hinoki-silence-tokyo/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/seven-rooms-september.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/le-meurice-paris/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/miramalfi-amalfi-coast/</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/one-only-moonlight-basin-big-sky/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/orient-express-venezia/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/paris-hotels-held-up/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/public-west-hollywood-schrager/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/seven-rooms-september/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/three-paris-hotels/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Articles: Culture & Editorial -->
+  <!-- Editorial -->
   <url>
-    <loc>https://splendidedit.com/september-again.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/mens-fw-paris-milan-june-2026/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/tokyo-between-shows.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/privacy-policy/</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/tokyo-between-shows/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Static Pages -->
   <url>
-    <loc>https://splendidedit.com/about.html</loc>
-    <lastmod>2026-03-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/contact.html</loc>
-    <lastmod>2026-03-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/privacy-policy.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/about/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/cookie-policy.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/contact/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/terms-of-use.html</loc>
-    <lastmod>2026-03-13</lastmod>
+    <loc>https://splendidedit.com/cookie-policy/</loc>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
-
-  <url>
-    <loc>https://splendidedit.com/mens-fw-paris-milan-june-2026.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://splendidedit.com/cote-dazur-summer-2026.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://splendidedit.com/simone-rocha-pitti-uomo-2026.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/florence-hotels-pitti-uomo.html</loc>
-    <lastmod>2026-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/galliano-zara-return.html</loc>
-    <lastmod>2026-03-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/valentino-palazzo-barberini-aw26.html</loc>
-    <lastmod>2026-03-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/aw26-fashion-week-trends.html</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/chemena-kamali-chloe.html</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/galliano-zara-luxury-partnership.html</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/one-only-moonlight-basin-big-sky.html</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/capella-kyoto-opening.html</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://splendidedit.com/terms-of-use/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
