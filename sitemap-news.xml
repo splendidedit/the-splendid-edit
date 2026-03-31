@@ -3,269 +3,134 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
-    <loc>https://splendidedit.com/paris-fashion-week-fw26-report.html</loc>
+    <loc>https://splendidedit.com/bulgari-garden-milan/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-16T00:00:00Z</news:publication_date>
-      <news:title>Paris Fashion Week FW26: The Shows That Mattered</news:title>
+      <news:publication_date>2026-03-31T13:59:01Z</news:publication_date>
+      <news:title>The garden that makes Milan survivable</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/berlin-fashion-week-fw26.html</loc>
+    <loc>https://splendidedit.com/connaught-mayfair/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-16T00:00:00Z</news:publication_date>
-      <news:title>Berlin's Quiet Revolution: The Designers Rewriting Fashion Week</news:title>
+      <news:publication_date>2026-03-31T13:59:01Z</news:publication_date>
+      <news:title>The Connaught, the shows, and the particular pleasure of Mayfair in February</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/runway-sets-new-theatre.html</loc>
+    <loc>https://splendidedit.com/delano-miami-beach-reopening/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-16T00:00:00Z</news:publication_date>
-      <news:title>When the Set Becomes the Show: Fashion's New Theatrical Turn</news:title>
+      <news:publication_date>2026-03-31T13:59:01Z</news:publication_date>
+      <news:title>The Delano Returns / Miami Beach gets its legend back</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/fw26-trend-edit.html</loc>
+    <loc>https://splendidedit.com/hinoki-silence-tokyo/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-16T00:00:00Z</news:publication_date>
-      <news:title>The FW26 Edit: What the Season Actually Told Us</news:title>
+      <news:publication_date>2026-03-31T13:59:01Z</news:publication_date>
+      <news:title>Hinoki. Silence. Tokyo.</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/opera-garnier-paris-fashion-week.html</loc>
+    <loc>https://splendidedit.com/seoul-beauty-fashion-week-ready/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-13T00:00:00Z</news:publication_date>
-      <news:title>When the Opéra Garnier Became a Runway</news:title>
+      <news:publication_date>2026-03-31T13:59:01Z</news:publication_date>
+      <news:title>Fashion Week Ready / Seoul&#x27;s beauty capital has your face covered</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/paris-fashion-week-aw26.html</loc>
+    <loc>https://splendidedit.com/seoul-hotels-fashion-week/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-13T00:00:00Z</news:publication_date>
-      <news:title>Five Shows That Mattered at Paris Fashion Week AW26</news:title>
+      <news:publication_date>2026-03-31T13:59:01Z</news:publication_date>
+      <news:title>Seoul Hotels / Where to stay for fashion week</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/prada-second-row.html</loc>
+    <loc>https://splendidedit.com/september-again/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-13T00:00:00Z</news:publication_date>
-      <news:title>What Prada Smells Like from the Second Row</news:title>
+      <news:publication_date>2026-03-31T13:59:01Z</news:publication_date>
+      <news:title>September, again</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/paris-hotels-held-up.html</loc>
+    <loc>https://splendidedit.com/seven-rooms-september/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-13T00:00:00Z</news:publication_date>
-      <news:title>The Hotels That Held Up, and One That Didn't</news:title>
+      <news:publication_date>2026-03-31T13:59:01Z</news:publication_date>
+      <news:title>Seven rooms for September</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/three-paris-hotels.html</loc>
+    <loc>https://splendidedit.com/tokyo-between-shows/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-13T00:00:00Z</news:publication_date>
-      <news:title>Three Hotels That Passed Every Test During Paris Fashion Week</news:title>
+      <news:publication_date>2026-03-31T13:59:01Z</news:publication_date>
+      <news:title>Tokyo between the shows</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/siriano-look-13-nyfw.html</loc>
+    <loc>https://splendidedit.com/capella-taipei-design-award/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-13T00:00:00Z</news:publication_date>
-      <news:title>Look 13: Christian Siriano at NYFW</news:title>
+      <news:publication_date>2026-03-31T07:00:00Z</news:publication_date>
+      <news:title>The Quiet Room at the Top — Capella Taipei&#x27;s Design Award</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/mens-fw-paris-milan-june-2026.html</loc>
+    <loc>https://splendidedit.com/antwerp-six-momu-40-years/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-20T08:00:00Z</news:publication_date>
-      <news:title>What the Men's Shows Need to Say This June</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://splendidedit.com/cote-dazur-summer-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-20T09:00:00Z</news:publication_date>
-      <news:title>Where summer knows its worth</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/simone-rocha-pitti-uomo-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-20T10:00:00Z</news:publication_date>
-      <news:title>Simone Rocha at Pitti Uomo: what her first menswear show needs to be</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/florence-hotels-pitti-uomo.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-20T11:00:00Z</news:publication_date>
-      <news:title>Where to stay in Florence during Pitti Uomo</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/galliano-zara-return.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-22T10:00:00Z</news:publication_date>
-      <news:title>John Galliano returns to fashion — and the venue says everything</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/valentino-palazzo-barberini-aw26.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-22T11:00:00Z</news:publication_date>
-      <news:title>Valentino comes home to Rome</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/aw26-fashion-week-trends.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-23T10:00:00Z</news:publication_date>
-      <news:title>A/W 2026 shows reveal a fashion season of balance and romance</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/chemena-kamali-chloe.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-23T10:30:00Z</news:publication_date>
-      <news:title>Chemena Kamali returns to Chloé as Creative Director — and it feels inevitable</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/galliano-zara-luxury-partnership.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-25T10:00:00Z</news:publication_date>
-      <news:title>Galliano joins Zara: when genius meets the masses</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/one-only-moonlight-basin-big-sky.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-25T11:00:00Z</news:publication_date>
-      <news:title>One&Only Moonlight Basin: grace in the mountains</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/capella-kyoto-opening.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-26T07:00:00Z</news:publication_date>
-      <news:title>Capella Arrives in Kyoto</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://splendidedit.com/chanel-aw26-blazy-grand-palais/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-29T10:00:00Z</news:publication_date>
-      <news:title>Chanel A/W 2026: Matthieu Blazy Builds from the Ground Up</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://splendidedit.com/dior-anderson-tuileries-aw26/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-29T10:00:00Z</news:publication_date>
-      <news:title>Dior A/W 2026: Jonathan Anderson Takes a Walk in the Tuileries</news:title>
+      <news:publication_date>2026-03-30T18:00:00Z</news:publication_date>
+      <news:title>The Antwerp Six at Forty — MoMu finally tells the whole story</news:title>
     </news:news>
   </url>
 
@@ -277,19 +142,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-03-30T14:00:00Z</news:publication_date>
-      <news:title>ClairObscur: Piccioli Meets Euphoria in the Dark</news:title>
-    </news:news>
-  </url>
-
-  <url>
-    <loc>https://splendidedit.com/delano-miami-beach-reopening/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-03-30T18:00:00Z</news:publication_date>
-      <news:title>The Delano Returns: Miami Beach Gets Its Legend Back</news:title>
+      <news:title>Balenciaga A/W 2026 / Pierpaolo Piccioli meets Euphoria in the dark</news:title>
     </news:news>
   </url>
 
@@ -301,31 +154,319 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-03-30T14:00:00Z</news:publication_date>
-      <news:title>Seoul Fashion Week: The City That Dresses Differently</news:title>
+      <news:title>Seoul Fashion Week / The city that dresses differently</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/seoul-hotels-fashion-week/</loc>
+    <loc>https://splendidedit.com/chanel-aw26-blazy-grand-palais/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-30T18:00:00Z</news:publication_date>
-      <news:title>Seoul Hotels: Where to Stay for Fashion Week</news:title>
+      <news:publication_date>2026-03-29T10:00:00Z</news:publication_date>
+      <news:title>Chanel A/W 2026 / Matthieu Blazy builds from the ground up</news:title>
     </news:news>
   </url>
 
   <url>
-    <loc>https://splendidedit.com/seoul-beauty-fashion-week-ready/</loc>
+    <loc>https://splendidedit.com/chanel-fw26-matthieu-blazy/</loc>
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-03-30T14:00:00Z</news:publication_date>
-      <news:title>Fashion Week Ready: Seoul's Beauty Capital Has Your Face Covered</news:title>
+      <news:publication_date>2026-03-29T10:00:00Z</news:publication_date>
+      <news:title>Chanel FW26 &amp;mdash; Matthieu Blazy and the Art of Becoming &amp;mdash; The Splendid Edit</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/dior-anderson-tuileries-aw26/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-29T10:00:00Z</news:publication_date>
+      <news:title>Dior A/W 2026 / Jonathan Anderson takes a walk in the Tuileries</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/willy-chavarria-zara-vatisimo/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-28T12:00:00Z</news:publication_date>
+      <news:title>Vatísimo — Willy Chavarria Brings Chicano Pride to the High Street</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/miramalfi-amalfi-coast/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-28T10:00:00Z</news:publication_date>
+      <news:title>Miramalfi &amp;mdash; The Amalfi Coast Hotel That Earns Its View &amp;mdash; The Splendid Edit</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/public-west-hollywood-schrager/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-27T12:00:00Z</news:publication_date>
+      <news:title>Public West Hollywood — Ian Schrager and John Pawson bring luxury for all to Sunset Strip</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/christopher-kane-mulberry/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-27T10:00:00Z</news:publication_date>
+      <news:title>Christopher Kane at Mulberry — the appointment that makes sense of everything</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/di-felice-courreges-farewell/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-27T10:00:00Z</news:publication_date>
+      <news:title>The Di Felice Years: how Courrèges came back to life</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/orient-express-venezia/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-27T10:00:00Z</news:publication_date>
+      <news:title>Orient Express Venezia — a palazzo that remembers everything</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/capella-kyoto-opening/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-26T07:00:00Z</news:publication_date>
+      <news:title>Capella Arrives in Kyoto</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/one-only-moonlight-basin-big-sky/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-25T11:00:00Z</news:publication_date>
+      <news:title>One&amp;Only Moonlight Basin: American luxury in the alpine peaks</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/galliano-zara-luxury-partnership/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-25T10:00:00Z</news:publication_date>
+      <news:title>John Galliano&#x27;s Zara partnership marks fashion&#x27;s most unexpected alliance</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/aw26-fashion-week-trends/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-23T10:00:00Z</news:publication_date>
+      <news:title>A/W 2026 shows reveal a fashion season of balance and romance</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/chemena-kamali-chloe/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-23T10:00:00Z</news:publication_date>
+      <news:title>Chemena Kamali returns to Chloé as Creative Director — and it feels inevitable</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/valentino-palazzo-barberini-aw26/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-22T11:00:00Z</news:publication_date>
+      <news:title>Valentino comes home to Rome</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/galliano-zara-return/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-22T10:00:00Z</news:publication_date>
+      <news:title>John Galliano returns to fashion — and the venue says everything</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/florence-hotels-pitti-uomo/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-20T11:00:00Z</news:publication_date>
+      <news:title>Where to stay in Florence during Pitti Uomo</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/simone-rocha-pitti-uomo-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-20T10:00:00Z</news:publication_date>
+      <news:title>Simone Rocha at Pitti Uomo</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/cote-dazur-summer-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-20T09:00:00Z</news:publication_date>
+      <news:title>Where summer knows its worth</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/mens-fw-paris-milan-june-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-20T08:00:00Z</news:publication_date>
+      <news:title>What the Men&#x27;s Shows Need to Say This June</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/fw26-trend-edit/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-16T10:00:00Z</news:publication_date>
+      <news:title>The FW26 Edit: What the Season Actually Told Us</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/runway-sets-new-theatre/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-16T10:00:00Z</news:publication_date>
+      <news:title>When the Set Becomes the Show: Fashion&#x27;s New Theatrical Turn</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/le-meurice-paris/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-15T10:00:00Z</news:publication_date>
+      <news:title>Le M&amp;eacute;urice: the suite that understands what fashion week actually costs you</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/opera-garnier-paris-fashion-week/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-13T20:00:00Z</news:publication_date>
+      <news:title>When the Opéra Garnier became a runway</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/paris-hotels-held-up/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-13T14:00:00Z</news:publication_date>
+      <news:title>The hotels that held up, and one that didn&amp;rsquo;t</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/three-paris-hotels/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-03-13T12:00:00Z</news:publication_date>
+      <news:title>Three hotels that passed every test during Paris Fashion Week</news:title>
     </news:news>
   </url>
 </urlset>
