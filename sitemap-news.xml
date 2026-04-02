@@ -505,4 +505,27 @@
     </news:news>
   </url>
 
+  <url>
+    <loc>https://splendidedit.com/australian-fashion-week-new-wave/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-02</news:publication_date>
+      <news:title>Australian Fashion Week: The Harbour Takes the Stage</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/sydney-resort-collections-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-02</news:publication_date>
+      <news:title>Sydney Resort Collections 2026: The Clothes That Travel</news:title>
+    </news:news>
+  </url>
+
 </urlset>
