@@ -2361,8 +2361,10 @@ async function handleSubscribe(e) {
 /* ── PRELOADER DISMISS ── */
 (function() {
   var preloader = document.getElementById('preloader');
+  var dismissed = false;
   function dismiss() {
-    if (!preloader) return;
+    if (dismissed || !preloader) return;
+    dismissed = true;
     preloader.classList.add('fade-out');
     setTimeout(function() {
       if (preloader && preloader.parentNode) {
@@ -2370,11 +2372,13 @@ async function handleSubscribe(e) {
       }
     }, 750);
   }
-  if (document.readyState === 'complete') {
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
     setTimeout(dismiss, 100);
   } else {
-    window.addEventListener('load', function() { setTimeout(dismiss, 100); });
+    document.addEventListener('DOMContentLoaded', function() { setTimeout(dismiss, 100); });
   }
+  /* Safety: never show preloader for more than 1.5s even on slow connections */
+  setTimeout(dismiss, 1500);
 })();
 </script>
 
