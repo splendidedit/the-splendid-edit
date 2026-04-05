@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Copenhagen Fashion Week turns twenty. The AW26 season proves the Danish capital's commitment to sustainability, inclusivity and a new generation of Nordic designers.">
+  <meta property="og:title" content="Twenty-one shows. Zero pretence. | The Splendid Edit">
+  <meta property="og:description" content="Copenhagen Fashion Week turns twenty. The AW26 season proves the Danish capital's commitment to sustainability, inclusivity and a new generation of Nordic designers.">
+  <meta property="og:image" content="https://splendidedit.com/images/cphfw-aw26-hero.jpg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Twenty-one shows. Zero pretence. | The Splendid Edit">
+  <meta name="twitter:description" content="Copenhagen Fashion Week turns twenty. The AW26 season proves the Danish capital's commitment to sustainability, inclusivity and a new generation of Nordic designers.">
+  <meta name="twitter:image" content="https://splendidedit.com/images/cphfw-aw26-hero.jpg">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Twenty-one shows. Zero pretence.",
+    "description": "Copenhagen Fashion Week turns twenty. The AW26 season proves the Danish capital's commitment to sustainability, inclusivity and a new generation of Nordic designers.",
+    "image": "https://splendidedit.com/images/cphfw-aw26-hero.jpg",
+    "datePublished": "2026-04-05T08:00:00Z",
+    "author": {
+      "@type": "Person",
+      "name": "Camille Ashworth"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Splendid Edit",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://splendidedit.com/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <title>Twenty-one shows. Zero pretence. | Copenhagen Fashion Week A/W 2026 | The Splendid Edit</title>
+  
+  <style>
+    :root {
+      --cream: #FAF6F1;
+      --warm-white: #FFFCF8;
+      --crimson: #8B1A1A;
+      --terracotta: #C2623B;
+      --gold: #C4A265;
+      --gold-light: #D4B98A;
+      --brown: #3D2318;
+      --footer-bg: #3D0A05;
+      --text: #3A3330;
+      --text-light: #7A7068;
+      --border: #E0D6CC;
+      --light: #F5F0EA;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      color: var(--text);
+      background-color: var(--warm-white);
+      line-height: 1.6;
+    }
+
+    /* Issue Bar */
+    .issue-bar {
+      background-color: var(--crimson);
+      color: var(--warm-white);
+      padding: 12px 20px;
+      font-size: 11px;
+      letter-spacing: 0.8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .issue-bar-left {
+      flex: 1;
+    }
+
+    .issue-bar-right {
+      text-align: right;
+    }
+
+    /* Navigation */
+    .nav {
+      background-color: var(--warm-white);
+      padding: 20px 40px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .nav-logo {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--brown);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 12px;
+      color: var(--text);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--terracotta);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 20px;
+      height: 2px;
+      background-color: var(--brown);
+      transition: all 0.3s;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: var(--warm-white);
+      border: 1px solid var(--border);
+      min-width: 200px;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .mobile-nav a {
+      padding: 12px 20px;
+      font-size: 12px;
+      color: var(--text);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--border);
+      transition: background-color 0.3s;
+    }
+
+    .mobile-nav a:hover {
+      background-color: var(--light);
+      color: var(--terracotta);
+    }
+
+    .mobile-nav a:last-child {
+      border-bottom: none;
+    }
+
+    /* Hero Section */
+    .article-hero {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+    .article-hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+    }
+
+    .article-hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 60px 40px 40px;
+      max-width: 800px;
+      color: var(--warm-white);
+    }
+
+    .article-kicker {
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .article-headline {
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: var(--warm-white);
+    }
+
+    .article-headline em {
+      font-style: italic;
+      display: inline;
+    }
+
+    .article-meta {
+      font-size: 12px;
+      color: var(--gold-light);
+      letter-spacing: 0.5px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .article-meta span {
+      display: inline-block;
+    }
+
+    /* Article Body */
+    .article-body {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 40px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--text);
+    }
+
+    .article-lede {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 30px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    p strong {
+      font-weight: 600;
+      color: var(--brown);
+    }
+
+    /* Pullquote */
+    .article-pullquote {
+      margin: 50px 0;
+      padding: 30px 40px;
+      border-left: 4px solid var(--terracotta);
+      background-color: var(--light);
+      font-size: 18px;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* Image Block */
+    .article-img-block {
+      margin: 50px 0;
+      text-align: center;
+    }
+
+    .article-img-block img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .article-img-caption {
+      font-size: 12px;
+      color: var(--text-light);
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    /* Related Articles */
+    .article-back {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 40px;
+      border-top: 1px solid var(--border);
+      padding-top: 30px;
+    }
+
+    .article-back a {
+      font-size: 12px;
+      color: var(--terracotta);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: color 0.3s;
+    }
+
+    .article-back a:hover {
+      color: var(--brown);
+    }
+
+    .related-articles {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 40px 60px;
+    }
+
+    .related-articles h3 {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 30px;
+      color: var(--brown);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 15px;
+    }
+
+    .related-articles-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .related-article-item {
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .related-article-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .related-article-item a {
+      text-decoration: none;
+      color: var(--text);
+      transition: color 0.3s;
+    }
+
+    .related-article-item a:hover {
+      color: var(--terracotta);
+    }
+
+    .related-article-title {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .related-article-category {
+      font-size: 11px;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--footer-bg);
+      color: var(--warm-white);
+      padding: 50px 40px;
+      margin-top: 60px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      color: var(--gold);
+    }
+
+    .footer-cities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-city h4 {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      color: var(--gold);
+    }
+
+    .footer-city ul {
+      list-style: none;
+    }
+
+    .footer-city ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-city a {
+      font-size: 12px;
+      color: var(--warm-white);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-city a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 30px;
+      font-size: 11px;
+      color: var(--text-light);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav {
+        padding: 15px 20px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .article-headline {
+        font-size: 32px;
+      }
+
+      .article-hero {
+        height: 350px;
+      }
+
+      .article-hero-content {
+        padding: 40px 20px 20px;
+      }
+
+      .article-body {
+        padding: 0 20px;
+        margin: 40px auto;
+      }
+
+      .article-pullquote {
+        padding: 20px 30px;
+        margin: 40px 0;
+      }
+
+      .issue-bar {
+        padding: 10px 15px;
+        font-size: 10px;
+      }
+
+      .footer-cities {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .article-headline {
+        font-size: 24px;
+      }
+
+      .article-hero {
+        height: 280px;
+      }
+
+      .article-body {
+        font-size: 15px;
+      }
+
+      .footer-cities {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Issue Bar -->
+  <div class="issue-bar">
+    <div class="issue-bar-left">The Splendid Edit &mdash; Issue No. 03 &mdash; Autumn 2026</div>
+    <div class="issue-bar-right">Fashion &mdash; Copenhagen</div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="../" class="nav-logo">The Splendid Edit</a>
+    <ul class="nav-links">
+      <li><a href="../#fashion">Fashion</a></li>
+      <li><a href="../#culture">Culture</a></li>
+      <li><a href="../#design">Design</a></li>
+      <li><a href="../#about">About</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="mobile-nav" id="mobileNav" style="display: none;">
+      <a href="../#fashion">Fashion</a>
+      <a href="../#culture">Culture</a>
+      <a href="../#design">Design</a>
+      <a href="../#about">About</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="article-hero" style="background-image: url('../images/cphfw-aw26-hero.jpg');">
+    <div class="article-hero-overlay"></div>
+    <div class="article-hero-content">
+      <div class="article-kicker">Copenhagen Fashion Week A/W 2026</div>
+      <h1 class="article-headline">Twenty-one shows. <em>Zero pretence.</em></h1>
+      <div class="article-meta">
+        <span>By Camille Ashworth</span>
+        <span>5 April 2026</span>
+        <span>7 min read</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Body -->
+  <article class="article-body">
+    <p class="article-lede">Copenhagen's fashion establishment marked two decades with understated confidence. The city's design community gathered for a 400-person dinner celebrating the twentieth anniversary of Copenhagen Fashion Week. Twenty-one shows defined the A/W 2026 season. The programming reflected a collective commitment to sustainability, radical inclusivity, and the emergence of a new generation of Nordic talent.</p>
+
+    <p>The season's structural foundation rested on an 18-point sustainability criteria. Participating brands committed to using at least 50 percent certified, organic, upcycled or recycled textiles. Zero-waste set design became standard practice. These requirements moved beyond marketing language. They established tangible benchmarks for an industry historically skeptical of measurable change.</p>
+
+    <p>The established names delivered with characteristic authority. Ganni presented collections that balanced commercial accessibility with design rigor. Cecilie Bahnsen returned with sculptural silhouettes that justified her 2017 LVMH Prize finalist status. Rotate Birger Christensen, Mfpen, and Henrik Vibskov each articulated distinct visual philosophies. These houses carried the weight of expectation. Each show reinforced their position within the Nordic design hierarchy.</p>
+
+    <div class="article-img-block">
+      <img src="../images/cphfw-emerging-designers.jpg" alt="Copenhagen Fashion Week emerging designer presentation">
+      <p class="article-img-caption">Emerging designers showcased innovation and sustainability focus at Copenhagen Fashion Week A/W 2026</p>
+    </div>
+
+    <p>The emerging talent tier generated genuine excitement. Nikolas Skovgaard demonstrated precision in tailoring. Forza Collective explored collaborative potential within the Nordic region. Sson presented an entirely secondhand collection titled "The Fortunate Ones." These designers rejected the notion that sustainability required aesthetic compromise. Their work proved otherwise.</p>
+
+    <p>Two designers marked significant returns after extended absences. Paolina Russo showed after a two-year hiatus. Her presentation at the French Embassy featured long pleated skirts and striped jersey tops that referenced collegiate aesthetics without irony. Anne Sofie Madsen returned after an eight-year break. She founded her label in 2011, spent six years showing in Paris, and chose Copenhagen to signal a new chapter. The city welcomed both designers with evident enthusiasm.</p>
+
+    <div class="article-pullquote">
+      "Zero-waste set design became standard practice. These requirements moved beyond marketing language. They established tangible benchmarks for an industry historically skeptical of measurable change."
+    </div>
+
+    <p>Other presentations revealed unexpected directions within Nordic fashion. Rave Review showcased upcycled deadstock at the Swedish Embassy, paired with live music by AK Cinder. Ranra brought Icelandic tradition forward with traditional outerwear featuring fur-lined hoods. O.Files synthesized Scandinavian minimalism, Italian craftsmanship, and Japanese origami principles into coherent collections. Sunflower transformed The Library Bar in Hotel Plaza into a runway, showcasing corduroy suits in warm tobacco tones. These venues mattered. They broke the convention center circuit and created intimate presentation spaces.</p>
+
+    <div class="article-img-block">
+      <img src="../images/cphfw-runway-detail.jpg" alt="Copenhagen Fashion Week runway detail">
+      <p class="article-img-caption">Detail-focused runway presentations showcased craftsmanship across the week</p>
+    </div>
+
+    <p>66 North celebrated its centennial with deliberate restraint. The Icelandic label focused on its fisherman heritage, pairing the collection with a dinner at Michelin-starred Kadeau. The approach connected contemporary design to historical context. Such presentations avoided the spectacle that often accompanies milestone celebrations.</p>
+
+    <p>Model casting reflected the season's commitment to genuine diversity. Expectant mothers appeared on runways. Gestuz, Paolina Russo, and Taus featured plus-size models. Ella Emhoff walked as a notable statement about familial legacy within fashion. These choices signaled a shift toward reflecting actual bodies and actual lives. The programming departed meaningfully from the narrow physical templates that governed fashion for decades.</p>
+
+    <div class="article-img-block">
+      <img src="../images/cphfw-designer-show.jpg" alt="Copenhagen Fashion Week designer show">
+      <p class="article-img-caption">Established and emerging designers shared the spotlight at Copenhagen Fashion Week A/W 2026</p>
+    </div>
+
+    <p>Copenhagen's particular contribution to global fashion remains distinct. The city rejects the pretense that defines other capitals. Paris manufactures heritage narratives. Milan emphasizes commercial polish. London promotes conceptual disruption. Copenhagen pursues a quieter path. The city prioritizes sustained practice over dramatic gesture. Twenty-one shows across one week demonstrated that restraint and innovation coexist. The 400 guests at the anniversary dinner appeared to understand this fundamental point. Copenhagen Fashion Week approaches its third decade with clarity about what it represents and what it refuses to become.</p>
+  </article>
+
+  <!-- Back Link -->
+  <div class="article-back">
+    <a href="../">&larr; Back to all articles</a>
+  </div>
+
+  <!-- Related Articles -->
+  <section class="related-articles">
+    <h3>Related Reading</h3>
+    <div class="related-articles-list">
+      <div class="related-article-item">
+        <a href="../fashion-creative-directors-2026/">
+          <div class="related-article-title">The New Wave: Fashion's Creative Directors 2026</div>
+          <div class="related-article-category">Fashion</div>
+        </a>
+      </div>
+      <div class="related-article-item">
+        <a href="../margiela-martens-reality-ss26/">
+          <div class="related-article-title">Margiela & Martens: Confronting Fashion's Reality</div>
+          <div class="related-article-category">Fashion</div>
+        </a>
+      </div>
+      <div class="related-article-item">
+        <a href="../met-gala-costume-art-2026/">
+          <div class="related-article-title">The Met Gala: Costume as Art 2026</div>
+          <div class="related-article-category">Culture</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">The Splendid Edit</div>
+      
+      <div class="footer-cities">
+        <div class="footer-city">
+          <h4>Paris</h4>
+          <ul>
+            <li><a href="../#paris-fashion">Fashion Week</a></li>
+            <li><a href="../#paris-culture">Culture</a></li>
+            <li><a href="../#paris-design">Design</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-city">
+          <h4>Milan</h4>
+          <ul>
+            <li><a href="../#milan-fashion">Fashion Week</a></li>
+            <li><a href="../#milan-culture">Culture</a></li>
+            <li><a href="../#milan-design">Design</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-city">
+          <h4>London</h4>
+          <ul>
+            <li><a href="../#london-fashion">Fashion Week</a></li>
+            <li><a href="../#london-culture">Culture</a></li>
+            <li><a href="../#london-design">Design</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-city">
+          <h4>New York</h4>
+          <ul>
+            <li><a href="../#ny-fashion">Fashion Week</a></li>
+            <li><a href="../#ny-culture">Culture</a></li>
+            <li><a href="../#ny-design">Design</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-city">
+          <h4>Tokyo</h4>
+          <ul>
+            <li><a href="../#tokyo-fashion">Fashion Week</a></li>
+            <li><a href="../#tokyo-culture">Culture</a></li>
+            <li><a href="../#tokyo-design">Design</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-city">
+          <h4>Seoul</h4>
+          <ul>
+            <li><a href="../#seoul-fashion">Fashion Week</a></li>
+            <li><a href="../#seoul-culture">Culture</a></li>
+            <li><a href="../#seoul-design">Design</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-city">
+          <h4>Shanghai</h4>
+          <ul>
+            <li><a href="../#shanghai-fashion">Fashion Week</a></li>
+            <li><a href="../#shanghai-culture">Culture</a></li>
+            <li><a href="../#shanghai-design">Design</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-city">
+          <h4>Sydney</h4>
+          <ul>
+            <li><a href="../#sydney-fashion">Fashion Week</a></li>
+            <li><a href="../#sydney-culture">Culture</a></li>
+            <li><a href="../#sydney-design">Design</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-city">
+          <h4>Monaco</h4>
+          <ul>
+            <li><a href="../#monaco-fashion">Fashion Week</a></li>
+            <li><a href="../#monaco-culture">Culture</a></li>
+            <li><a href="../#monaco-design">Design</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-city">
+          <h4>Copenhagen</h4>
+          <ul>
+            <li><a href="../#copenhagen-fashion">Fashion Week</a></li>
+            <li><a href="../#copenhagen-culture">Culture</a></li>
+            <li><a href="../#copenhagen-design">Design</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>Photography: 10 Magazine, Wallpaper*</p>
+        <p style="margin-top: 15px;">&copy; 2026 The Splendid Edit. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Navigation Toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburger.addEventListener('click', function() {
+      if (mobileNav.style.display === 'none') {
+        mobileNav.style.display = 'flex';
+      } else {
+        mobileNav.style.display = 'none';
+      }
+    });
+
+    // Close mobile nav when a link is clicked
+    const navLinks = mobileNav.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileNav.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
