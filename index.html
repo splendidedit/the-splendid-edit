@@ -209,9 +209,11 @@
     .latest-card-desc { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 300; line-height: 1.65; color: var(--text-light); }
 
     /* ── CITY STRIP ── */
-    .city-strip { display: grid; grid-template-columns: repeat(10, 1fr); border-top: 1px solid var(--border); }
+    .city-strip { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--border); }
     a.city-card { display: block; text-decoration: none; color: inherit; position: relative; overflow: hidden; height: 340px; border-right: 1px solid var(--border); }
-    a.city-card:last-child { border-right: none; }
+    a.city-card:nth-child(5) { border-right: none; }
+    a.city-card:nth-child(10) { border-right: none; }
+    a.city-card:nth-child(n+6) { border-top: 1px solid var(--border); }
     a.city-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(61,35,24,0.88) 0%, rgba(61,35,24,0.1) 55%); z-index: 1; transition: background 0.4s; }
     a.city-card:hover::before { background: linear-gradient(to top, rgba(139,26,26,0.95) 0%, rgba(139,26,26,0.2) 55%); }
     a.city-card:hover .cover-img { transform: scale(1.07); }
@@ -333,8 +335,7 @@
       a.latest-card:nth-child(odd):last-child { border-right: none; }
 
       /* City strip */
-      .city-strip { grid-template-columns: repeat(4, 1fr); }
-      a.city-card:nth-child(4) { border-right: none; }
+      .city-strip { grid-template-columns: repeat(5, 1fr); }
       a.city-card { height: 280px; }
 
       /* Season */
