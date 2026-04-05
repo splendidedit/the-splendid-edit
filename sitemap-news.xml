@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
+    <loc>https://splendidedit.com/monaco-gp-fashion-paddock/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-05T10:00:00Z</news:publication_date>
+      <news:title>The Grid: When fashion took the chequered flag</news:title>
+    </news:news>
+  </url>
+
+  <url>
     <loc>https://splendidedit.com/bulgari-garden-milan/</loc>
     <news:news>
       <news:publication>
