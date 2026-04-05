@@ -594,7 +594,67 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-03T18:00:00Z</news:publication_date>
-      <news:title>The Lake Como Edition: Where restraint meets the water</news:title>
+      <news:title>The Lake Como EDITION: Worth every waitlist</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/monaco-fashion-chanel-heritage/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-05T08:00:00Z</news:publication_date>
+      <news:title>Chanel x Monte Carlo: The house that never left the Riviera</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/monaco-hotels-monte-carlo/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-05T09:00:00Z</news:publication_date>
+      <news:title>Three addresses. One principality. Monaco&#x27;s luxury hotels</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/margiela-martens-reality-ss26/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-05T07:00:00Z</news:publication_date>
+      <news:title>Glenn Martens and the art of dressing real at Maison Margiela</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/met-gala-costume-art-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-05T14:00:00Z</news:publication_date>
+      <news:title>The Met Gala 2026: Fashion finds its museum moment</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://splendidedit.com/tbilisi-design-capital-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-05T18:00:00Z</news:publication_date>
+      <news:title>Tbilisi: The capital that caught design&#x27;s eye</news:title>
     </news:news>
   </url>
 
