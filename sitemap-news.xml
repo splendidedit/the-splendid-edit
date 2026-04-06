@@ -670,4 +670,16 @@
     </news:news>
   </url>
 
+  <url>
+    <loc>https://splendidedit.com/copenhagen-fashion-stores-guide/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-06T10:00:00Z</news:publication_date>
+      <news:title>Copenhagen: The stores that dress the city</news:title>
+    </news:news>
+  </url>
+
 </urlset>
