@@ -9,7 +9,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-01</news:publication_date>
-      <news:title>A noble arrival on the quiet island — The Splendid Edit</news:title>
+      <news:title>airelles-palladio-venezia</news:title>
     </news:news>
   </url>
   <url>
@@ -68,7 +68,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-01</news:publication_date>
-      <news:title>The garden that makes &lt;em&gt;Milan survivable&lt;/em&gt; — The Splendid Edit</news:title>
+      <news:title>bulgari-garden-milan</news:title>
     </news:news>
   </url>
   <url>
@@ -137,7 +137,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-03-29</news:publication_date>
-      <news:title>Chanel FW26 — Matthieu Blazy and the Art of Becoming</news:title>
+      <news:title>Chanel FW26 \u2014 Matthieu Blazy and the Art of Becoming</news:title>
     </news:news>
   </url>
   <url>
@@ -172,7 +172,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-01</news:publication_date>
-      <news:title>The Connaught, the shows, and the &lt;em&gt;particular pleasure&lt;/em&gt; of Mayfair in February — The Splendid Edit</news:title>
+      <news:title>connaught-mayfair</news:title>
     </news:news>
   </url>
   <url>
@@ -217,7 +217,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-01</news:publication_date>
-      <news:title>The Delano Returns / Miami Beach gets its legend back — The Splendid Edit</news:title>
+      <news:title>delano-miami-beach-reopening</news:title>
     </news:news>
   </url>
   <url>
@@ -278,6 +278,18 @@
       <news:publication_date>2026-04-07</news:publication_date>
       <news:title>Courrèges, Reborn / Drew Henry steps into the atelier</news:title>
       <news:keywords>Courrèges, Drew Henry, artistic director, Paris, designer appointment, Burberry, Nicolas Di Felice</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/effie-kats-melbourne-eveningwear/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-10</news:publication_date>
+      <news:title>Effie Kats / Melbourne's third-generation case for dressing up</news:title>
+      <news:keywords>Effie Kats, Melbourne, Australian fashion, evening wear, gowns, Australian-made, formal attire, Sydney, independent designer</news:keywords>
     </news:news>
   </url>
   <url>
@@ -347,7 +359,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-01</news:publication_date>
-      <news:title>Hinoki. Silence. &lt;em&gt;Tokyo.&lt;/em&gt; — The Splendid Edit</news:title>
+      <news:title>hinoki-silence-tokyo</news:title>
     </news:news>
   </url>
   <url>
@@ -473,7 +485,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-03-28</news:publication_date>
-      <news:title>Miramalfi — The Amalfi Coast Hotel That Earns Its View</news:title>
+      <news:title>Miramalfi \u2014 The Amalfi Coast Hotel That Earns Its View</news:title>
     </news:news>
   </url>
   <url>
@@ -498,6 +510,18 @@
       <news:publication_date>2026-04-05</news:publication_date>
       <news:title>Chanel × Monte Carlo / The house that never left the Riviera</news:title>
       <news:keywords>Chanel, Monaco, Monte Carlo, Coco Chanel, Matthieu Blazy, luxury fashion, Riviera, haute couture</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/monaco-gp-2026-fashion-takeover/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-10</news:publication_date>
+      <news:title>Monaco GP 2026 / When LVMH bought the starting grid</news:title>
+      <news:keywords>Monaco Grand Prix, F1, TAG Heuer, LVMH, Ferrari, Charles Leclerc, Louis Vuitton, paddock fashion, Formula 1, 2026</news:keywords>
     </news:news>
   </url>
   <url>
@@ -624,7 +648,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-01</news:publication_date>
-      <news:title>Fashion Week Ready / Seoul's beauty capital has your face covered — The Splendid Edit</news:title>
+      <news:title>seoul-beauty-fashion-week-ready</news:title>
     </news:news>
   </url>
   <url>
@@ -647,7 +671,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-01</news:publication_date>
-      <news:title>Seoul Hotels / Where to stay for fashion week — The Splendid Edit</news:title>
+      <news:title>seoul-hotels-fashion-week</news:title>
     </news:news>
   </url>
   <url>
@@ -658,7 +682,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-01</news:publication_date>
-      <news:title>September, &lt;em&gt;again&lt;/em&gt; — The Splendid Edit</news:title>
+      <news:title>september-again</news:title>
     </news:news>
   </url>
   <url>
@@ -669,7 +693,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-01</news:publication_date>
-      <news:title>Seven rooms &lt;em&gt;for September&lt;/em&gt; — The Splendid Edit</news:title>
+      <news:title>seven-rooms-september</news:title>
     </news:news>
   </url>
   <url>
@@ -720,6 +744,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://splendidedit.com/six-senses-london-whiteley/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-01</news:publication_date>
+      <news:title>six-senses-london-whiteley</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://splendidedit.com/sydney-resort-collections-2026/</loc>
     <news:news>
       <news:publication>
@@ -761,7 +796,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-04-01</news:publication_date>
-      <news:title>Tokyo &lt;em&gt;between the shows&lt;/em&gt; — The Splendid Edit</news:title>
+      <news:title>tokyo-between-shows</news:title>
     </news:news>
   </url>
   <url>
