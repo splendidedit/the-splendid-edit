@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Splendid Edit — Luxury stays. Fashion weeks. Perfectly edited.</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" /></noscript>
 
   <!-- SEO -->
   <meta name="description" content="The Splendid Edit — luxury hotel stays, fashion week coverage and perfectly curated travel. An Australian editorial publication by Splendid Media." />
@@ -530,7 +533,7 @@
     <img
       src="images/edition-como-pool.jpg"
       alt="The Lake Como EDITION &mdash; lakefront pool with mountain panorama"
-      class="cover-img"
+      fetchpriority="high" class="cover-img"
       style="height:100%;object-position:center 35%;"
     />
     <p class="hero-img-credit">The Lake Como EDITION &mdash; Photography courtesy of Marriott International</p>
@@ -600,9 +603,26 @@
 
 <section class="issue-grid">
 
+  <a href="shanghai-susan-fang-fw26/" class="issue-card">
+    <div class="issue-card-img">
+      <img src="images/design-shanghai-2026-hero.jpg" alt="Susan Fang Air-Infinity FW26 collection at Shanghai Fashion Week" loading="lazy" class="cover-img" style="height:280px;" />
+    </div>
+    <span class="img-credit-small">Wallpaper*</span>
+    <div class="issue-card-body">
+      <span class="issue-card-num">NEW</span>
+      <span class="issue-card-tag">The Season &middot; Shanghai</span>
+      <h3 class="issue-card-title">Susan Fang FW26: Shanghai's air-woven poet reaches infinity</h3>
+      <p class="issue-card-desc">3D-printed armour meets floating chiffon as Susan Fang pushes her ribbon construction to its most ambitious expression yet. Shanghai Fashion Week's standout show.</p>
+      <div class="issue-card-foot">
+        <span class="issue-card-byline">By Margaux Delacroix &middot; 13 Apr 2026</span>
+        <span class="issue-card-arrow">Read &rarr;</span>
+      </div>
+    </div>
+  </a>
+
   <a href="dior-cigale-bag-anderson-paris/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/dior-cigale-bag-ss26-hero.jpg" alt="The Dior Cigale bag for Spring/Summer 2026, designed by Jonathan Anderson" class="cover-img" style="height:280px;" />
+      <img src="images/dior-cigale-bag-ss26-hero.jpg" alt="The Dior Cigale bag for Spring/Summer 2026, designed by Jonathan Anderson" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Photograph by Pegah Farahmand / 10 Magazine</span>
     <div class="issue-card-body">
@@ -619,7 +639,7 @@
 
   <a href="marni-rogge-milan-debut-aw26/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/marni-rogge-milan-aw26-hero.jpg" alt="Meryll Rogge's debut Marni AW26 collection at Milan Fashion Week" class="cover-img" style="height:280px;" />
+      <img src="images/marni-rogge-milan-aw26-hero.jpg" alt="Meryll Rogge's debut Marni AW26 collection at Milan Fashion Week" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Wallpaper*</span>
     <div class="issue-card-body">
@@ -636,7 +656,7 @@
 
   <a href="chiuri-fendi-aw26-milan/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/fendi-aw26-chiuri-debut-milan.jpg" alt="Fendi AW26 runway show, Maria Grazia Chiuri debut collection in Milan" class="cover-img" style="height:280px;" />
+      <img src="images/fendi-aw26-chiuri-debut-milan.jpg" alt="Fendi AW26 runway show, Maria Grazia Chiuri debut collection in Milan" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Photography courtesy of Fendi / 10 Magazine</span>
     <div class="issue-card-body">
@@ -653,7 +673,7 @@
 
   <a href="chancery-rosewood-london/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/chancery-rosewood-hero.jpg" alt="The Chancery Rosewood London on Grosvenor Square" class="cover-img" style="height:280px;" />
+      <img src="images/chancery-rosewood-hero.jpg" alt="The Chancery Rosewood London on Grosvenor Square" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Wallpaper*</span>
     <div class="issue-card-body">
@@ -670,7 +690,7 @@
 
   <a href="bottega-veneta-louise-trotter-ss26/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/bottega-veneta-ss26-hero.jpg" alt="Bottega Veneta Spring Summer 2026 by Louise Trotter" class="cover-img" style="height:280px;" />
+      <img src="images/bottega-veneta-ss26-hero.jpg" alt="Bottega Veneta Spring Summer 2026 by Louise Trotter" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">CR Fashion Book</span>
     <div class="issue-card-body">
@@ -687,7 +707,7 @@
 
   <a href="met-gala-2026-costume-art-beyonce/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/met-gala-costume-art-2026.jpg" alt="The Metropolitan Museum Costume Institute 'Costume Art' exhibition 2026" class="cover-img" style="height:280px;" />
+      <img src="images/met-gala-costume-art-2026.jpg" alt="The Metropolitan Museum Costume Institute 'Costume Art' exhibition 2026" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Wallpaper*</span>
     <div class="issue-card-body">
@@ -704,7 +724,7 @@
 
   <a href="six-senses-milan-brera/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/bulgari-hero.jpg" alt="Luxury hotel in Milan's Brera district" class="cover-img" style="height:280px;" />
+      <img src="images/bulgari-hero.jpg" alt="Luxury hotel in Milan's Brera district" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Robb Report</span>
     <div class="issue-card-body">
@@ -721,7 +741,7 @@
 
   <a href="craig-green-flower-power-paris-ss26/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/craig-green-ss26-paris-flower-power.jpg" alt="Craig Green S/S 2026 collection at the Conservatoire National des Arts et Métiers, Paris" class="cover-img" style="height:280px;" />
+      <img src="images/craig-green-ss26-paris-flower-power.jpg" alt="Craig Green S/S 2026 collection at the Conservatoire National des Arts et Métiers, Paris" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Photography by Giulio Ventisei / 10 Magazine</span>
     <div class="issue-card-body">
@@ -738,7 +758,7 @@
 
   <a href="prada-days-of-summer-harrods-london/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/prada-days-of-summer-harrods-hero.jpg" alt="Prada Days of Summer pop-up at Harrods London" class="cover-img" style="height:280px;" />
+      <img src="images/prada-days-of-summer-harrods-hero.jpg" alt="Prada Days of Summer pop-up at Harrods London" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Photography courtesy of Prada / 10 Magazine</span>
     <div class="issue-card-body">
@@ -755,7 +775,7 @@
 
   <a href="monaco-gp-louis-vuitton-2026/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/monaco-gp-lv-trophy.jpg" alt="Louis Vuitton trophy trunk for the Formula 1 Monaco Grand Prix" class="cover-img" style="height:280px;" />
+      <img src="images/monaco-gp-lv-trophy.jpg" alt="Louis Vuitton trophy trunk for the Formula 1 Monaco Grand Prix" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">CR Fashion Book</span>
     <div class="issue-card-body">
@@ -772,7 +792,7 @@
 
   <a href="shanghai-fashion-week-margiela-folders/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/margiela-aw26-shanghai-hero.jpg" alt="Maison Margiela AW 2026 show at Shanghai Fashion Week" class="cover-img" style="height:280px;" />
+      <img src="images/margiela-aw26-shanghai-hero.jpg" alt="Maison Margiela AW 2026 show at Shanghai Fashion Week" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Wallpaper*</span>
     <div class="issue-card-body">
@@ -789,7 +809,7 @@
 
   <a href="sydney-australian-fashion-week-2026/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/zimmermann-cruise-2026-sydney.jpg" alt="Models in Zimmermann Cruise 2026 collection at Australian Fashion Week" class="cover-img" style="height:280px;" />
+      <img src="images/zimmermann-cruise-2026-sydney.jpg" alt="Models in Zimmermann Cruise 2026 collection at Australian Fashion Week" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">CR Fashion Book</span>
     <div class="issue-card-body">
@@ -806,7 +826,7 @@
 
   <a href="faena-new-york-chelsea/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/faena-new-york-hero.jpg" alt="Faena New York hotel interior" class="cover-img" style="height:280px;" />
+      <img src="images/faena-new-york-hero.jpg" alt="Faena New York hotel interior" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Photography courtesy of Faena New York / Wallpaper*</span>
     <div class="issue-card-body">
@@ -823,7 +843,7 @@
 
   <a href="shanghai-luxury-fashion-new-frontier/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/louis-vuitton-the-louis-shanghai.jpg" alt="Louis Vuitton's The Louis floating flagship on Shanghai's Huangpu River" class="cover-img" style="height:280px;" />
+      <img src="images/louis-vuitton-the-louis-shanghai.jpg" alt="Louis Vuitton's The Louis floating flagship on Shanghai's Huangpu River" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">CR Fashion Book</span>
     <div class="issue-card-body">
@@ -840,7 +860,7 @@
 
   <a href="stefano-gabbana-dolce-exit-milan/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/stefano-gabbana-dolce-gabbana-resignation.jpg" alt="Domenico Dolce and Stefano Gabbana, co-founders of Dolce & Gabbana" class="cover-img" style="height:280px;" />
+      <img src="images/stefano-gabbana-dolce-gabbana-resignation.jpg" alt="Domenico Dolce and Stefano Gabbana, co-founders of Dolce & Gabbana" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Photography courtesy of Dolce & Gabbana / 10 Magazine</span>
     <div class="issue-card-body">
@@ -857,7 +877,7 @@
 
   <a href="demna-gucci-milan-debut/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/demna-gucci-aw26-milan-hero.jpg" alt="Demna's debut Gucci collection at Milan Fashion Week AW26" class="cover-img" style="height:280px;" />
+      <img src="images/demna-gucci-aw26-milan-hero.jpg" alt="Demna's debut Gucci collection at Milan Fashion Week AW26" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Photography courtesy of Gucci / 10 Magazine</span>
     <div class="issue-card-body">
@@ -874,7 +894,7 @@
 
   <a href="effie-kats-melbourne-eveningwear/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/effie-kats-sydney-eveningwear.jpg" alt="Effie Kats elevated evening wear, Melbourne" class="cover-img" style="height:280px;" />
+      <img src="images/effie-kats-sydney-eveningwear.jpg" alt="Effie Kats elevated evening wear, Melbourne" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">worldofsplendid.com</span>
     <div class="issue-card-body">
@@ -891,7 +911,7 @@
 
   <a href="monaco-gp-2026-fashion-takeover/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/ferrari-leclerc-monaco-capsule.jpg" alt="Ferrari x Charles Leclerc capsule collection for Monaco Grand Prix 2026" class="cover-img" style="height:280px;" />
+      <img src="images/ferrari-leclerc-monaco-capsule.jpg" alt="Ferrari x Charles Leclerc capsule collection for Monaco Grand Prix 2026" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">CR Fashion Book</span>
     <div class="issue-card-body">
@@ -908,7 +928,7 @@
 
   <a href="six-senses-london-whiteley/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/six-senses-london-hero.jpg" alt="Six Senses London lobby at The Whiteley, Bayswater" class="cover-img" style="height:280px;" />
+      <img src="images/six-senses-london-hero.jpg" alt="Six Senses London lobby at The Whiteley, Bayswater" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">Wallpaper* / Six Senses</span>
     <div class="issue-card-body">
@@ -925,7 +945,7 @@
 
   <a href="sanchez-medina-madrid-esparto/" class="issue-card">
     <div class="issue-card-img">
-      <img src="images/sanchez-medina-esparto-studio.jpg" alt="Javier Sánchez Medina weaving esparto in his Madrid studio" class="cover-img" style="height:280px;" />
+      <img src="images/sanchez-medina-esparto-studio.jpg" alt="Javier Sánchez Medina weaving esparto in his Madrid studio" loading="lazy" class="cover-img" style="height:280px;" />
     </div>
     <span class="img-credit-small">The Aficionados</span>
     <div class="issue-card-body">
@@ -945,7 +965,7 @@
       <img
         src="images/miumiu-ss26-runway.jpg"
         alt="Miu Miu AW26 runway, Paris Fashion Week"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -967,7 +987,7 @@
       <img
         src="images/celine-michael-rider-ss26-preppy-hero.jpg"
         alt="Celine Spring Summer 2026 collection by Michael Rider at Paris Fashion Week"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -989,7 +1009,7 @@
       <img
         src="images/burberry-aw26-old-billingsgate-london.jpg"
         alt="Burberry A/W 2026 runway at Old Billingsgate Market, London"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1011,7 +1031,7 @@
       <img
         src="images/loewe-aw26-chateau-vincennes.jpg"
         alt="Loewe A/W 2026 runway at Château de Vincennes, Paris"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1033,7 +1053,7 @@
       <img
         src="images/airelles-palladio-venezia-hero.jpg"
         alt="Airelles Palladio, Venezia on Giudecca island"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1055,7 +1075,7 @@
       <img
         src="images/courreges-di-felice-aw26-backstage.jpg"
         alt="Courrèges atelier, Paris"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1078,7 +1098,7 @@
       <img
         src="images/dior-aw26-runway.jpg"
         alt="Dior AW26 runway show"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1100,7 +1120,7 @@
       <img
         src="images/monaco-harbour-aerial.jpg"
         alt="Monte-Carlo Fashion Week 2026 — aerial view of Monaco harbour"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1122,7 +1142,7 @@
       <img
         src="images/prada-runway.jpg"
         alt="Prada AW26 runway show at Milan Fashion Week"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1144,7 +1164,7 @@
       <img
         src="images/fashion-exhibitions-2026-hero.jpg"
         alt="Vivienne Westwood exhibition at the Bowes Museum"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1166,7 +1186,7 @@
       <img
         src="images/monaco-gp-lv-trophy.jpg"
         alt="Louis Vuitton x Formula 1 &mdash; the LV monogram on a sculpted F1 car"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1188,7 +1208,7 @@
       <img
         src="images/amanjena-marrakech-hero.jpg"
         alt="Amanjena resort pavilion, Marrakech"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1210,7 +1230,7 @@
       <img
         src="images/paris-fashion-atelier.jpg"
         alt="Paris fashion atelier — the creative directors reshaping fashion in 2026"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1232,7 +1252,7 @@
       <img
         src="images/shanghai-fashion-show.jpg"
         alt="Shushu/Tong Fall 2026 presentation at Shanghai Fashion Week"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1254,7 +1274,7 @@
       <img
         src="images/margiela-aw26-shanghai-hero.jpg"
         alt="Maison Margiela AW26 — ghostly figure in layered organza at Shanghai shipping yard presentation"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1276,7 +1296,7 @@
       <img
         src="images/admiralty-arch-waldorf-astoria-london-hero.jpg"
         alt="Admiralty Arch at the end of The Mall, London — the landmark opening as the Waldorf Astoria London in May 2026"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1298,7 +1318,7 @@
       <img
         src="images/mcqueen-manta-bag-campaign-hero.jpg"
         alt="Alexander McQueen De Manta bag campaign — Tim Walker photographed model Vivien Solari submerged underwater"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1320,7 +1340,7 @@
       <img
         src="images/capella-taipei-hero.jpg"
         alt="Capella Taipei hotel interior — marble vestibule and bronze doors by Andr&eacute; Fu"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1342,7 +1362,7 @@
       <img
         src="images/seoul-lotte-tower.jpg"
         alt="Lotte World Tower and Seoul skyline at dusk"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1364,7 +1384,7 @@
       <img
         src="images/seoul-songeun-cityscape.jpg"
         alt="Seoul skyline with Songeun Art Space by Herzog and de Meuron"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1386,7 +1406,7 @@
       <img
         src="images/seoul-palace-night.jpg"
         alt="Gyeongbokgung Palace reflected in water at night, Seoul"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1408,7 +1428,7 @@
       <img
         src="images/balenciaga-clairobscur-aw26-hero.jpg"
         alt="Balenciaga A/W 2026 ClairObscur runway with Euphoria screens"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1430,7 +1450,7 @@
       <img
         src="images/delano-miami-beach-hero.jpg"
         alt="The Delano Miami Beach, Art Deco facade"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1452,7 +1472,7 @@
       <img
         src="images/chanel-fw26-matthieu-blazy-hero.jpg"
         alt="Chanel FW26 runway look by Matthieu Blazy at the Grand Palais, Paris"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1474,7 +1494,7 @@
       <img
         src="images/paris-fw26-dior.jpg"
         alt="Jonathan Anderson's Dior A/W 2026 show in the Tuileries Gardens, Paris"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1496,7 +1516,7 @@
       <img
         src="images/miramalfi-amalfi-coast-hero.jpg"
         alt="Miramalfi hotel terrace overlooking the Tyrrhenian Sea, Amalfi Coast"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1518,7 +1538,7 @@
       <img
         src="images/willy-chavarria-zara-vatisimo-hero.jpg"
         alt="Willy Chavarria x Zara Vat&iacute;simo campaign &mdash; Spring 2026"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1540,7 +1560,7 @@
       <img
         src="images/public-weho-hero.jpg"
         alt="Public West Hollywood &mdash; Ian Schrager and John Pawson on the Sunset Strip"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1562,7 +1582,7 @@
       <img
         src="images/courreges-di-felice-aw26-backstage.jpg"
         alt="Backstage at Courr&egrave;ges A/W 2026, Nicolas Di Felice&rsquo;s final collection"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1584,7 +1604,7 @@
       <img
         src="images/christopher-kane-mulberry.jpg"
         alt="Christopher Kane, creative director of womenswear at Mulberry"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1606,7 +1626,7 @@
       <img
         src="images/paris-saintlaurent-aw26.jpg"
         alt="Paris — June Men's Fashion Week"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1628,7 +1648,7 @@
       <img
         src="images/mercer-hero.jpg"
         alt="Luxury hotel bedroom, New York"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1650,7 +1670,7 @@
       <img
         src="images/aman-tokyo-lobby.jpg"
         alt="Aman Tokyo — the signature wooden-lattice lobby"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1672,7 +1692,7 @@
       <img
         src="images/valentino-barberini-2.jpg"
         alt="Runway presentation at the Op&eacute;ra Garnier, Paris Fashion Week"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1694,7 +1714,7 @@
       <img
         src="images/palais-garnier.jpg"
         alt="Palais Garnier grand staircase, Paris — venue for immersive fashion shows"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1716,7 +1736,7 @@
       <img
         src="images/paris-chloe-aw26.jpg"
         alt="Chloé Autumn/Winter 2026, Paris Fashion Week"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1739,7 +1759,7 @@
       <img
         src="images/simone-rocha-pitti.jpg"
         alt="Florence — Pitti Uomo June 2026, Simone Rocha guest designer"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1761,7 +1781,7 @@
       <img
         src="images/jkplace-florence.jpg"
         alt="Florence — Palazzo and Duomo skyline, Pitti Uomo hotel guide"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1783,7 +1803,7 @@
       <img
         src="images/galliano-zara.jpg"
         alt="John Galliano returns to fashion via Zara partnership"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1805,7 +1825,7 @@
       <img
         src="images/valentino-barberini-1.jpg"
         alt="Valentino AW26 at Palazzo Barberini, Rome"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1827,7 +1847,7 @@
       <img
         src="images/prada-runway.jpg"
         alt="A/W 2026 Fashion Week runway models"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1849,7 +1869,7 @@
       <img
         src="images/chloe-kamali-runway.jpg"
         alt="Creative design process in a fashion studio"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1871,7 +1891,7 @@
       <img
         src="images/galliano-zara-portrait.jpg"
         alt="John Galliano &mdash; Zara creative partnership"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1893,7 +1913,7 @@
       <img
         src="images/one-only-big-sky.jpg"
         alt="Mountain landscape — Big Sky, Montana"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1915,7 +1935,7 @@
       <img
         src="images/aman-kyoto-suite.jpg"
         alt="Kyoto — temple garden and traditional architecture"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:280px;"
       />
     </div>
@@ -1956,7 +1976,7 @@
     <img
       src="images/monaco-gp-ferrari-leclerc.jpg"
       alt="Charles Leclerc for the Ferrari capsule collection &mdash; the Monaco Grand Prix&rsquo;s fashion moment"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="min-height:560px;object-position:center 25%;"
     />
     <p class="long-read-img-credit">Photography courtesy of CR Fashion Book / Ferrari</p>
@@ -1993,7 +2013,7 @@
       <img
         src="images/paris-fashion-atelier.jpg"
         alt="Paris fashion atelier interior with natural light"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:220px;"
       />
     </div>
@@ -2010,7 +2030,7 @@
       <img
         src="images/shanghai-fashion-show.jpg"
         alt="Shanghai fashion show venue with dramatic lighting"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:220px;"
       />
     </div>
@@ -2027,7 +2047,7 @@
       <img
         src="images/edition-como-exterior.jpg"
         alt="The Lake Como EDITION &mdash; restored palazzo exterior at night"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:220px;"
       />
     </div>
@@ -2044,7 +2064,7 @@
       <img
         src="images/bulgari-hero.jpg"
         alt="The 10,000 sq ft secret garden, Bulgari Hotel Milano"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:220px;"
       />
     </div>
@@ -2061,7 +2081,7 @@
       <img
         src="images/bristol-paris-hero.jpg"
         alt="Elegant Paris hotel lobby, fashion week season"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:220px;"
       />
     </div>
@@ -2078,7 +2098,7 @@
       <img
         src="images/aman-tokyo-pool.jpg"
         alt="Aman Tokyo — the 30m indoor pool, Otemachi"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:220px;"
       />
     </div>
@@ -2095,7 +2115,7 @@
       <img
         src="images/siriano-nyfw.jpg"
         alt="Luxury hotel suite, New York"
-        class="cover-img"
+        loading="lazy" class="cover-img"
         style="height:220px;"
       />
     </div>
@@ -2124,7 +2144,7 @@
     <img
       src="images/bristol-paris-hero.jpg"
       alt="Paris, France"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="height:340px;"
     />
     <div class="city-label">
@@ -2138,7 +2158,7 @@
     <img
       src="images/bulgari-hero.jpg"
       alt="Duomo di Milano at sunset, Milan, Italy"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="height:340px;"
     />
     <div class="city-label">
@@ -2152,7 +2172,7 @@
     <img
       src="images/london-park-hyatt-thames.jpg"
       alt="London skyline and River Thames at golden hour"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="height:340px;"
     />
     <div class="city-label">
@@ -2166,7 +2186,7 @@
     <img
       src="images/new-york-skyline-city.jpg"
       alt="New York City skyline with the Chrysler Building"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="height:340px;"
     />
     <div class="city-label">
@@ -2180,7 +2200,7 @@
     <img
       src="images/aman-tokyo-lobby.jpg"
       alt="Tokyo, Japan"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="height:340px;"
     />
     <div class="city-label">
@@ -2194,7 +2214,7 @@
     <img
       src="images/seoul-lotte-tower-skyline.jpg"
       alt="Seoul skyline with Lotte World Tower at dusk"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="height:340px;"
     />
     <div class="city-label">
@@ -2208,7 +2228,7 @@
     <img
       src="images/shanghai-bund-skyline.jpg"
       alt="Shanghai skyline viewed from the Bund"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="height:340px;"
     />
     <div class="city-label">
@@ -2222,7 +2242,7 @@
     <img
       src="images/sydney-opera-house-harbour.jpg"
       alt="Sydney Opera House and harbour"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="height:340px;"
     />
     <div class="city-label">
@@ -2236,7 +2256,7 @@
     <img
       src="images/monaco-harbour-aerial.jpg"
       alt="Monaco harbour and coastline aerial view"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="height:340px;"
     />
     <div class="city-label">
@@ -2250,7 +2270,7 @@
     <img
       src="images/copenhagen-harbour-big.jpg"
       alt="Copenhagen harbour architecture"
-      class="cover-img"
+      loading="lazy" class="cover-img"
       style="height:340px;"
     />
     <div class="city-label">
@@ -2273,7 +2293,7 @@
         <img
           src="images/park-hyatt-paris-hero.jpg"
           alt="Paris fashion week — the hotels that held up"
-          class="cover-img"
+          loading="lazy" class="cover-img"
           style="height:220px;"
         />
       </div>
@@ -2293,7 +2313,7 @@
         <img
           src="images/aman-tokyo-pool.jpg"
           alt="Aman Tokyo — the 30m indoor pool"
-          class="cover-img"
+          loading="lazy" class="cover-img"
           style="height:220px;"
         />
       </div>
