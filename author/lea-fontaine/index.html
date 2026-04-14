@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Léa Fontaine &mdash; The Splendid Edit</title>
+  <meta name="description" content="Articles by Léa Fontaine. Contributing Fashion Writer at The Splendid Edit." />
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" /></noscript>
+  <style>
+    :root {
+      --cream: #FAF6F1; --warm-white: #FFFCF8; --crimson: #8B1A1A;
+      --terracotta: #C2623B; --gold: #C4A265; --gold-light: #D4B98A;
+      --brown: #3D2318; --footer-bg: #3D0A05; --text: #3A3330;
+      --text-light: #7A7068; --border: #E0D6CC; --light: #F5F0EA;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Cormorant Garamond', Georgia, serif; background: var(--cream); color: var(--text); overflow-x: hidden; }
+    img { display: block; max-width: 100%; }
+    .issue-bar { background: var(--brown); padding: 9px 48px; display: flex; align-items: center; justify-content: space-between; }
+    .issue-bar-left { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+    .issue-bar-right { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,246,241,0.4); }
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 64px; background: rgba(250,246,241,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brown); text-decoration: none; }
+    .nav-logo em { font-style: normal; color: var(--crimson); font-weight: 400; }
+    .nav-links { display: flex; gap: 40px; list-style: none; position: absolute; left: 50%; transform: translateX(-50%); }
+    .nav-links a { font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--crimson); }
+    .nav-subscribe { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--crimson); text-decoration: none; border-bottom: 1px solid var(--crimson); padding-bottom: 1px; }
+    .page-header { background: var(--brown); padding: 80px 80px 64px; text-align: center; }
+    .page-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 18px; }
+    .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 4vw, 52px); font-weight: 300; line-height: 1.12; color: var(--cream); }
+    .page-title em { font-style: italic; color: var(--gold); }
+    .page-body { max-width: 780px; margin: 0 auto; padding: 72px 48px 96px; }
+    .page-body p { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 300; line-height: 1.85; color: var(--text); margin-bottom: 28px; }
+    .page-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 300; line-height: 1.15; color: var(--brown); margin: 48px 0 20px; }
+    .page-body h2 em { font-style: italic; color: var(--crimson); }
+    .page-body ul { margin: 0 0 28px 24px; }
+    .page-body li { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 300; line-height: 1.85; color: var(--text); margin-bottom: 8px; }
+    .page-body a { color: var(--crimson); text-decoration: underline; text-underline-offset: 3px; }
+    .page-body a:hover { color: var(--brown); }
+    .article-back { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-light); text-decoration: none; margin-bottom: 48px; transition: color 0.2s; }
+    .article-back:hover { color: var(--crimson); }
+    .author-bio { margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .author-role { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light); margin-bottom: 12px; }
+    footer { background: var(--footer-bg); padding: 72px 80px 40px; color: rgba(250,246,241,0.4); }
+    .footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
+    .footer-brand { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cream); display: block; margin-bottom: 12px; }
+    .footer-tagline { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 300; font-style: italic; line-height: 1.5; color: rgba(250,246,241,0.5); margin-bottom: 16px; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 8px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 16px; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 300; color: rgba(250,246,241,0.4); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-bottom { border-top: 1px solid rgba(250,246,241,0.06); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.1em; color: rgba(250,246,241,0.25); }
+    .footer-legal { display: flex; gap: 24px; }
+    .footer-legal a { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 0.08em; color: rgba(250,246,241,0.25); text-decoration: none; }
+    .footer-legal a:hover { color: var(--cream); }
+    .nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px 4px; z-index: 101; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--brown); transition: all 0.25s ease; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    .mobile-nav { display: none; position: fixed; top: 64px; left: 0; right: 0; background: rgba(250,246,241,0.98); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 99; padding: 0 32px 28px; }
+    .mobile-nav.open { display: block; }
+    .mobile-nav ul { list-style: none; }
+    .mobile-nav ul li { border-bottom: 1px solid var(--border); }
+    .mobile-nav ul li a { display: block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brown); text-decoration: none; padding: 16px 0; transition: color 0.2s; }
+    .mobile-nav ul li a:hover { color: var(--crimson); }
+    .mobile-nav-subscribe { display: block; margin-top: 20px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--crimson); text-decoration: none; text-align: center; padding: 14px; border: 1px solid var(--crimson); }
+    @media (max-width: 900px) {
+      .issue-bar { padding: 9px 24px; }
+      .issue-bar-right { display: none; }
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .nav-subscribe { display: none; }
+      .nav-hamburger { display: flex; }
+      footer { padding: 48px 28px 32px; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
+    }
+    @media (max-width: 560px) {
+      nav { padding: 0 20px; }
+      .issue-bar { padding: 9px 20px; }
+      footer { padding: 40px 20px 28px; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .footer-legal { flex-wrap: wrap; gap: 10px 20px; }
+    }
+  </style>
+  <link rel="canonical" href="https://splendidedit.com/author/lea-fontaine/" />
+  <meta property="og:title" content="Léa Fontaine" />
+  <meta property="og:description" content="Articles by Léa Fontaine. Contributing Fashion Writer at The Splendid Edit." />
+  <meta property="og:image" content="https://splendidedit.com/images/splendid-edit-og.jpg" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="The Splendid Edit" />
+</head>
+<body>
+
+<div class="issue-bar">
+  <span class="issue-bar-left">The Splendid Edit &mdash; Issue No. 04 &mdash; Summer 2026</span>
+  <span class="issue-bar-right">Splendid Media &mdash; worldofsplendid.com</span>
+</div>
+<nav>
+  <a href="../../" class="nav-logo">The Splendid <em>Edit</em></a>
+  <ul class="nav-links">
+    <li><a href="../../#the-stay">The Stay</a></li>
+    <li><a href="../../#features">The Season</a></li>
+    <li><a href="../../">The Edit</a></li>
+    <li><a href="../../#cities">City Guides</a></li>
+  </ul>
+  <a href="../../#newsletter" class="nav-subscribe">Subscribe</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <ul>
+    <li><a href="../../#the-stay" onclick="closeMobileNav()">The Stay</a></li>
+    <li><a href="../../#features" onclick="closeMobileNav()">The Season</a></li>
+    <li><a href="../../" onclick="closeMobileNav()">The Edit</a></li>
+    <li><a href="../../#cities" onclick="closeMobileNav()">City Guides</a></li>
+  </ul>
+  <a href="../../#newsletter" class="mobile-nav-subscribe" onclick="closeMobileNav()">Subscribe to The Edit</a>
+</div>
+
+<section class="page-header">
+  <span class="page-kicker">Contributing Editor</span>
+  <h1 class="page-title">Léa Fontaine</h1>
+</section>
+
+<div class="page-body">
+  <a href="../../about/" class="article-back">&#x2190; Back to Contributors</a>
+
+  <div class="author-bio">
+    <div class="author-role">Contributing Fashion Writer</div>
+    <p>Milan-based specialist in Italian fashion houses and creative directors. A former buying director at Galeries Lafayette, Léa understands Italian fashion from both editorial and commercial perspectives, bringing nuanced insight to the creative decisions shaping the industry.</p>
+    <p>Based in Milan</p>
+  </div>
+
+  <h2>Articles by Léa Fontaine</h2>
+  <ul>
+    <li><a href="../../celine-michael-rider-ss26-preppy/">Celine S/S 2026 / Preppy reimagined</a></li>
+    <li><a href="../../dior-cigale-bag-anderson-paris/">The Cigale Bag / Jonathan Anderson turns a 1952 Dior gown into something you can carry</a></li>
+  </ul>
+
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <span class="footer-brand">The Splendid Edit</span>
+      <p class="footer-tagline">Luxury stays. Fashion weeks.<br/>Perfectly edited.</p>
+    </div>
+    <div>
+      <span class="footer-col-title">The Edit</span>
+      <ul class="footer-links">
+        <li><a href="../../#the-stay">The Stay</a></li>
+        <li><a href="../../#features">The Season</a></li>
+        <li><a href="../../">The Edit</a></li>
+        <li><a href="../../#cities">City Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="footer-col-title">Fashion Week Cities</span>
+      <ul class="footer-links">
+        <li><a href="../../three-paris-hotels/">Paris</a></li>
+        <li><a href="../../bulgari-garden-milan/">Milan</a></li>
+        <li><a href="../../connaught-mayfair/">London</a></li>
+        <li><a href="../../seven-rooms-september/">New York</a></li>
+        <li><a href="../../#cities">Tokyo</a></li>
+        <li><a href="../../seoul-fashion-week-korean-wave/">Seoul</a></li>
+        <li><a href="../../shanghai-fashion-week-new-guard/">Shanghai</a></li>
+        <li><a href="../../australian-fashion-week-new-wave/">Sydney</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="footer-col-title">About</span>
+      <ul class="footer-links">
+        <li><a href="../../about/">About Us</a></li>
+        <li><a href="../../editorial-policy/">Editorial Policy</a></li>
+        <li><a href="../../contact/">Contact</a></li>
+        <li><a href="../../privacy-policy/">Privacy</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="footer-col-title">Splendid Magazine</span>
+      <ul class="footer-links">
+        <li><a href="https://worldofsplendid.com" target="_blank" rel="noopener">worldofsplendid.com</a></li>
+        <li><a href="https://studio.worldofsplendid.com/" target="_blank" rel="noopener">Studio Splendid</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2026 The Splendid Edit &middot; A Splendid Media Publication</p>
+    <div class="footer-legal">
+      <a href="../../privacy-policy/">Privacy Policy</a>
+      <a href="../../terms-of-use/">Terms of Use</a>
+      <a href="../../cookie-policy/">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var hamburger = document.getElementById('hamburger');
+  var mobileNav = document.getElementById('mobileNav');
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', function() {
+      var isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      mobileNav.setAttribute('aria-hidden', !isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileNav.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('click', function(e) {
+      if (mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+        closeMobileNav();
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

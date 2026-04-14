@@ -24,6 +24,46 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://splendidedit.com/editorial-policy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/author/margaux-delacroix/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/author/sienna-caldwell/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/author/lea-fontaine/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/author/camille-ashworth/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/author/elena-voss/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/author/isabelle-rowe/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/author/juliette-marchand/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://splendidedit.com/airelles-palladio-venezia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
