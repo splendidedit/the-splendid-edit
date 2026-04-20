@@ -41,6 +41,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://splendidedit.com/masthead/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://splendidedit.com/author/margaux-delacroix/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
