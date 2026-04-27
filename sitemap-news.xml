@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://splendidedit.com/six-senses-london-whiteley-bayswater/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-27</news:publication_date>
+      <news:title>Six Senses London: wellness finds its address</news:title>
+      <news:keywords>Six Senses London, The Whiteley, Bayswater, Foster + Partners, AvroKO, wellness hotel London, magnesium pool, spa hotel</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/ss26-defining-trends-spring-summer/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-27</news:publication_date>
+      <news:title>The twelve looks that define Spring/Summer 2026</news:title>
+      <news:keywords>SS26 trends, Spring Summer 2026, Bottega Veneta, Louise Trotter, Chanel, Matthieu Blazy, Givenchy, Sarah Burton, Saint Laurent, Prada, fashion trends</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/louis-vuitton-hotel-london-monogram/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-27</news:publication_date>
+      <news:title>Louis Vuitton Hotel: checking into 130 years of the monogram</news:title>
+      <news:keywords>Louis Vuitton Hotel, LV monogram 130 years, Berkeley Square, Mayfair, Keepall, Alma bag, Speedy, Pharrell Williams, London pop-up</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://splendidedit.com/kilchoan-estate-knoydart-scotland/</loc>
     <news:news>
       <news:publication>
