@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://splendidedit.com/victoria-beckham-gap-collection/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30</news:publication_date>
+      <news:title>Victoria Beckham × Gap: the return of democratic luxury</news:title>
+      <news:keywords>Victoria Beckham, Gap, Arc Jean, collaboration, democratic luxury, denim, womenswear, menswear, accessible fashion</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/bottega-veneta-trotter-fw26/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30</news:publication_date>
+      <news:title>Louise Trotter's Bottega Veneta: brutalism in shearling</news:title>
+      <news:keywords>Bottega Veneta, Louise Trotter, Fall Winter 2026, Milan Fashion Week, shearling, outerwear, Intrecciato, Italian luxury</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/zannier-bendor-ile-de-france/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30</news:publication_date>
+      <news:title>Zannier Bendor: a private island reborn on the Riviera</news:title>
+      <news:keywords>Zannier Hotels, Île de Bendor, Bandol, Provence, French Riviera, private island, luxury hotel, Paul Ricard, Lionel Levy, wellness</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://splendidedit.com/top-10-fashion-led-magazines/</loc>
     <news:news>
       <news:publication>
