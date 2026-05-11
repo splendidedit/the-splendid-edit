@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://splendidedit.com/sitemap.xml
+Sitemap: https://splendidedit.com/sitemap-news.xml
