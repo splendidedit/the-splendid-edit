@@ -4785,23 +4785,22 @@ async function handleSubscribe(e) {
   const email = document.getElementById('newsletter-email').value.trim();
   const btn = document.getElementById('newsletter-btn');
   const msg = document.getElementById('newsletter-msg');
-  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzrNMoycUD5m420g3lLZdZ08qHv3618nIjXkyyDBPYESLlQctbyFeUw3z0PRtxaf3t_/exec';
   btn.disabled = true;
   btn.textContent = 'Subscribing\u2026';
   msg.style.display = 'none';
   try {
-    // mode:'no-cors' bypasses CORS preflight — Apps Script handles the POST
-    // and we show success optimistically (opaque response can't be read)
-    await fetch(SCRIPT_URL, {
+    var res = await fetch('https://formsubmit.co/ajax/hello@worldofsplendid.com', {
       method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: 'email=' + encodeURIComponent(email)
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ email: email, _subject: 'New subscriber: ' + email, _template: 'table' })
     });
-    msg.style.display = 'block';
-    msg.style.color = '#5a7a5a';
-    msg.textContent = 'You\u2019re subscribed \u2014 welcome to The Edit.';
-    document.getElementById('newsletter-form').reset();
+    var data = await res.json();
+    if (data.success) {
+      msg.style.display = 'block';
+      msg.style.color = '#5a7a5a';
+      msg.textContent = 'You\u2019re subscribed \u2014 welcome to The Edit.';
+      document.getElementById('newsletter-form').reset();
+    } else { throw new Error('fail'); }
   } catch(err) {
     msg.style.display = 'block';
     msg.style.color = '#c0392b';
