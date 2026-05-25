@@ -1981,4 +1981,15 @@
     <news:title>Cannes 2026 Best Dressed / The red carpet finds its quiet power</news:title>
   </news:news>
 </url>
+<url>
+  <loc>https://splendidedit.com/villa-san-michele-florence/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Splendid Edit</news:name>
+      <news:language>en</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-25</news:publication_date>
+    <news:title>The villa that watches over Florence</news:title>
+  </news:news>
+</url>
 </urlset>
