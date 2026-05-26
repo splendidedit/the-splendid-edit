@@ -2003,4 +2003,15 @@
     <news:title>Paris haute couture returns in July. The new names must prove it.</news:title>
   </news:news>
 </url>
+  <url>
+    <loc>https://splendidedit.com/myeongdong-lienjang-skin/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-11</news:publication_date>
+      <news:title>Myeongdong, where the glow gets serious</news:title>
+    </news:news>
+  </url>
 </urlset>
