@@ -2025,4 +2025,15 @@
       <news:title>Aman comes to Baja, and keeps to the quiet side</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/amanvari-baja-california/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-26</news:publication_date>
+      <news:title>Amanvari, Aman's first resort in Mexico</news:title>
+    </news:news>
+  </url>
 </urlset>
