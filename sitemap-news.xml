@@ -2090,19 +2090,7 @@
       <news:publication_date>2026-05-28</news:publication_date>
       <news:title>Milan's call goes out. Humans only.</news:title>
     </news:news>
-  </url>
-  <url>
-    <loc>https://splendidedit.com/aman-le-melezin-courchevel-spa/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Splendid Edit</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-29</news:publication_date>
-      <news:title>Aman raises the hotel to make room for the spa</news:title>
-    </news:news>
-  </url>
-<url>
+  </url><url>
   <loc>https://splendidedit.com/opera-paris-costume-sale-bastille/</loc>
   <news:news>
     <news:publication>
@@ -2113,4 +2101,26 @@
     <news:title>The Opera de Paris opens its wardrobe for the weekend</news:title>
   </news:news>
 </url>
+  <url>
+    <loc>https://splendidedit.com/villa-timeo-belmond-taormina/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-29</news:publication_date>
+      <news:title>Belmond opens a side door in Taormina</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://splendidedit.com/loewe-craft-prize-2026-jongjin-park/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-29</news:publication_date>
+      <news:title>At Loewe, a Korean ceramicist makes paper hold its shape</news:title>
+    </news:news>
+  </url>
 </urlset>
