@@ -2102,4 +2102,15 @@
       <news:title>Aman raises the hotel to make room for the spa</news:title>
     </news:news>
   </url>
+<url>
+  <loc>https://splendidedit.com/opera-paris-costume-sale-bastille/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>The Splendid Edit</news:name>
+      <news:language>en</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-29</news:publication_date>
+    <news:title>The Opera de Paris opens its wardrobe for the weekend</news:title>
+  </news:news>
+</url>
 </urlset>
