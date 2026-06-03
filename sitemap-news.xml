@@ -2252,4 +2252,15 @@
       <news:title>The Fashion Fund finds its next ten</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/loewe-180-anniversary-amazona-paris/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-03T16:00:00+00:00</news:publication_date>
+      <news:title>Loewe turns 180. The Amazona comes back.</news:title>
+    </news:news>
+  </url>
 </urlset>
