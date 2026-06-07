@@ -2329,4 +2329,15 @@
       <news:title>Miu Miu rebuilds the shirt in Ginza</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/hotel-cipriani-venice-dior-spa/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-06T18:00:00+00:00</news:publication_date>
+      <news:title>Dior crosses the water to the Cipriani</news:title>
+    </news:news>
+  </url>
 </urlset>
