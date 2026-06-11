@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prada checks into the Hotel Chelsea &mdash; The Splendid Edit</title>
+  <meta name="description" content="Prada Mode arrives in New York with Satellites II, a Nicolas Winding Refn and Hideo Kojima takeover of the Hotel Chelsea, Katz's Delicatessen and the Angelika during Tribeca." />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" /></noscript>
+<style>
+    :root {
+      --cream: #FAF6F1; --warm-white: #FFFCF8; --crimson: #8B1A1A;
+      --terracotta: #C2623B; --gold: #C4A265; --gold-light: #D4B98A;
+      --brown: #3D2318; --footer-bg: #3D0A05; --text: #3A3330;
+      --text-light: #7A7068; --border: #E0D6CC; --light: #F5F0EA;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Cormorant Garamond', Georgia, serif; background: var(--cream); color: var(--text); overflow-x: hidden; }
+    img { display: block; max-width: 100%; }
+    .cover-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    /* Issue bar */
+    .issue-bar { background: var(--brown); padding: 9px 48px; display: flex; align-items: center; justify-content: space-between; }
+    .issue-bar-left { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+    .issue-bar-right { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,246,241,0.4); }
+    /* Nav */
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 64px; background: rgba(250,246,241,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brown); text-decoration: none; }
+    .nav-logo em { font-style: normal; color: var(--crimson); font-weight: 400; }
+    .nav-links { display: flex; gap: 40px; list-style: none; position: absolute; left: 50%; transform: translateX(-50%); }
+    .nav-links a { font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--crimson); }
+    .nav-subscribe { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--crimson); text-decoration: none; border-bottom: 1px solid var(--crimson); padding-bottom: 1px; }
+    /* Article hero */
+    .article-hero { position: relative; height: 70vh; min-height: 500px; overflow: hidden; }
+    .article-hero img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .article-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(61,35,24,0.92) 0%, rgba(61,35,24,0.3) 50%, transparent 100%); }
+    .article-hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 72px 120px 56px; z-index: 2; }
+    .article-kicker { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--terracotta); display: block; margin-bottom: 18px; }
+    .article-headline { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 4vw, 58px); font-weight: 300; line-height: 1.08; color: var(--cream); margin-bottom: 24px; max-width: 800px; }
+    .article-headline em { font-style: italic; color: var(--gold); }
+    .article-meta { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 0.12em; color: rgba(250,246,241,0.5); display: flex; gap: 18px; align-items: center; }
+    .article-meta span + span::before { content: '·'; margin-right: 18px; }
+    /* Article body */
+    .article-body { max-width: 780px; margin: 0 auto; padding: 72px 48px 96px; }
+    .article-lede { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 300; font-style: italic; line-height: 1.6; color: var(--brown); margin-bottom: 44px; padding-bottom: 44px; border-bottom: 1px solid var(--border); }
+    .article-body p { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 300; line-height: 1.85; color: var(--text); margin-bottom: 28px; }
+    .article-body p em { font-style: italic; color: var(--brown); }
+    .article-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; line-height: 1.15; color: var(--brown); margin: 56px 0 24px; }
+    .article-body h2 em { font-style: italic; color: var(--crimson); }
+    /* Pull quote */
+    .article-pullquote { margin: 56px -80px; padding: 48px 80px; background: var(--warm-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center; }
+    .article-pullquote-mark { font-family: 'Cormorant Garamond', serif; font-size: 60px; font-weight: 300; line-height: 0.5; color: var(--gold); display: block; margin-bottom: 24px; }
+    .article-pullquote-text { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 2.5vw, 32px); font-weight: 300; font-style: italic; line-height: 1.45; color: var(--brown); max-width: 600px; margin: 0 auto 20px; }
+    .article-pullquote-attr { font-family: 'Montserrat', sans-serif; font-size: 8.5px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-light); }
+    /* Inline image */
+    .article-img-block { margin: 48px -80px; }
+    .article-img-block img { width: 100%; height: 440px; object-fit: cover; }
+    .article-img-caption { padding: 12px 80px 0; font-family: 'Montserrat', sans-serif; font-size: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light); }
+    /* Hotel facts box */
+    .article-facts { background: var(--brown); color: var(--cream); padding: 44px 52px; margin: 52px 0; }
+    .article-facts-title { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 24px; }
+    .article-facts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 48px; }
+    .article-fact-label { font-family: 'Montserrat', sans-serif; font-size: 8px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(250,246,241,0.4); display: block; margin-bottom: 4px; }
+    .article-fact-value { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 300; line-height: 1.5; color: var(--cream); }
+    /* Gold rule */
+    .article-rule { width: 48px; height: 1px; background: var(--gold); margin: 48px 0; }
+    /* Back link */
+    .article-back { display: inline-flex; align-items: center; gap: 10px; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--crimson); text-decoration: none; margin-bottom: 48px; border-bottom: 1px solid var(--crimson); padding-bottom: 2px; }
+    /* Footer */
+    footer { background: var(--footer-bg); padding: 72px 80px 44px; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 56px; padding-bottom: 56px; border-bottom: 1px solid rgba(250,246,241,0.08); }
+    .footer-brand { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--cream); display: block; margin-bottom: 14px; }
+    .footer-tagline { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; font-weight: 300; color: rgba(250,246,241,0.45); line-height: 1.65; margin-bottom: 24px; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 22px; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 11px; }
+    .footer-links a { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 300; color: rgba(250,246,241,0.5); text-decoration: none; }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; }
+    .footer-copy { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 300; letter-spacing: 0.1em; color: rgba(250,246,241,0.25); }
+    .footer-legal { display: flex; gap: 28px; }
+    .footer-legal a { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 300; letter-spacing: 0.1em; color: rgba(250,246,241,0.25); text-decoration: none; }
+
+    /* ── HAMBURGER BUTTON ── */
+    .nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px 4px; z-index: 101; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--brown); transition: all 0.25s ease; }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* ── MOBILE NAV DRAWER ── */
+    .mobile-nav { display: none; position: fixed; top: 64px; left: 0; right: 0; background: rgba(250,246,241,0.98); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 99; padding: 0 32px 28px; }
+    .mobile-nav.open { display: block; }
+    .mobile-nav ul { list-style: none; }
+    .mobile-nav ul li { border-bottom: 1px solid var(--border); }
+    .mobile-nav ul li a { display: block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brown); text-decoration: none; padding: 16px 0; transition: color 0.2s; }
+    .mobile-nav ul li a:hover { color: var(--crimson); }
+    .mobile-nav-subscribe { display: block; margin-top: 20px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--crimson); text-decoration: none; text-align: center; padding: 14px; border: 1px solid var(--crimson); }
+
+    @media (max-width: 900px) {
+      .issue-bar { padding: 9px 24px; }
+      .issue-bar-right { display: none; }
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .nav-subscribe { display: none; }
+      .nav-hamburger { display: flex; }
+      /* Article hero */
+      .article-hero { height: 55vh; min-height: 320px; }
+      .article-hero-content { padding: 48px 36px 36px; }
+      /* Article body */
+      .article-body { padding: 48px 28px 64px; }
+      .article-pullquote { margin: 44px -28px; padding: 36px 28px; }
+      .article-img-block { margin: 36px -28px; }
+      .article-img-block img { height: 340px; }
+      .article-img-caption { padding: 10px 28px 0; }
+      /* Footer */
+      footer { padding: 48px 28px 32px; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
+    }
+
+    @media (max-width: 560px) {
+      nav { padding: 0 20px; }
+      .issue-bar { padding: 9px 20px; }
+      /* Article hero */
+      .article-hero { height: 50vh; min-height: 280px; }
+      .article-hero-content { padding: 36px 24px 28px; }
+      /* Article body */
+      .article-body { padding: 36px 20px 52px; }
+      .article-lede { font-size: 19px; }
+      .article-body p { font-size: 17px; }
+      .article-body h2 { font-size: 26px; margin: 40px 0 18px; }
+      .article-pullquote { margin: 36px -20px; padding: 32px 20px; }
+      .article-img-block { margin: 32px -20px; }
+      .article-img-block img { height: 260px; }
+      .article-img-caption { padding: 10px 20px 0; }
+      /* Footer */
+      footer { padding: 40px 20px 28px; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      .footer-legal { flex-wrap: wrap; gap: 10px 20px; }
+    }
+  </style>
+<style>
+.related-articles { max-width: 700px; margin: 48px auto 0; padding: 32px 24px; border-top: 1px solid var(--border); }
+.related-articles h3 { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-light); margin: 0 0 16px; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; }
+.related-articles li { margin-bottom: 8px; }
+.related-articles a { font-family: 'Cormorant Garamond', serif; font-size: 17px; color: var(--text); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+.related-articles a:hover { border-bottom-color: var(--gold); }
+</style>
+  <link rel="canonical" href="https://splendidedit.com/prada-mode-new-york-satellites/" />
+  <meta property="og:title" content="Prada checks into the Hotel Chelsea" />
+  <meta property="og:description" content="Prada Mode arrives in New York with Satellites II, a Nicolas Winding Refn and Hideo Kojima takeover of the Hotel Chelsea, Katz's Delicatessen and the Angelika during Tribeca." />
+  <meta property="og:image" content="https://splendidedit.com/images/prada-mode-tokyo-pavilion.jpg" />
+  <meta property="og:url" content="https://splendidedit.com/prada-mode-new-york-satellites/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="The Splendid Edit" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Prada checks into the Hotel Chelsea" />
+  <meta name="twitter:description" content="Prada Mode arrives in New York with Satellites II, a Nicolas Winding Refn and Hideo Kojima takeover of the Hotel Chelsea, Katz's Delicatessen and the Angelika during Tribeca." />
+  <meta name="twitter:image" content="https://splendidedit.com/images/prada-mode-tokyo-pavilion.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Prada checks into the Hotel Chelsea",
+    "description": "Prada Mode arrives in New York with Satellites II, a Nicolas Winding Refn and Hideo Kojima takeover of the Hotel Chelsea, Katz's Delicatessen and the Angelika during Tribeca.",
+    "image": "https://splendidedit.com/images/prada-mode-tokyo-pavilion.jpg",
+    "datePublished": "2026-06-11T16:00:00Z",
+    "dateModified": "2026-06-11T16:00:00Z",
+    "author": {"@type":"Organization","name":"The Splendid Edit","url":"https://splendidedit.com"},
+    "publisher": {"@type":"Organization","name":"The Splendid Edit","url":"https://splendidedit.com","logo":{"@type":"ImageObject","url":"https://splendidedit.com/favicon.svg"}},
+    "mainEntityOfPage": {"@type":"WebPage","@id":"https://splendidedit.com/prada-mode-new-york-satellites/"},
+    "genre": "Fashion",
+    "keywords": "Prada Mode, Satellites II, Hideo Kojima, Nicolas Winding Refn, Hotel Chelsea, Tribeca Film Festival, Katz's Delicatessen, New York"
+  }
+  </script>
+</head>
+<body>
+
+<div class="issue-bar">
+  <span class="issue-bar-left">The Splendid Edit &mdash; Issue No. 05 &mdash; Summer 2026</span>
+  <span class="issue-bar-right">The Season &mdash; New York</span>
+</div>
+<nav>
+  <a href="../" class="nav-logo">The Splendid <em>Edit</em></a>
+  <ul class="nav-links">
+    <li><a href="../#the-stay">The Stay</a></li>
+    <li><a href="../#features">The Season</a></li>
+    <li><a href="../">The Edit</a></li>
+    <li><a href="../#cities">City Guides</a></li>
+    <li><a href="../about/">About</a></li>
+  </ul>
+  <a href="../#newsletter" class="nav-subscribe">Subscribe</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <ul>
+    <li><a href="../#the-stay" onclick="closeMobileNav()">The Stay</a></li>
+    <li><a href="../#features" onclick="closeMobileNav()">The Season</a></li>
+    <li><a href="../" onclick="closeMobileNav()">The Edit</a></li>
+    <li><a href="../#cities" onclick="closeMobileNav()">City Guides</a></li>
+    <li><a href="../about/" onclick="closeMobileNav()">About</a></li>
+  </ul>
+  <a href="../#newsletter" class="mobile-nav-subscribe" onclick="closeMobileNav()">Subscribe to The Edit</a>
+</div>
+
+<section class="article-hero">
+  <img fetchpriority="high" src="../images/prada-mode-tokyo-pavilion.jpg" alt="The Prada Mode pavilion designed by Ryue Nishizawa at the Teien Art Museum, Tokyo" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+  <div class="article-hero-overlay"></div>
+  <div class="article-hero-content">
+    <span class="article-kicker">The Season &middot; New York</span>
+    <h1 class="article-headline">Prada <em>checks into the Hotel Chelsea</em></h1>
+    <div class="article-meta">
+      <span>By <a href="../about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(250,246,241,0.3);">The Splendid Edit</a></span>
+      <span>June 2026</span>
+      <span>4 min read</span>
+    </div>
+  </div>
+</section>
+<div class="article-body">
+  <a href="../" class="article-back">&#x2190; Back to The Edit</a>
+
+    <p class="article-lede">The lobby bar of the Hotel Chelsea is broadcasting horoscopes. Prada Mode has arrived in New York, and it has brought Hideo Kojima and Nicolas Winding Refn with it.</p>
+
+    <p>Satellites II is the fourteenth edition of Prada Mode, the house&rsquo;s travelling arts club, and it has claimed the Chelsea as its hub through June 14. The Danish filmmaker and the Japanese game creator built the programme together, timing it to the Tribeca Film Festival running across the city. Their subject is communication and human connection across language, culture and space.</p>
+
+    <p>The pairing began in Tokyo. In 2025 the two staged Satellites at Prada Aoyama, an exploration of love, language and creativity that paired Refn&rsquo;s cinema with Kojima&rsquo;s game design. The sequel moves the conversation to a hotel that has housed more artists per floor than most institutions manage per century.</p>
+
+    <h2>The <em>Chelsea</em></h2>
+
+    <p>Upstairs, Prada has taken three rooms. One is finished in chrome, one recalls clouds at sunset, one is dressed as a control room. What gets filmed in them feeds the screens downstairs.</p>
+
+    <p>Those screens are the takeover&rsquo;s strangest pleasure. Set into the lobby bar, styled after analogue television, they carry Prada Mode Channel, a livestream built with Mikael Bertelsen that runs from talk shows to horoscopes. Guests drink beneath a broadcast being made above their heads.</p>
+
+    <p>The preview days, June 3 and 4, set the register. Refn and Kojima talked first with the actress and musician Sophie Thatcher, then with Abel Ferrara. The Velveteers, Lydia Lunch and Precious performed, William Benton played a DJ set, Juno the Bakery ran cake-decorating workshops, and a kendama demonstration put a Japanese wooden skill toy in front of a downtown crowd. Day two brought Amanda Gorman, a Thatcher performance and Miho Hatori of Cibo Matto.</p>
+
+    <h2>Pastrami</h2>
+
+    <p>At night the club moved downtown to Katz&rsquo;s Delicatessen, where Grandmaster Flash, Papi Juice and Justin Strauss kept a party running among the pastrami sandwiches. The deli stays in the programme for the public run, serving a menu created with Sam Lawrence of Bridges.</p>
+
+    <p>The footprint spreads from there. The Angelika Film Center hosts screenings, the Prada store on Broadway carries an installation, and branded vending machines scattered across the locations dispense pins, stickers and the occasional better prize.</p>
+
+    <div class="article-pullquote">
+      <span class="article-pullquote-mark">&ldquo;</span>
+      <p class="article-pullquote-text">A private club with no fixed address takes a room at the hotel where New York has always kept its artists.</p>
+      <span class="article-pullquote-attr">The Splendid Edit</span>
+    </div>
+
+    <h2>The club <em>moves</em></h2>
+
+    <p>Prada Mode has worked this way since its first editions. The club has set up at 180 The Strand in London, in Moscow, Dubai and Los Angeles, in Seoul, Shanghai, Paris and Hong Kong, each time pairing a cultural figure with a borrowed building. In 2023 it landed at Tokyo&rsquo;s Teien Art Museum, with site-specific works curated by Kazuyo Sejima and a curved wooden pavilion by Ryue Nishizawa in the museum&rsquo;s European garden.</p>
+
+    <div class="article-img-block">
+      <img loading="lazy" src="../images/prada-mode-tokyo-talk.jpg" alt="A conversation under the Ryue Nishizawa pavilion at Prada Mode Tokyo, Teien Art Museum, 2023" />
+      <p class="article-img-caption">Prada Mode Tokyo at the Teien Art Museum, 2023. Courtesy of Prada</p>
+    </div>
+
+    <p>New York gets the noisier version. Where Tokyo offered tea-ceremony discourse under a wooden canopy, the Chelsea offers Grandmaster Flash and a deli counter. The framework holds either way: a city, a building with a past, and a programme dense enough to reward a full day inside it.</p>
+
+    <p>The public run opened June 9 and closes Sunday, with registration open on Prada&rsquo;s site. Go for the screens, stay for the sandwich, and try the vending machines on the way out.</p>
+
+    <div class="related-articles">
+      <h3>Also in The Edit</h3>
+      <ul>
+        <li><a href="../prada-axiom-lcvg-new-york/">Prada knits the layer that goes to the Moon</a></li>
+        <li><a href="../miu-miu-jazz-club-ginza-tokyo/">When fashion learned to swing in Ginza</a></li>
+        <li><a href="../prada-re-nylon-2026-sea-beyond/">Prada returns Re-Nylon to the sea</a></li>
+      </ul>
+    </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <span class="footer-brand">The Splendid Edit</span>
+      <p class="footer-tagline">Luxury stays. Fashion weeks.<br/>Perfectly edited.</p>
+    </div>
+    <div>
+      <span class="footer-col-title">The Edit</span>
+      <ul class="footer-links">
+        <li><a href="../#the-stay">The Stay</a></li>
+        <li><a href="../#features">The Season</a></li>
+        <li><a href="../#cities">City Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="footer-col-title">Fashion Week Cities</span>
+      <ul class="footer-links">
+        <li><a href="../three-paris-hotels/">Paris</a></li>
+        <li><a href="../bulgari-garden-milan/">Milan</a></li>
+        <li><a href="../connaught-mayfair/">London</a></li>
+        <li><a href="../seven-rooms-september/">New York</a></li>
+        <li><a href="../#cities">Tokyo</a></li>
+        <li><a href="../seoul-fashion-week-korean-wave/">Seoul</a></li>
+        <li><a href="../shanghai-fashion-week-new-guard/">Shanghai</a></li>
+        <li><a href="../australian-fashion-week-new-wave/">Sydney</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="footer-col-title">About</span>
+      <ul class="footer-links">
+        <li><a href="../about/">About Us</a></li>
+        <li><a href="../contact/">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="footer-col-title">Splendid Magazine</span>
+      <ul class="footer-links">
+        <li><a href="https://worldofsplendid.com" target="_blank" rel="noopener">worldofsplendid.com</a></li>
+        <li><a href="https://studio.worldofsplendid.com/" target="_blank" rel="noopener">Studio Splendid</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2026 The Splendid Edit &middot; A Splendid Media Publication</p>
+    <div class="footer-legal">
+      <a href="../privacy-policy/">Privacy Policy</a>
+      <a href="../editorial-policy/">Editorial Policy</a>
+      <a href="../terms-of-use/">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var hamburger = document.getElementById('hamburger');
+  var mobileNav = document.getElementById('mobileNav');
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', function() {
+      var isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      mobileNav.setAttribute('aria-hidden', !isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileNav.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('click', function(e) {
+      if (mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+        closeMobileNav();
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
