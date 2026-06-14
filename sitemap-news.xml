@@ -2458,4 +2458,12 @@
     <news:title>Loewe dresses Spain for the World Cup</news:title>
   </news:news>
 </url>
+<url>
+  <loc>https://splendidedit.com/aman-nai-lert-bangkok/</loc>
+  <news:news>
+    <news:publication><news:name>The Splendid Edit</news:name><news:language>en</news:language></news:publication>
+    <news:publication_date>2026-06-14</news:publication_date>
+    <news:title>Aman climbs above a Bangkok garden</news:title>
+  </news:news>
+</url>
 </urlset>
