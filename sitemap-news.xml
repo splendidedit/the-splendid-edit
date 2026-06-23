@@ -2543,4 +2543,15 @@
       <news:title>The beef Kyoto keeps to itself</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/kenzo-nigo-homecoming-paris/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-23</news:publication_date>
+      <news:title>Kenzo goes back to the founder's house</news:title>
+    </news:news>
+  </url>
 </urlset>
