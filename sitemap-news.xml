@@ -2565,4 +2565,15 @@
       <news:title>Prada S/S 2027 / Nothing to waste</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/aman-venice-palazzo-papadopoli/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-01</news:publication_date>
+      <news:title>The garden Venice forgot it had</news:title>
+    </news:news>
+  </url>
 </urlset>
