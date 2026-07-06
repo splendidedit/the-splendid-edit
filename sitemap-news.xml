@@ -2686,4 +2686,15 @@
       <news:title>Kenzo ties its spring to Place des Victoires</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/bottega-veneta-il-mio-milan/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-06</news:publication_date>
+      <news:title>Bottega Veneta keeps what belongs to me</news:title>
+    </news:news>
+  </url>
 </urlset>
