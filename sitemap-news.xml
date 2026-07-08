@@ -2731,14 +2731,22 @@
     </news:news>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://splendidedit.com/saint-laurent-ss27-vaccarello-paris/</loc>
+=======
+    <loc>https://splendidedit.com/venice-simplon-orient-express-villeggiatura/</loc>
+>>>>>>> 0cd01a5 (Publish: The train that ends in Pompeii)
     <news:news>
       <news:publication>
         <news:name>The Splendid Edit</news:name>
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-07-08</news:publication_date>
+<<<<<<< HEAD
       <news:title>Saint Laurent keeps the lights low</news:title>
+=======
+      <news:title>The train that ends in Pompeii</news:title>
+>>>>>>> 0cd01a5 (Publish: The train that ends in Pompeii)
     </news:news>
   </url>
 </urlset>
