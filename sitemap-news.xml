@@ -3071,4 +3071,15 @@
       <news:title>Chanel takes Charvet on Place Vendôme</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/marc-jacobs-memory-loss-fall-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-27</news:publication_date>
+      <news:title>Marc Jacobs makes memory the subject at the Armory</news:title>
+    </news:news>
+  </url>
 </urlset>
