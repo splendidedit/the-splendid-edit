@@ -3200,4 +3200,15 @@
       <news:title>The white domes of Maundays Bay</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/copenhagen-fashion-week-ss27/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-02</news:publication_date>
+      <news:title>Copenhagen goes first, before September</news:title>
+    </news:news>
+  </url>
 </urlset>
