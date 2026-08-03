@@ -3222,4 +3222,15 @@
       <news:title>Pharrell takes Louis Vuitton to the surf for Spring-Summer 2027</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/aman-karingani-mozambique/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-03</news:publication_date>
+      <news:title>Aman goes to the African bush</news:title>
+    </news:news>
+  </url>
 </urlset>
