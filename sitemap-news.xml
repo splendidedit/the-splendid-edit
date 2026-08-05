@@ -3244,4 +3244,15 @@
       <news:title>The Monogram at one hundred and thirty</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/galliano-horizons-met-2027/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-05</news:publication_date>
+      <news:title>The Met takes Galliano in full</news:title>
+    </news:news>
+  </url>
 </urlset>
