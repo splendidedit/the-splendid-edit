@@ -3288,4 +3288,15 @@
       <news:title>New York opens September fur-free</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/mcqueen-aw26-noir-campaign/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-07</news:publication_date>
+      <news:title>McQueen shoots autumn in noir</news:title>
+    </news:news>
+  </url>
 </urlset>
