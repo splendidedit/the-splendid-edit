@@ -3367,4 +3367,15 @@
       <news:title>The rooms make their own air</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/fendi-baguette-re-edition/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-10</news:publication_date>
+      <news:title>Fendi reissues the Baguette, a dozen ways</news:title>
+    </news:news>
+  </url>
 </urlset>
