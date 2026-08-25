@@ -3697,4 +3697,15 @@
       <news:title>Paris keeps the last word</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/fendi-chiuri-ss27-milan-return/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-25</news:publication_date>
+      <news:title>Fendi keeps a Wednesday in September</news:title>
+    </news:news>
+  </url>
 </urlset>
