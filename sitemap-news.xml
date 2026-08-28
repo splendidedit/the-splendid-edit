@@ -3774,4 +3774,15 @@
       <news:title>Vogue World comes to the Galleria</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/amanemu-ise-shima-private-experiences/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-28</news:publication_date>
+      <news:title>One experience for every night</news:title>
+    </news:news>
+  </url>
 </urlset>
