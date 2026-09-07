@@ -3918,4 +3918,15 @@
       <news:title>The first house on the ridge</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/amanfayun-hangzhou-hundred-cranes/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-07</news:publication_date>
+      <news:title>A hundred cranes in the tea village</news:title>
+    </news:news>
+  </url>
 </urlset>
