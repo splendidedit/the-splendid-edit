@@ -4223,4 +4223,15 @@
       <news:title>The pool beneath Carlos Place</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/marks-spencer-london-fashion-week-debut/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-19</news:publication_date>
+      <news:title>Marks &amp; Spencer walks its first runway at one hundred</news:title>
+    </news:news>
+  </url>
 </urlset>
