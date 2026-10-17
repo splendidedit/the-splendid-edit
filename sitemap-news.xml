@@ -4495,4 +4495,15 @@
       <news:title>Aman puts a date on Mount Moiwa</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/sean-mcgirr-exits-alexander-mcqueen-london/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-17</news:publication_date>
+      <news:title>Sean McGirr steps down as creative director of Alexander McQueen</news:title>
+    </news:news>
+  </url>
 </urlset>
