@@ -4663,4 +4663,15 @@
       <news:title>At Celine, Michael Rider widens the house</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://splendidedit.com/jimmy-choo-pearls-of-wisdom-30th-london/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Splendid Edit</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-24</news:publication_date>
+      <news:title>At Jimmy Choo, thirty years in pearls</news:title>
+    </news:news>
+  </url>
 </urlset>
